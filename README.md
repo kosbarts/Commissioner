@@ -15,5 +15,6 @@ This typeface was funded by Google and is distributed by Google Fonts.
 
 ## License
 
-Commissioner is licensed under the SIL Open Font License v1.1 (<http://scripts.sil.org/OFL>)
+Commissioner is licensed under the SIL Open Font License v1.1 (<http://scripts.sil.org/OFL>).
+
 To view the copyright and specific terms and conditions please refer to [OFL.txt](https://github.com/kosbarts/Commissioner/blob/master/OFL.txt)
