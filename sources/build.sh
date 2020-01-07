@@ -2,15 +2,13 @@
 source venv/bin/activate
 set -e
 
-cd sources
-
 echo "Generating Static fonts"
 mkdir -p ../fonts/ttfs
-fontmake -g Commissioner_Variable.glyphs -i -o ttf --output-dir ../fonts/ttfs/
+fontmake -g Commissioner-Variable.glyphs -i -o ttf --output-dir ../fonts/ttfs/
 
 echo "Generating VFs"
 mkdir -p ../fonts/variable
-fontmake -g Commissioner_Variable.glyphs -o variable --output-path ../fonts/variable/Commissioner-VF.ttf
+fontmake -g Commissioner-Variable.glyphs -o variable --output-path ../fonts/variable/Commissioner-VF.ttf
 
 rm -rf master_ufo/ instance_ufo/
 echo "Post processing"
