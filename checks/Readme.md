@@ -132,5 +132,3 @@ gf-glyphs-scripts:
   Family is not listed in the GF Master repo doc, http://tinyurl.com/kflp3k7.
   Listing the family helps us keep track of it and ensure there is one original source
 
-
-
