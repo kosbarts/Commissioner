@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="endash" format="2">
+  <advance width="570"/>
+  <unicode hex="2013"/>
+  <outline>
+    <contour>
+      <point x="70" y="281" type="line"/>
+      <point x="128" y="281"/>
+      <point x="183" y="281"/>
+      <point x="230" y="281" type="curve"/>
+      <point x="340" y="281" type="line"/>
+      <point x="387" y="281"/>
+      <point x="442" y="281"/>
+      <point x="500" y="281" type="curve"/>
+      <point x="500" y="309" type="line"/>
+      <point x="442" y="309"/>
+      <point x="387" y="309"/>
+      <point x="340" y="309" type="curve"/>
+      <point x="230" y="309" type="line"/>
+      <point x="183" y="309"/>
+      <point x="128" y="309"/>
+      <point x="70" y="309" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

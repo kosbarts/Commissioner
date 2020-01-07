@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Umacron" format="2">
+  <advance width="726"/>
+  <unicode hex="016A"/>
+  <anchor x="311" y="0" name="bottom"/>
+  <anchor x="462" y="0" name="ogonek"/>
+  <anchor x="506" y="928" name="top"/>
+  <anchor x="813" y="713" name="topright"/>
+  <outline>
+    <component base="U"/>
+    <component base="macroncomb.case" xOffset="108" yOffset="211"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

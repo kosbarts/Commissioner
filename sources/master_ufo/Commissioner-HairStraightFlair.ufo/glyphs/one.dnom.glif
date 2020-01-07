@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.dnom" format="2">
+  <advance width="303"/>
+  <outline>
+    <contour>
+      <point x="38" y="345" type="line"/>
+      <point x="95" y="376"/>
+      <point x="146" y="404"/>
+      <point x="192" y="429" type="curve"/>
+      <point x="192" y="460" type="line"/>
+      <point x="139" y="431"/>
+      <point x="85" y="402"/>
+      <point x="30" y="372" type="curve"/>
+    </contour>
+    <contour>
+      <point x="179" y="0" type="curve"/>
+      <point x="208" y="0" type="line"/>
+      <point x="208" y="50"/>
+      <point x="208" y="93"/>
+      <point x="208" y="148" type="curve"/>
+      <point x="208" y="300" type="line"/>
+      <point x="208" y="356"/>
+      <point x="208" y="410"/>
+      <point x="208" y="459" type="curve"/>
+      <point x="192" y="460" type="line"/>
+      <point x="179" y="444" type="line"/>
+      <point x="179" y="395"/>
+      <point x="179" y="346"/>
+      <point x="179" y="297" type="curve"/>
+      <point x="179" y="148" type="line"/>
+      <point x="179" y="93"/>
+      <point x="179" y="50"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>16</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>16</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>428</integer>
+            <integer>32</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uring" format="2">
+  <advance width="595"/>
+  <unicode hex="016F"/>
+  <anchor x="294" y="0" name="bottom"/>
+  <anchor x="563" y="0" name="ogonek"/>
+  <anchor x="314" y="691" name="top"/>
+  <anchor x="575" y="502" name="topright"/>
+  <outline>
+    <component base="u"/>
+    <component base="ringcomb" xOffset="-6"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

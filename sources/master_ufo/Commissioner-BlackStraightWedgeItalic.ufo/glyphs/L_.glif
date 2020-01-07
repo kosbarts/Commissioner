@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="L" format="2">
+  <advance width="574"/>
+  <unicode hex="004C"/>
+  <anchor x="245" y="0" name="bottom"/>
+  <anchor x="478" y="360" name="center"/>
+  <anchor x="354" y="713" name="top"/>
+  <anchor x="379" y="502" name="topright"/>
+  <outline>
+    <contour>
+      <point x="-8" y="0" type="curve"/>
+      <point x="239" y="0" type="line"/>
+      <point x="248" y="40" type="line"/>
+      <point x="263" y="114"/>
+      <point x="277" y="178"/>
+      <point x="296" y="269" type="curve"/>
+      <point x="340" y="474" type="line"/>
+      <point x="360" y="569"/>
+      <point x="374" y="635"/>
+      <point x="391" y="713" type="curve"/>
+      <point x="144" y="713" type="line"/>
+      <point x="127" y="635"/>
+      <point x="113" y="569"/>
+      <point x="93" y="474" type="curve"/>
+      <point x="41" y="229" type="line"/>
+      <point x="21" y="136"/>
+      <point x="8" y="74"/>
+    </contour>
+    <contour>
+      <point x="207" y="0" type="line"/>
+      <point x="497" y="0" type="line"/>
+      <point x="542" y="212" type="line"/>
+      <point x="480" y="212"/>
+      <point x="427" y="212"/>
+      <point x="336" y="212" type="curve"/>
+      <point x="252" y="212" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+    </dict>
+  </lib>
+</glyph>

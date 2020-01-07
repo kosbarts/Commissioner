@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="asciicircum" format="2">
+  <advance width="590"/>
+  <unicode hex="005E"/>
+  <outline>
+    <contour>
+      <point x="483" y="394" type="curve"/>
+      <point x="520" y="395" type="line"/>
+      <point x="453" y="491"/>
+      <point x="385" y="588"/>
+      <point x="318" y="684" type="curve"/>
+      <point x="272" y="684" type="line"/>
+      <point x="205" y="588"/>
+      <point x="137" y="493"/>
+      <point x="70" y="397" type="curve"/>
+      <point x="107" y="397" type="line"/>
+      <point x="169" y="483"/>
+      <point x="230" y="570"/>
+      <point x="292" y="656" type="curve"/>
+      <point x="298" y="656" type="line"/>
+      <point x="360" y="569"/>
+      <point x="421" y="481"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>11</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

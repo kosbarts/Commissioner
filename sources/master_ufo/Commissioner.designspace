@@ -1,0 +1,1683 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="250" maximum="900" default="250">
+      <map input="250" output="30"/>
+      <map input="275" output="46"/>
+      <map input="300" output="64"/>
+      <map input="400" output="82"/>
+      <map input="500" output="108"/>
+      <map input="600" output="130"/>
+      <map input="700" output="155"/>
+      <map input="800" output="185"/>
+      <map input="900" output="220"/>
+    </axis>
+    <axis tag="slnt" name="Slant" minimum="0" maximum="12" default="0"/>
+    <axis tag="FLAR" name="Flair" minimum="0" maximum="100" default="0"/>
+    <axis tag="VOLM" name="Volume" minimum="0" maximum="100" default="0"/>
+  </axes>
+  <rules>
+    <rule name="BRACKET.140.220">
+      <conditionset>
+        <condition name="Weight" minimum="140" maximum="220"/>
+      </conditionset>
+      <sub name="cedi" with="cedi.BRACKET.140"/>
+      <sub name="cent" with="cent.BRACKET.140"/>
+      <sub name="colonsign" with="colonsign.BRACKET.140"/>
+      <sub name="dollar" with="dollar.BRACKET.140"/>
+      <sub name="guarani" with="guarani.BRACKET.140"/>
+      <sub name="naira" with="naira.BRACKET.140"/>
+      <sub name="peseta" with="peseta.BRACKET.140"/>
+      <sub name="peso" with="peso.BRACKET.140"/>
+      <sub name="won" with="won.BRACKET.140"/>
+    </rule>
+  </rules>
+  <sources>
+    <source filename="Commissioner-HairStraightFlair.ufo" name="Commissioner Hair Straight Flair" familyname="Commissioner" stylename="Hair Straight Flair">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairStraightFlair.ufo" name="Commissioner Hair Straight Flair {117,0,0,0}" layer="{117,0,0,0}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackStraightFlair.ufo" name="Commissioner Black Straight Flair" familyname="Commissioner" stylename="Black Straight Flair">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairFlair.ufo" name="Commissioner Hair Flair" familyname="Commissioner" stylename="Hair Flair">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairFlair.ufo" name="Commissioner Hair Flair {117,0,100,0}" layer="{117,0,100,0}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackFlair.ufo" name="Commissioner Black Flair" familyname="Commissioner" stylename="Black Flair">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairWedge.ufo" name="Commissioner Hair Wedge" familyname="Commissioner" stylename="Hair Wedge">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairWedge.ufo" name="Commissioner Hair Wedge {117,0,100,100}" layer="{117,0,100,100}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackWedge.ufo" name="Commissioner Black Wedge" familyname="Commissioner" stylename="Black Wedge">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairStraightWedge.ufo" name="Commissioner Hair Straight Wedge" familyname="Commissioner" stylename="Hair Straight Wedge">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairStraightWedge.ufo" name="Commissioner Hair Straight Wedge {117,0,0,100}" layer="{117,0,0,100}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackStraightWedge.ufo" name="Commissioner Black Straight Wedge" familyname="Commissioner" stylename="Black Straight Wedge">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairStraightFlairItalic.ufo" name="Commissioner Hair Straight Flair Italic" familyname="Commissioner" stylename="Hair Straight Flair Italic">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairStraightFlairItalic.ufo" name="Commissioner Hair Straight Flair Italic {117,12,0,0}" layer="{117,12,0,0}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackStraightFlairItalic.ufo" name="Commissioner Black Straight Flair Italic" familyname="Commissioner" stylename="Black Straight Flair Italic">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairFlairItalic.ufo" name="Commissioner Hair Flair Italic" familyname="Commissioner" stylename="Hair Flair Italic">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairFlairItalic.ufo" name="Commissioner Hair Flair Italic {117,12,100,0}" layer="{117,12,100,0}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackFlairItalic.ufo" name="Commissioner Black Flair Italic" familyname="Commissioner" stylename="Black Flair Italic">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairWedgeItalic.ufo" name="Commissioner Hair Wedge Italic" familyname="Commissioner" stylename="Hair Wedge Italic">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairWedgeItalic.ufo" name="Commissioner Hair Wedge Italic {117,12,100,100}" layer="{117,12,100,100}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackWedgeItalic.ufo" name="Commissioner Black Wedge Italic" familyname="Commissioner" stylename="Black Wedge Italic">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairStraightWedgeItalic.ufo" name="Commissioner Hair Straight Wedge Italic" familyname="Commissioner" stylename="Hair Straight Wedge Italic">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-HairStraightWedgeItalic.ufo" name="Commissioner Hair Straight Wedge Italic {117,12,0,100}" layer="{117,12,0,100}">
+      <location>
+        <dimension name="Weight" xvalue="117"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Commissioner-BlackStraightWedgeItalic.ufo" name="Commissioner Black Straight Wedge Italic" familyname="Commissioner" stylename="Black Straight Wedge Italic">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Commissioner Thin" familyname="Commissioner" stylename="Thin" filename="../instance_ufo/Commissioner-Thin.ufo" stylemapfamilyname="Commissioner Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner ExtraLight" familyname="Commissioner" stylename="ExtraLight" filename="../instance_ufo/Commissioner-ExtraLight.ufo" stylemapfamilyname="Commissioner ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="46"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraLight</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Light" familyname="Commissioner" stylename="Light" filename="../instance_ufo/Commissioner-Light.ufo" stylemapfamilyname="Commissioner Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Regular" familyname="Commissioner" stylename="Regular" filename="../instance_ufo/Commissioner-Regular.ufo" stylemapfamilyname="Commissioner" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="82"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Regular</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Medium" familyname="Commissioner" stylename="Medium" filename="../instance_ufo/Commissioner-Medium.ufo" stylemapfamilyname="Commissioner Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="108"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner SemiBold" familyname="Commissioner" stylename="SemiBold" filename="../instance_ufo/Commissioner-SemiBold.ufo" stylemapfamilyname="Commissioner SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Bold" familyname="Commissioner" stylename="Bold" filename="../instance_ufo/Commissioner-Bold.ufo" stylemapfamilyname="Commissioner Grot Regular" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="155"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner ExtraBold" familyname="Commissioner" stylename="ExtraBold" filename="../instance_ufo/Commissioner-ExtraBold.ufo" stylemapfamilyname="Commissioner ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="185"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Black" familyname="Commissioner" stylename="Black" filename="../instance_ufo/Commissioner-Black.ufo" stylemapfamilyname="Commissioner Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Thin Italic" familyname="Commissioner" stylename="Thin Italic" filename="../instance_ufo/Commissioner-ThinItalic.ufo" stylemapfamilyname="Commissioner Thin" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Thin Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner ExtraLight Italic" familyname="Commissioner" stylename="ExtraLight Italic" filename="../instance_ufo/Commissioner-ExtraLightItalic.ufo" stylemapfamilyname="Commissioner ExtraLight" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="46"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraLight Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Light Italic" familyname="Commissioner" stylename="Light Italic" filename="../instance_ufo/Commissioner-LightItalic.ufo" stylemapfamilyname="Commissioner Light" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Light Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Regular Italic" familyname="Commissioner" stylename="Regular Italic" filename="../instance_ufo/Commissioner-RegularItalic.ufo" stylemapfamilyname="Commissioner Regular" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="82"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Regular Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Medium Italic" familyname="Commissioner" stylename="Medium Italic" filename="../instance_ufo/Commissioner-MediumItalic.ufo" stylemapfamilyname="Commissioner Medium" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="108"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Medium Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner SemiBold Italic" familyname="Commissioner" stylename="SemiBold Italic" filename="../instance_ufo/Commissioner-SemiBoldItalic.ufo" stylemapfamilyname="Commissioner SemiBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiBold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Bold Italic" familyname="Commissioner" stylename="Bold Italic" filename="../instance_ufo/Commissioner-BoldItalic.ufo" stylemapfamilyname="Commissioner Regular " stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="155"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Bold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner ExtraBold Italic" familyname="Commissioner" stylename="ExtraBold Italic" filename="../instance_ufo/Commissioner-ExtraBoldItalic.ufo" stylemapfamilyname="Commissioner ExtraBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="185"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraBold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Black Italic" familyname="Commissioner" stylename="Black Italic" filename="../instance_ufo/Commissioner-BlackItalic.ufo" stylemapfamilyname="Commissioner Black" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="0"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Black Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Thin" familyname="Commissioner" stylename="Flair Thin" filename="../instance_ufo/Commissioner-FlairThin.ufo" stylemapfamilyname="Commissioner Flair Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair ExtraLight" familyname="Commissioner" stylename="Flair ExtraLight" filename="../instance_ufo/Commissioner-FlairExtraLight.ufo" stylemapfamilyname="Commissioner Flair ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="46"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraLight</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Light" familyname="Commissioner" stylename="Flair Light" filename="../instance_ufo/Commissioner-FlairLight.ufo" stylemapfamilyname="Commissioner Flair Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Regular" familyname="Commissioner" stylename="Flair Regular" filename="../instance_ufo/Commissioner-FlairRegular.ufo" stylemapfamilyname="Commissioner Flair" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="82"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Regular</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Medium" familyname="Commissioner" stylename="Flair Medium" filename="../instance_ufo/Commissioner-FlairMedium.ufo" stylemapfamilyname="Commissioner Flair Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="108"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair SemiBold" familyname="Commissioner" stylename="Flair SemiBold" filename="../instance_ufo/Commissioner-FlairSemiBold.ufo" stylemapfamilyname="Commissioner Flair SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Bold" familyname="Commissioner" stylename="Flair Bold" filename="../instance_ufo/Commissioner-FlairBold.ufo" stylemapfamilyname="Commissioner Regular Flair" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="155"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair ExtraBold" familyname="Commissioner" stylename="Flair ExtraBold" filename="../instance_ufo/Commissioner-FlairExtraBold.ufo" stylemapfamilyname="Commissioner Flair ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="185"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Black" familyname="Commissioner" stylename="Flair Black" filename="../instance_ufo/Commissioner-FlairBlack.ufo" stylemapfamilyname="Commissioner Flair Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Thin Italic" familyname="Commissioner" stylename="Flair Thin Italic" filename="../instance_ufo/Commissioner-FlairThinItalic.ufo" stylemapfamilyname="Commissioner Flair Thin" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Thin Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair ExtraLight Italic" familyname="Commissioner" stylename="Flair ExtraLight Italic" filename="../instance_ufo/Commissioner-FlairExtraLightItalic.ufo" stylemapfamilyname="Commissioner Flair ExtraLight" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="46"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraLight Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Light Italic" familyname="Commissioner" stylename="Flair Light Italic" filename="../instance_ufo/Commissioner-FlairLightItalic.ufo" stylemapfamilyname="Commissioner Flair Light" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Light Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Regular Italic" familyname="Commissioner" stylename="Flair Regular Italic" filename="../instance_ufo/Commissioner-FlairRegularItalic.ufo" stylemapfamilyname="Commissioner Flair Regular " stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="82"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Regular Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Medium Italic" familyname="Commissioner" stylename="Flair Medium Italic" filename="../instance_ufo/Commissioner-FlairMediumItalic.ufo" stylemapfamilyname="Commissioner Flair Medium" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="108"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Medium Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair SemiBold Italic" familyname="Commissioner" stylename="Flair SemiBold Italic" filename="../instance_ufo/Commissioner-FlairSemiBoldItalic.ufo" stylemapfamilyname="Commissioner Flair SemiBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiBold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Bold Italic" familyname="Commissioner" stylename="Flair Bold Italic" filename="../instance_ufo/Commissioner-FlairBoldItalic.ufo" stylemapfamilyname="Commissioner Flair Regular " stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="155"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Bold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair ExtraBold Italic" familyname="Commissioner" stylename="Flair ExtraBold Italic" filename="../instance_ufo/Commissioner-FlairExtraBoldItalic.ufo" stylemapfamilyname="Commissioner Flair ExtraBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="185"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraBold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Flair Black Italic" familyname="Commissioner" stylename="Flair Black Italic" filename="../instance_ufo/Commissioner-FlairBlackItalic.ufo" stylemapfamilyname="Commissioner Flair Black" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Flair</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Black Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Thin" familyname="Commissioner" stylename="Loud Thin" filename="../instance_ufo/Commissioner-LoudThin.ufo" stylemapfamilyname="Commissioner Loud Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Thin</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud ExtraLight" familyname="Commissioner" stylename="Loud ExtraLight" filename="../instance_ufo/Commissioner-LoudExtraLight.ufo" stylemapfamilyname="Commissioner Loud ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="46"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraLight</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Light" familyname="Commissioner" stylename="Loud Light" filename="../instance_ufo/Commissioner-LoudLight.ufo" stylemapfamilyname="Commissioner Loud Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Light</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Regular" familyname="Commissioner" stylename="Loud Regular" filename="../instance_ufo/Commissioner-LoudRegular.ufo" stylemapfamilyname="Commissioner Loud" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="82"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Regular</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Medium" familyname="Commissioner" stylename="Loud Medium" filename="../instance_ufo/Commissioner-LoudMedium.ufo" stylemapfamilyname="Commissioner Loud Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="108"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Medium</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud SemiBold" familyname="Commissioner" stylename="Loud SemiBold" filename="../instance_ufo/Commissioner-LoudSemiBold.ufo" stylemapfamilyname="Commissioner Loud SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Bold" familyname="Commissioner" stylename="Loud Bold" filename="../instance_ufo/Commissioner-LoudBold.ufo" stylemapfamilyname="Commissioner Loud Regular" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="155"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Bold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud ExtraBold" familyname="Commissioner" stylename="Loud ExtraBold" filename="../instance_ufo/Commissioner-LoudExtraBold.ufo" stylemapfamilyname="Commissioner Loud ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="185"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraBold</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Black" familyname="Commissioner" stylename="Loud Black" filename="../instance_ufo/Commissioner-LoudBlack.ufo" stylemapfamilyname="Commissioner Loud Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Black</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Thin Italic" familyname="Commissioner" stylename="Loud Thin Italic" filename="../instance_ufo/Commissioner-LoudThinItalic.ufo" stylemapfamilyname="Commissioner Loud Thin" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="30"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Thin Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud ExtraLight Italic" familyname="Commissioner" stylename="Loud ExtraLight Italic" filename="../instance_ufo/Commissioner-LoudExtraLightItalic.ufo" stylemapfamilyname="Commissioner Loud ExtraLight" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="46"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraLight Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Light Italic" familyname="Commissioner" stylename="Loud Light Italic" filename="../instance_ufo/Commissioner-LoudLightItalic.ufo" stylemapfamilyname="Commissioner Loud Light" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="64"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Light Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Regular Italic" familyname="Commissioner" stylename="Loud Regular Italic" filename="../instance_ufo/Commissioner-LoudRegularItalic.ufo" stylemapfamilyname="Commissioner Loud Regular" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="82"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Regular Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Medium Italic" familyname="Commissioner" stylename="Loud Medium Italic" filename="../instance_ufo/Commissioner-LoudMediumItalic.ufo" stylemapfamilyname="Commissioner Loud Medium" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="108"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Medium Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud SemiBold Italic" familyname="Commissioner" stylename="Loud SemiBold Italic" filename="../instance_ufo/Commissioner-LoudSemiBoldItalic.ufo" stylemapfamilyname="Commissioner Loud SemiBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="130"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>SemiBold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Bold Italic" familyname="Commissioner" stylename="Loud Bold Italic" filename="../instance_ufo/Commissioner-LoudBoldItalic.ufo" stylemapfamilyname="Commissioner Loud Regular " stylemapstylename="bold italic">
+      <location>
+        <dimension name="Weight" xvalue="155"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Bold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud ExtraBold Italic" familyname="Commissioner" stylename="Loud ExtraBold Italic" filename="../instance_ufo/Commissioner-LoudExtraBoldItalic.ufo" stylemapfamilyname="Commissioner Loud ExtraBold" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="185"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>ExtraBold Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Commissioner Loud Black Italic" familyname="Commissioner" stylename="Loud Black Italic" filename="../instance_ufo/Commissioner-LoudBlackItalic.ufo" stylemapfamilyname="Commissioner Loud Black" stylemapstylename="italic">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+        <dimension name="Slant" xvalue="12"/>
+        <dimension name="Flair" xvalue="100"/>
+        <dimension name="Volume" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>preferredFamilyName</string>
+              <string>Commissioner Loud</string>
+            </array>
+            <array>
+              <string>preferredSubfamilyName</string>
+              <string>Black Italic</string>
+            </array>
+          </array>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>09CD3A9D-9719-4D1B-A1D2-8C0588FE1BBC</key>
+        <dict>
+          <key>nV</key>
+          <string>110</string>
+          <key>oV</key>
+          <string>110</string>
+        </dict>
+        <key>1549F9F0-9C47-49C4-93D3-D9E048604B59</key>
+        <dict>
+          <key>HH</key>
+          <string>31</string>
+          <key>HV</key>
+          <string>32</string>
+          <key>OH</key>
+          <string>33</string>
+          <key>OV</key>
+          <string>33</string>
+          <key>nV</key>
+          <string>30</string>
+          <key>nd</key>
+          <string>32</string>
+          <key>oH</key>
+          <string>32</string>
+          <key>oV</key>
+          <string>31</string>
+        </dict>
+        <key>1E586BCE-7672-4541-95D2-E6220BD99751</key>
+        <dict>
+          <key>nV</key>
+          <string>222</string>
+        </dict>
+        <key>33E1D1EC-DE64-42BC-A7B3-0EBD09475EFE</key>
+        <dict>
+          <key>nV</key>
+          <string>46</string>
+          <key>nd</key>
+          <string>46</string>
+          <key>oH</key>
+          <string>45</string>
+          <key>oV</key>
+          <string>48</string>
+        </dict>
+        <key>51C6A73B-16C4-41E4-9D4A-F590BB930F37</key>
+        <dict>
+          <key>HH</key>
+          <string>202</string>
+          <key>HV</key>
+          <string>245</string>
+          <key>OH</key>
+          <string>198</string>
+          <key>OV</key>
+          <string>256</string>
+          <key>nV</key>
+          <string>222</string>
+          <key>oH</key>
+          <string>177</string>
+          <key>oV</key>
+          <string>226</string>
+        </dict>
+        <key>68E1DDB2-454E-4373-8D8D-FED2E5ADD9A7</key>
+        <dict>
+          <key>nV</key>
+          <string>143</string>
+          <key>oV</key>
+          <string>141</string>
+        </dict>
+        <key>76C16423-34B0-4ECF-AECB-1F530A917043</key>
+        <dict>
+          <key>nV</key>
+          <string>86</string>
+          <key>oH</key>
+          <string>77</string>
+          <key>oV</key>
+          <string>88</string>
+        </dict>
+        <key>8AB5AD06-5176-40A9-AE27-DD846BC69980</key>
+        <dict>
+          <key>HH</key>
+          <string>31</string>
+          <key>HV</key>
+          <string>32</string>
+          <key>OH</key>
+          <string>33</string>
+          <key>OV</key>
+          <string>33</string>
+        </dict>
+        <key>DD7F8760-F7A7-4482-AF8A-8FD93F25A5F7</key>
+        <dict>
+          <key>nV</key>
+          <string>222</string>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</designspace>
