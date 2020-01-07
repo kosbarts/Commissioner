@@ -16,6 +16,7 @@ gf-glyphs-scripts:
 - Proof kerning for current master -
 
 - QA
+~~~~~~~~~~~~~~~
 Start
 Flair Thin is not a correct style name
 Flair ExtraLight is not a correct style name
@@ -56,6 +57,7 @@ Loud Black Italic is not a correct style name
 Google Fonts QA
 ~~~~~~~~~~~~~~~
 
+~~~~~~~~~~~~~~~
 Tests to ensure .glyphs files follow the Google Fonts specification.
 
 The Google Fonts specification:
