@@ -11,7 +11,7 @@ gf-glyphs-scripts:
 
 - Decompose Transformed Components -
 
-- Fix Fonts for GF spec -
+- Fix Fonts for GF spec - Pass
 
 - Proof kerning for current master -
 
