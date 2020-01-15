@@ -1,3 +1,6 @@
+- Check if kerning of brace/bracket layered glyphs is working in VF and statics after export. 
+- Make sure kerning exceptions are consistent across all masters.
+
 Inside Glyphs App:
 
 gf-glyphs-scripts:
@@ -162,4 +165,6 @@ Listing the family helps us keep track of it and ensure there is one original so
 
 
 End
+
+
 
