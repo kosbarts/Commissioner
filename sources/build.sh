@@ -1,10 +1,10 @@
 #!/bin/sh
-source venv/bin/activate
+#source ../venv/bin/activate
 set -e
 
-echo "Generating Static fonts"
-mkdir -p ../fonts/ttfs
-fontmake -g Commissioner-Variable.glyphs -i -o ttf --output-dir ../fonts/ttfs/
+#echo "Generating Static fonts"
+#mkdir -p ../fonts/ttfs
+#fontmake -g Commissioner-Variable.glyphs -i -o ttf --output-dir ../fonts/ttfs/
 
 echo "Generating VFs"
 mkdir -p ../fonts/variable
@@ -14,15 +14,15 @@ rm -rf master_ufo/ instance_ufo/
 echo "Post processing"
 
 
-ttfs=$(ls ../fonts/ttfs/*.ttf)
-echo $ttfs
-for ttf in $ttfs
-do
-	gftools fix-dsig -f $ttf;
-	gftools fix-nonhinting $ttf "$ttf.fix";
-	mv "$ttf.fix" $ttf;
-done
-rm ../fonts/ttfs/*backup*.ttf
+#ttfs=$(ls ../fonts/ttfs/*.ttf)
+#echo $ttfs
+#for ttf in $ttfs
+#do
+#	gftools fix-dsig -f $ttf;
+#	gftools fix-nonhinting $ttf "$ttf.fix";
+#	mv "$ttf.fix" $ttf;
+#done
+#rm ../fonts/ttfs/*backup*.ttf
 
 vfs=$(ls ../fonts/variable/*.ttf)
 for vf in $vfs
@@ -47,22 +47,22 @@ done
 
 
 
-cd ..
-
-# ============================================================================
-# Autohinting ================================================================
-
-statics=$(ls fonts/ttfs/*.ttf)
-echo hello
-for file in $statics; do 
-    echo "fix DSIG in " ${file}
-    gftools fix-dsig --autofix ${file}
-
-    echo "TTFautohint " ${file}
-    # autohint with detailed info
-    hintedFile=${file/".ttf"/"-hinted.ttf"}
-    ttfautohint -I ${file} ${hintedFile} 
-    cp ${hintedFile} ${file}
-    rm -rf ${hintedFile}
-done
+#cd ..
+#
+## ============================================================================
+## Autohinting ================================================================
+#
+#statics=$(ls fonts/ttfs/*.ttf)
+#echo hello
+#for file in $statics; do 
+#    echo "fix DSIG in " ${file}
+#    gftools fix-dsig --autofix ${file}
+#
+#    echo "TTFautohint " ${file}
+#    # autohint with detailed info
+#    hintedFile=${file/".ttf"/"-hinted.ttf"}
+#    ttfautohint -I ${file} ${hintedFile} 
+#    cp ${hintedFile} ${file}
+#    rm -rf ${hintedFile}
+#done
 
