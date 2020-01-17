@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="odieresismacron" format="2">
+  <advance width="597.6578947368421"/>
+  <unicode hex="022B"/>
+  <anchor x="245.99999999999997" y="0.0" name="bottom"/>
+  <anchor x="298.6578947368421" y="249.6315789473684" name="center"/>
+  <anchor x="364.2894736842105" y="0.0" name="ogonek"/>
+  <anchor x="433.1842105263158" y="899.0" name="top"/>
+  <anchor x="577.5" y="499.2631578947368" name="topright"/>
+  <outline>
+    <component base="o"/>
+    <component base="dieresiscomb" xOffset="-0.3421052631578947"/>
+    <component base="macroncomb" xOffset="38.60526315789473" yOffset="198.76315789473685"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="odotaccentmacron" format="2">
+  <advance width="1194.1684210526316"/>
+  <unicode hex="0231"/>
+  <anchor x="596.1684210526316" y="0.0" name="bottom"/>
+  <anchor x="596.1684210526316" y="494.6736842105263" name="center"/>
+  <anchor x="733.0736842105263" y="0.0" name="ogonek"/>
+  <anchor x="594.421052631579" y="1730.9684210526316" name="top"/>
+  <anchor x="1072.6315789473683" y="989.3473684210526" name="topright"/>
+  <outline>
+    <component base="o"/>
+    <component base="dotaccentcomb" xOffset="391.17894736842106"/>
+    <component base="macroncomb" xOffset="-5.578947368421053" yOffset="386.7157894736842"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lslash" format="2">
+  <advance width="321.2210526315789"/>
+  <unicode hex="0142"/>
+  <outline>
+    <contour>
+      <point x="12.568421052631578" y="258.90526315789475" type="line"/>
+      <point x="67.18947368421054" y="277.8315789473685"/>
+      <point x="116.4" y="293.11578947368423"/>
+      <point x="163.7894736842105" y="306.16842105263163" type="curve"/>
+      <point x="203.58947368421053" y="317.22105263157897" type="line"/>
+      <point x="248.21052631578945" y="329.68421052631584"/>
+      <point x="301.65263157894736" y="343.3263157894737"/>
+      <point x="356.86315789473684" y="354.3263157894737" type="curve"/>
+      <point x="349.34736842105264" y="439.5157894736842" type="line"/>
+      <point x="294.7263157894737" y="420.5894736842105"/>
+      <point x="244.46315789473684" y="404.89473684210526"/>
+      <point x="197.4842105263158" y="391.84210526315786" type="curve"/>
+      <point x="157.68421052631578" y="380.7894736842105" type="line"/>
+      <point x="109.8842105263158" y="367.7368421052631"/>
+      <point x="60.67368421052632" y="355.5052631578947"/>
+      <point x="5.642105263157895" y="344.09473684210525" type="curve"/>
+    </contour>
+    <contour>
+      <point x="46.094736842105256" y="0.0" type="curve"/>
+      <point x="172.64210526315787" y="0.0" type="line"/>
+      <point x="182.7157894736842" y="72.53684210526316"/>
+      <point x="192.8421052631579" y="135.4842105263158"/>
+      <point x="210.25263157894736" y="217.7157894736842" type="curve"/>
+      <point x="268.66315789473686" y="493.58947368421053" type="line"/>
+      <point x="287.4842105263158" y="583.1052631578947"/>
+      <point x="309.41052631578947" y="664.9789473684211"/>
+      <point x="334.2842105263158" y="744.9263157894737" type="curve"/>
+      <point x="192.5263157894737" y="730.2315789473685" type="line"/>
+      <point x="189.14736842105262" y="653.7157894736843"/>
+      <point x="177.02105263157895" y="576.1263157894737"/>
+      <point x="159.8421052631579" y="493.58947368421053" type="curve"/>
+      <point x="101.43157894736841" y="217.7157894736842" type="line"/>
+      <point x="84.02105263157894" y="135.4842105263158"/>
+      <point x="67.37894736842105" y="72.53684210526316"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>7</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

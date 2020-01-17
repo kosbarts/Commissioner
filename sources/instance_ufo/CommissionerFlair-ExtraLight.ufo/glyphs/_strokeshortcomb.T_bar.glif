@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_strokeshortcomb.Tbar" format="2">
+  <advance width="738.6631578947369"/>
+  <anchor x="369.8315789473684" y="357.0" name="_center"/>
+  <outline>
+    <contour>
+      <point x="177.30526315789473" y="323.27368421052637" type="line"/>
+      <point x="238.97894736842105" y="325.7789473684211"/>
+      <point x="296.7368421052632" y="325.94736842105266"/>
+      <point x="346.5789473684211" y="325.94736842105266" type="curve"/>
+      <point x="393.0842105263158" y="325.94736842105266" type="line"/>
+      <point x="442.9263157894737" y="325.94736842105266"/>
+      <point x="500.6842105263158" y="325.7789473684211"/>
+      <point x="562.357894736842" y="323.27368421052637" type="curve"/>
+      <point x="562.357894736842" y="370.4947368421052" type="line"/>
+      <point x="500.6842105263158" y="368.0736842105263"/>
+      <point x="442.9263157894737" y="367.82105263157894"/>
+      <point x="393.0842105263158" y="367.82105263157894" type="curve"/>
+      <point x="346.5789473684211" y="367.82105263157894" type="line"/>
+      <point x="296.7368421052632" y="367.82105263157894"/>
+      <point x="238.97894736842105" y="368.0736842105263"/>
+      <point x="177.30526315789473" y="370.4947368421052" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

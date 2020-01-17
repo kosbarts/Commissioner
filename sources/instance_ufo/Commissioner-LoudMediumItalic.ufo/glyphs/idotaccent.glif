@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotaccent" format="2">
+  <advance width="530.1894736842105"/>
+  <anchor x="160.27368421052634" y="0.0" name="bottom"/>
+  <anchor x="281.30526315789473" y="0.0" name="ogonek"/>
+  <anchor x="455.6631578947368" y="1399.5578947368422" name="top"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dotaccentcomb" xOffset="34.61052631578947"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

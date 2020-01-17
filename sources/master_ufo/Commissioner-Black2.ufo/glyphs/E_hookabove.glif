@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ehookabove" format="2">
+  <advance width="1200"/>
+  <unicode hex="1EBA"/>
+  <anchor x="606" y="0" name="bottom"/>
+  <anchor x="1120" y="0" name="ogonek"/>
+  <anchor x="606" y="2008" name="top"/>
+  <anchor x="66" y="1426" name="topleft"/>
+  <outline>
+    <component base="E"/>
+    <component base="hookabovecomb.case" xOffset="6" yOffset="422"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

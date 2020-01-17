@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="E" format="2">
+  <advance width="1182"/>
+  <unicode hex="0045"/>
+  <anchor x="640" y="0" name="bottom"/>
+  <anchor x="1056" y="0" name="ogonek"/>
+  <anchor x="640" y="1426" name="top"/>
+  <anchor x="74" y="1426" name="topleft"/>
+  <outline>
+    <contour>
+      <point x="216" y="0" type="curve"/>
+      <point x="290" y="0" type="line"/>
+      <point x="290" y="6" type="line"/>
+      <point x="288" y="168"/>
+      <point x="286" y="310"/>
+      <point x="284" y="484" type="curve"/>
+      <point x="284" y="944" type="line"/>
+      <point x="286" y="1118"/>
+      <point x="288" y="1258"/>
+      <point x="290" y="1420" type="curve"/>
+      <point x="290" y="1426" type="line"/>
+      <point x="216" y="1426" type="line"/>
+      <point x="218" y="1264"/>
+      <point x="218" y="1124"/>
+      <point x="220" y="950" type="curve"/>
+      <point x="220" y="476" type="line"/>
+      <point x="218" y="302"/>
+      <point x="218" y="162"/>
+    </contour>
+    <contour>
+      <point x="272" y="0" type="line"/>
+      <point x="1056" y="0" type="line"/>
+      <point x="1056" y="70" type="line"/>
+      <point x="902" y="68"/>
+      <point x="738" y="64"/>
+      <point x="552" y="62" type="curve"/>
+      <point x="272" y="62" type="line"/>
+    </contour>
+    <contour>
+      <point x="272" y="694" type="line"/>
+      <point x="560" y="694" type="line"/>
+      <point x="748" y="694"/>
+      <point x="874" y="692"/>
+      <point x="1012" y="692" type="curve"/>
+      <point x="1012" y="762" type="line"/>
+      <point x="882" y="760"/>
+      <point x="752" y="758"/>
+      <point x="562" y="756" type="curve"/>
+      <point x="272" y="756" type="line"/>
+    </contour>
+    <contour>
+      <point x="272" y="1364" type="line"/>
+      <point x="544" y="1364" type="line"/>
+      <point x="764" y="1362"/>
+      <point x="916" y="1358"/>
+      <point x="1058" y="1356" type="curve"/>
+      <point x="1058" y="1426" type="line"/>
+      <point x="272" y="1426" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>H</string>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

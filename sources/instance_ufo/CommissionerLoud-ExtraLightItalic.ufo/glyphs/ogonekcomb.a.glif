@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ogonekcomb.a" format="2">
+  <anchor x="247.0" y="0.0" name="_ogonek"/>
+  <outline>
+    <contour>
+      <point x="190.97701149425288" y="-202.39080459770116" type="curve" smooth="yes"/>
+      <point x="201.1609195402299" y="-202.39080459770116"/>
+      <point x="219.71264367816093" y="-200.20689655172413"/>
+      <point x="241.44827586206895" y="-197.02298850574712" type="curve"/>
+      <point x="249.10344827586206" y="-157.93103448275863" type="line"/>
+      <point x="229.83908045977012" y="-160.93103448275863"/>
+      <point x="213.02298850574707" y="-162.93103448275863"/>
+      <point x="196.75862068965517" y="-164.93103448275863" type="curve" smooth="yes"/>
+      <point x="162.1264367816092" y="-164.93103448275863"/>
+      <point x="142.49425287356323" y="-149.11494252873564"/>
+      <point x="149.12643678160921" y="-117.03448275862068" type="curve" smooth="yes"/>
+      <point x="158.7586206896552" y="-74.05747126436782"/>
+      <point x="216.73563218390805" y="-34.71264367816092"/>
+      <point x="278.0" y="0.0" type="curve"/>
+      <point x="261.97701149425285" y="22.655172413793103" type="line"/>
+      <point x="244.14942528735634" y="21.551724137931036" type="line"/>
+      <point x="241.59770114942532" y="7.977011494252873" type="line"/>
+      <point x="156.2758620689655" y="-36.63218390804598"/>
+      <point x="116.72413793103448" y="-72.89655172413794"/>
+      <point x="106.90804597701148" y="-117.26436781609195" type="curve" smooth="yes"/>
+      <point x="96.72413793103448" y="-164.367816091954"/>
+      <point x="127.64367816091955" y="-202.39080459770116"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>600</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>21</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>6</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>12</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>9</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

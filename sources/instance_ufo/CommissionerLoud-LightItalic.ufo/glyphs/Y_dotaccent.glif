@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ydotaccent" format="2">
+  <advance width="644.0315789473684"/>
+  <unicode hex="1E8E"/>
+  <anchor x="270.87368421052633" y="0.0" name="bottom"/>
+  <anchor x="458.37894736842105" y="892.5894736842105" name="top"/>
+  <anchor x="117.82105263157895" y="713.0" name="topleft"/>
+  <outline>
+    <component base="Y"/>
+    <component base="dotaccentcomb.case" xOffset="262.71578947368425" yOffset="217.56842105263158"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

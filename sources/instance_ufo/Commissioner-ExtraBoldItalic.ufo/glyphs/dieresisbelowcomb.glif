@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresisbelowcomb" format="2">
+  <unicode hex="0324"/>
+  <anchor x="494.36842105263156" y="0.0" name="_bottom"/>
+  <outline>
+    <contour>
+      <point x="644.2631578947368" y="-466.1578947368421" type="curve" smooth="yes"/>
+      <point x="745.3684210526316" y="-466.1578947368421"/>
+      <point x="823.421052631579" y="-434.3684210526316"/>
+      <point x="849.7368421052631" y="-305.31578947368416" type="curve" smooth="yes"/>
+      <point x="872.7894736842105" y="-193.8421052631579"/>
+      <point x="812.0" y="-101.10526315789474"/>
+      <point x="696.578947368421" y="-101.10526315789474" type="curve" smooth="yes"/>
+      <point x="589.6842105263158" y="-101.10526315789474"/>
+      <point x="511.26315789473676" y="-150.47368421052633"/>
+      <point x="487.84210526315786" y="-266.84210526315786" type="curve" smooth="yes"/>
+      <point x="462.78947368421046" y="-392.63157894736844"/>
+      <point x="535.7368421052632" y="-466.1578947368421"/>
+    </contour>
+    <contour>
+      <point x="172.47368421052633" y="-466.1578947368421" type="curve" smooth="yes"/>
+      <point x="273.57894736842104" y="-466.1578947368421"/>
+      <point x="351.6315789473684" y="-434.3684210526316"/>
+      <point x="377.9473684210526" y="-305.31578947368416" type="curve" smooth="yes"/>
+      <point x="400.99999999999994" y="-193.8421052631579"/>
+      <point x="340.2105263157894" y="-101.10526315789474"/>
+      <point x="224.78947368421055" y="-101.10526315789474" type="curve" smooth="yes"/>
+      <point x="117.89473684210526" y="-101.10526315789474"/>
+      <point x="39.47368421052633" y="-150.47368421052633"/>
+      <point x="16.052631578947384" y="-266.84210526315786" type="curve" smooth="yes"/>
+      <point x="-8.999999999999986" y="-392.63157894736844"/>
+      <point x="63.94736842105262" y="-466.1578947368421"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>11</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>5</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

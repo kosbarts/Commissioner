@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="quotesingle" format="2">
+  <advance width="478.57894736842104"/>
+  <unicode hex="0027"/>
+  <outline>
+    <contour>
+      <point x="142.42105263157896" y="757.421052631579" type="curve"/>
+      <point x="413.42105263157896" y="759.421052631579" type="line"/>
+      <point x="479.52631578947364" y="1005.7894736842105"/>
+      <point x="547.1052631578948" y="1248.8947368421052"/>
+      <point x="632.4736842105262" y="1489.6315789473683" type="curve"/>
+      <point x="238.94736842105263" y="1481.1052631578948" type="line"/>
+      <point x="218.57894736842107" y="1242.0"/>
+      <point x="182.42105263157893" y="1000.8947368421052"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>7</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

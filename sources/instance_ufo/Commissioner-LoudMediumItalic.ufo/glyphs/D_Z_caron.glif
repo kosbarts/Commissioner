@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="DZcaron" format="2">
+  <advance width="2797.8736842105263"/>
+  <unicode hex="01C4"/>
+  <anchor x="599.2842105263157" y="0.0" name="bottom_1"/>
+  <anchor x="2016.1684210526314" y="0.0" name="bottom_2"/>
+  <anchor x="784.5368421052632" y="714.0" name="center_1"/>
+  <anchor x="2166.1684210526314" y="714.0" name="center_2"/>
+  <anchor x="899.2842105263157" y="1426.0" name="top_1"/>
+  <anchor x="2316.1684210526314" y="1426.0" name="top_2"/>
+  <outline>
+    <component base="D"/>
+    <component base="Z" xOffset="1442.9263157894738"/>
+    <component base="caroncomb.case" xOffset="1611.3473684210528" yOffset="431.4315789473684"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

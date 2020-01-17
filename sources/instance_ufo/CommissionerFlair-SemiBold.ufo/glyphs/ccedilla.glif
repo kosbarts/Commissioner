@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ccedilla" format="2">
+  <advance width="487.2631578947368"/>
+  <unicode hex="00E7"/>
+  <anchor x="281.57894736842104" y="0.0" name="bottom"/>
+  <anchor x="277.3157894736842" y="498.2105263157895" name="top"/>
+  <outline>
+    <component base="c"/>
+    <component base="cedillacomb" xOffset="-17.94736842105263"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

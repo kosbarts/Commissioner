@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="radical" format="2">
+  <advance width="1230.421052631579"/>
+  <unicode hex="221A"/>
+  <outline>
+    <contour>
+      <point x="443.68421052631584" y="0.0" type="curve"/>
+      <point x="809.8947368421052" y="0.0" type="line"/>
+      <point x="866.4210526315788" y="146.94736842105263"/>
+      <point x="912.1052631578947" y="266.0"/>
+      <point x="985.4736842105262" y="455.89473684210526" type="curve"/>
+      <point x="1288.6315789473686" y="1159.157894736842" type="line"/>
+      <point x="1380.6315789473683" y="1355.157894736842"/>
+      <point x="1440.5263157894735" y="1482.9473684210527"/>
+      <point x="1512.5263157894735" y="1636.0" type="curve"/>
+      <point x="1217.5789473684213" y="1636.0" type="line"/>
+      <point x="1168.5263157894738" y="1505.0526315789475"/>
+      <point x="1127.4736842105262" y="1397.2631578947367"/>
+      <point x="1065.7894736842106" y="1233.8947368421052" type="curve"/>
+      <point x="673.3684210526317" y="311.57894736842104" type="line"/>
+      <point x="650.8421052631579" y="311.57894736842104" type="line"/>
+      <point x="611.578947368421" y="578.6315789473684" type="line"/>
+      <point x="602.5263157894738" y="692.1052631578948"/>
+      <point x="592.3157894736842" y="777.6842105263157"/>
+      <point x="584.2105263157895" y="888.421052631579" type="curve"/>
+      <point x="316.2105263157895" y="888.421052631579" type="line"/>
+      <point x="376.5263157894737" y="530.7368421052632" type="line"/>
+      <point x="403.7894736842105" y="317.2631578947369"/>
+      <point x="423.2631578947369" y="163.1578947368421"/>
+    </contour>
+    <contour>
+      <point x="78.10526315789474" y="649.6842105263158" type="line"/>
+      <point x="213.99999999999997" y="653.7894736842105"/>
+      <point x="358.5263157894737" y="657.8947368421053"/>
+      <point x="451.6842105263158" y="660.0" type="curve"/>
+      <point x="499.4736842105263" y="888.421052631579" type="line"/>
+      <point x="407.36842105263156" y="890.5263157894736"/>
+      <point x="263.8947368421052" y="894.6315789473684"/>
+      <point x="132.0" y="898.7368421052631" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>22</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>7</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>6</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

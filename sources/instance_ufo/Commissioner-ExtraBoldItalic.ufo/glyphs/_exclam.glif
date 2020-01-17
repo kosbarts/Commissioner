@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_exclam" format="2">
+  <advance width="560.1578947368421"/>
+  <outline>
+    <contour>
+      <point x="141.57894736842107" y="547.9473684210526" type="curve"/>
+      <point x="443.2105263157895" y="551.578947368421" type="line"/>
+      <point x="523.3684210526316" y="863.1052631578947"/>
+      <point x="604.9999999999999" y="1171.0"/>
+      <point x="687.0" y="1476.157894736842" type="curve"/>
+      <point x="285.1578947368421" y="1465.6315789473683" type="line"/>
+      <point x="238.94736842105263" y="1165.3684210526314"/>
+      <point x="192.36842105263156" y="858.2105263157895"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>7</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

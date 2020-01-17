@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="strokelongcomb" format="2">
+  <unicode hex="0336"/>
+  <anchor x="655.4526315789474" y="714.0" name="_center"/>
+  <outline>
+    <contour>
+      <point x="2.4210526315789442" y="1034.2736842105264" type="line"/>
+      <point x="141.8947368421053" y="1041.5578947368422"/>
+      <point x="271.91578947368424" y="1042.6526315789474"/>
+      <point x="384.8421052631579" y="1042.6526315789474" type="curve"/>
+      <point x="1065.3052631578948" y="1042.6526315789474" type="line"/>
+      <point x="1178.2315789473685" y="1042.6526315789474"/>
+      <point x="1307.157894736842" y="1041.5578947368422"/>
+      <point x="1442.6315789473686" y="1034.2736842105264" type="curve"/>
+      <point x="1473.9578947368423" y="1177.2631578947369" type="line"/>
+      <point x="1333.9368421052632" y="1170.5263157894738"/>
+      <point x="1204.463157894737" y="1168.8842105263159"/>
+      <point x="1091.5368421052633" y="1168.8842105263159" type="curve"/>
+      <point x="411.0736842105263" y="1168.8842105263159" type="line"/>
+      <point x="298.14736842105265" y="1168.8842105263159"/>
+      <point x="168.67368421052632" y="1170.5263157894738"/>
+      <point x="33.74736842105263" y="1177.2631578947369" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

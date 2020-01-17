@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macroncomb" format="2">
+  <unicode hex="0304"/>
+  <anchor x="600.0" y="994.5684210526316" name="_top"/>
+  <anchor x="600.0" y="1376.2315789473685" name="top"/>
+  <outline>
+    <contour>
+      <point x="275.1578947368421" y="1220.8210526315788" type="line"/>
+      <point x="373.0105263157895" y="1222.4631578947367"/>
+      <point x="484.9684210526316" y="1226.1052631578946"/>
+      <point x="600.0" y="1228.5684210526315" type="curve"/>
+      <point x="715.8526315789474" y="1226.1052631578946"/>
+      <point x="826.9894736842106" y="1222.4631578947367"/>
+      <point x="924.8421052631579" y="1220.8210526315788" type="curve"/>
+      <point x="924.8421052631579" y="1400.6947368421054" type="line"/>
+      <point x="827.8105263157895" y="1399.0526315789475"/>
+      <point x="715.8526315789474" y="1395.4105263157896"/>
+      <point x="600.0" y="1392.9473684210527" type="curve"/>
+      <point x="484.9684210526316" y="1395.4105263157896"/>
+      <point x="372.18947368421055" y="1399.0526315789475"/>
+      <point x="275.1578947368421" y="1400.6947368421054" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>12</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

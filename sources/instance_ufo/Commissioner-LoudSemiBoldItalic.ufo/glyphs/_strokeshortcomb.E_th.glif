@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_strokeshortcomb.Eth" format="2">
+  <advance width="1473.7894736842106"/>
+  <anchor x="783.8421052631578" y="714.0" name="_center"/>
+  <outline>
+    <contour>
+      <point x="-7.05263157894737" y="591.6842105263158" type="line"/>
+      <point x="118.10526315789473" y="596.842105263158"/>
+      <point x="227.89473684210526" y="600.0000000000001"/>
+      <point x="339.4736842105263" y="604.1052631578948" type="curve"/>
+      <point x="433.57894736842104" y="604.1052631578948" type="line"/>
+      <point x="544.3157894736843" y="600.0000000000001"/>
+      <point x="650.9473684210526" y="595.7894736842106"/>
+      <point x="773.9999999999999" y="591.6842105263158" type="curve"/>
+      <point x="820.6315789473683" y="814.421052631579" type="line"/>
+      <point x="697.5789473684212" y="810.3157894736842"/>
+      <point x="587.7894736842106" y="806.1052631578947"/>
+      <point x="475.05263157894734" y="802.0" type="curve"/>
+      <point x="380.9473684210526" y="802.0" type="line"/>
+      <point x="270.31578947368416" y="806.1052631578947"/>
+      <point x="163.68421052631578" y="809.2631578947368"/>
+      <point x="39.578947368421055" y="814.421052631579" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

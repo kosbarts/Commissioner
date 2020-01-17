@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresiscomb" format="2">
+  <unicode hex="0308"/>
+  <anchor x="598.0" y="992.3789473684211" name="_top"/>
+  <anchor x="596.0" y="1369.157894736842" name="top"/>
+  <outline>
+    <contour>
+      <point x="808.5894736842105" y="1206.7368421052631" type="curve" smooth="yes"/>
+      <point x="877.2210526315789" y="1206.7368421052631"/>
+      <point x="918.9052631578948" y="1245.6842105263158"/>
+      <point x="918.9052631578948" y="1323.221052631579" type="curve" smooth="yes"/>
+      <point x="918.9052631578948" y="1394.5473684210526"/>
+      <point x="877.2210526315789" y="1439.5157894736842"/>
+      <point x="810.5894736842105" y="1439.5157894736842" type="curve" smooth="yes"/>
+      <point x="743.4105263157895" y="1439.5157894736842"/>
+      <point x="700.2736842105263" y="1397.6421052631579"/>
+      <point x="700.2736842105263" y="1323.221052631579" type="curve" smooth="yes"/>
+      <point x="700.2736842105263" y="1245.6842105263158"/>
+      <point x="743.4105263157895" y="1206.7368421052631"/>
+    </contour>
+    <contour>
+      <point x="384.5052631578947" y="1206.7368421052631" type="curve" smooth="yes"/>
+      <point x="453.13684210526316" y="1206.7368421052631"/>
+      <point x="494.82105263157894" y="1245.6842105263158"/>
+      <point x="494.82105263157894" y="1323.221052631579" type="curve" smooth="yes"/>
+      <point x="494.82105263157894" y="1394.5473684210526"/>
+      <point x="453.13684210526316" y="1439.5157894736842"/>
+      <point x="386.5052631578947" y="1439.5157894736842" type="curve" smooth="yes"/>
+      <point x="319.3263157894737" y="1439.5157894736842"/>
+      <point x="276.1894736842105" y="1397.6421052631579"/>
+      <point x="276.1894736842105" y="1323.221052631579" type="curve" smooth="yes"/>
+      <point x="276.1894736842105" y="1245.6842105263158"/>
+      <point x="319.3263157894737" y="1206.7368421052631"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>11</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>5</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

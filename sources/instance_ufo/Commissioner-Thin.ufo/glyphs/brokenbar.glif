@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="brokenbar" format="2">
+  <advance width="500"/>
+  <unicode hex="00A6"/>
+  <outline>
+    <contour>
+      <point x="220" y="732" type="line"/>
+      <point x="280" y="732" type="line"/>
+      <point x="280" y="914" type="line"/>
+      <point x="280" y="1130"/>
+      <point x="280" y="1336"/>
+      <point x="280" y="1572" type="curve"/>
+      <point x="220" y="1572" type="line"/>
+      <point x="220" y="1336"/>
+      <point x="220" y="1130"/>
+      <point x="220" y="914" type="curve"/>
+    </contour>
+    <contour>
+      <point x="220" y="-308" type="curve"/>
+      <point x="280" y="-308" type="line"/>
+      <point x="280" y="-72"/>
+      <point x="280" y="134"/>
+      <point x="280" y="350" type="curve"/>
+      <point x="280" y="532" type="line"/>
+      <point x="220" y="532" type="line"/>
+      <point x="220" y="350" type="line"/>
+      <point x="220" y="134"/>
+      <point x="220" y="-72"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>9</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

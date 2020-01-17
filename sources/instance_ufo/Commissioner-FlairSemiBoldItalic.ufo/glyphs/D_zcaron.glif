@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Dzcaron" format="2">
+  <advance width="2494.6315789473683"/>
+  <unicode hex="01C5"/>
+  <anchor x="600.2105263157895" y="0.0" name="bottom_1"/>
+  <anchor x="1876.2105263157896" y="0.0" name="bottom_2"/>
+  <anchor x="783.8421052631578" y="714.0" name="center_1"/>
+  <anchor x="1981.2631578947369" y="498.2105263157895" name="center_2"/>
+  <anchor x="900.2105263157895" y="1426.0" name="top_1"/>
+  <anchor x="2180.1052631578946" y="1448.842105263158" name="top_2"/>
+  <outline>
+    <component base="D"/>
+    <component base="zcaron" xOffset="1473.7894736842106"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

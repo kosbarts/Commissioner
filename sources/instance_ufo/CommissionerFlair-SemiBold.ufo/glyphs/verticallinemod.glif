@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="verticallinemod" format="2">
+  <advance width="211.05263157894737"/>
+  <unicode hex="02C8"/>
+  <outline>
+    <contour>
+      <point x="53.684210526315795" y="517.1578947368421" type="curve"/>
+      <point x="157.36842105263156" y="517.1578947368421" type="line"/>
+      <point x="157.36842105263156" y="607.9473684210526"/>
+      <point x="157.89473684210523" y="692.2105263157895"/>
+      <point x="166.68421052631578" y="779.0" type="curve"/>
+      <point x="44.36842105263158" y="779.0" type="line"/>
+      <point x="53.15789473684211" y="692.2105263157895"/>
+      <point x="53.684210526315795" y="607.9473684210526"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>7</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

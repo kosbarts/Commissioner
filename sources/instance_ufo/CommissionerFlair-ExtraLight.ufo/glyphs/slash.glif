@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="slash" format="2">
+  <advance width="441.95789473684215"/>
+  <unicode hex="002F"/>
+  <outline>
+    <contour>
+      <point x="34.463157894736845" y="0.0" type="curve"/>
+      <point x="88.89473684210526" y="0.0" type="line"/>
+      <point x="119.21052631578947" y="74.0"/>
+      <point x="146.53684210526316" y="137.0"/>
+      <point x="187.69473684210524" y="228.0" type="curve"/>
+      <point x="297.5052631578947" y="474.0" type="line"/>
+      <point x="340.66315789473686" y="571.0"/>
+      <point x="370.15789473684214" y="636.0"/>
+      <point x="407.4947368421052" y="713.0" type="curve"/>
+      <point x="353.1473684210526" y="713.0" type="line"/>
+      <point x="320.91578947368424" y="636.0"/>
+      <point x="292.58947368421053" y="570.9157894736842"/>
+      <point x="250.43157894736842" y="476.0" type="curve"/>
+      <point x="139.62105263157895" y="228.0" type="line"/>
+      <point x="98.46315789473685" y="137.0"/>
+      <point x="68.96842105263158" y="74.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

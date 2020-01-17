@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="bar" format="2">
+  <advance width="254.37894736842105"/>
+  <unicode hex="007C"/>
+  <outline>
+    <contour>
+      <point x="102.61052631578949" y="-154.8421052631579" type="curve"/>
+      <point x="151.76842105263157" y="-154.8421052631579" type="line"/>
+      <point x="150.43157894736842" y="-16.842105263157897"/>
+      <point x="149.01052631578946" y="136.1578947368421"/>
+      <point x="148.92631578947368" y="174.1578947368421" type="curve"/>
+      <point x="148.92631578947368" y="456.1578947368421" type="line"/>
+      <point x="149.01052631578946" y="494.1578947368421"/>
+      <point x="150.43157894736842" y="647.1578947368421"/>
+      <point x="151.76842105263157" y="785.1578947368421" type="curve"/>
+      <point x="102.61052631578949" y="785.1578947368421" type="line"/>
+      <point x="103.94736842105264" y="647.1578947368421"/>
+      <point x="105.36842105263159" y="494.1578947368421"/>
+      <point x="105.45263157894738" y="456.1578947368421" type="curve"/>
+      <point x="105.45263157894738" y="174.1578947368421" type="line"/>
+      <point x="105.36842105263159" y="136.1578947368421"/>
+      <point x="103.94736842105264" y="-16.842105263157897"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

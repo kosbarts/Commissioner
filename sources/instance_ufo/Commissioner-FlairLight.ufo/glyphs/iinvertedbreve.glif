@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iinvertedbreve" format="2">
+  <advance width="499.6210526315789"/>
+  <unicode hex="020B"/>
+  <anchor x="249.81052631578945" y="0.0" name="bottom"/>
+  <anchor x="323.38947368421054" y="0.0" name="ogonek"/>
+  <anchor x="248.16842105263157" y="1433.0315789473684" name="top"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="breveinvertedcomb.narrow" xOffset="-350.18947368421055"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

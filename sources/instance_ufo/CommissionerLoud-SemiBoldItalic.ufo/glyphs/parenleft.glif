@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="parenleft" format="2">
+  <advance width="404.5263157894737"/>
+  <unicode hex="0028"/>
+  <outline>
+    <contour>
+      <point x="199.94736842105263" y="-129.89473684210526" type="curve"/>
+      <point x="308.57894736842104" y="-92.57894736842105" type="line"/>
+      <point x="234.73684210526312" y="48.05263157894737"/>
+      <point x="169.0526315789474" y="181.0"/>
+      <point x="200.94736842105263" y="334.6842105263158" type="curve" smooth="yes"/>
+      <point x="232.8421052631579" y="488.8947368421053"/>
+      <point x="355.8947368421052" y="607.1578947368421"/>
+      <point x="482.0" y="734.578947368421" type="curve"/>
+      <point x="376.9473684210526" y="776.8421052631578" type="line"/>
+      <point x="261.73684210526324" y="668.578947368421"/>
+      <point x="109.63157894736842" y="539.8947368421053"/>
+      <point x="70.47368421052632" y="350.3157894736842" type="curve" smooth="yes"/>
+      <point x="31.31578947368421" y="161.21052631578945"/>
+      <point x="132.15789473684214" y="-4.684210526315782"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>10</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

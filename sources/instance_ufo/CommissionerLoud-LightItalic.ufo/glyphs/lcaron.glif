@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lcaron" format="2">
+  <advance width="258.2526315789474"/>
+  <unicode hex="013E"/>
+  <anchor x="71.72631578947367" y="0.0" name="bottom"/>
+  <anchor x="159.62105263157895" y="409.0" name="center"/>
+  <anchor x="224.29473684210527" y="724.7894736842105" name="top"/>
+  <anchor x="260.85263157894735" y="495.4315789473684" name="topright"/>
+  <outline>
+    <component base="l"/>
+    <component base="caroncomb.alt" xOffset="-91.32631578947368"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>l</string>
+      <key>com.schriftgestaltung.componentsAlignment</key>
+      <array>
+        <integer>-1</integer>
+        <integer>0</integer>
+      </array>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

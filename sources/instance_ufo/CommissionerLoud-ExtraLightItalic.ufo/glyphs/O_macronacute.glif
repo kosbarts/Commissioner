@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Omacronacute" format="2">
+  <advance width="818.3263157894737"/>
+  <unicode hex="1E52"/>
+  <anchor x="357.57894736842104" y="0.0" name="bottom"/>
+  <anchor x="432.57894736842104" y="357.0" name="center"/>
+  <anchor x="468.5473684210527" y="0.0" name="ogonek"/>
+  <anchor x="580.7684210526315" y="1068.7684210526315" name="top"/>
+  <anchor x="125.57894736842105" y="713.0" name="topleft"/>
+  <anchor x="791.1684210526316" y="713.0" name="topright"/>
+  <outline>
+    <component base="O"/>
+    <component base="macroncomb.case" xOffset="155.49473684210525" yOffset="218.32631578947368"/>
+    <component base="acutecomb.case" xOffset="190.42105263157893" yOffset="386.62105263157895"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

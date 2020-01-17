@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="greaterequal" format="2">
+  <advance width="1151.578947368421"/>
+  <unicode hex="2265"/>
+  <outline>
+    <contour>
+      <point x="2.421052631578945" y="0.0" type="line"/>
+      <point x="136.31578947368422" y="0.0"/>
+      <point x="263.1578947368421" y="0.0"/>
+      <point x="372.9473684210526" y="0.0" type="curve"/>
+      <point x="566.6315789473684" y="0.0" type="line"/>
+      <point x="676.421052631579" y="0.0"/>
+      <point x="803.2631578947369" y="0.0"/>
+      <point x="937.1578947368421" y="0.0" type="curve"/>
+      <point x="986.9473684210526" y="228.42105263157893" type="line"/>
+      <point x="853.0526315789474" y="228.42105263157893"/>
+      <point x="726.2105263157895" y="228.42105263157893"/>
+      <point x="616.421052631579" y="228.42105263157893" type="curve"/>
+      <point x="422.7368421052631" y="228.42105263157893" type="line"/>
+      <point x="312.9473684210526" y="228.42105263157893"/>
+      <point x="186.10526315789474" y="228.42105263157893"/>
+      <point x="52.21052631578947" y="228.42105263157893" type="curve"/>
+    </contour>
+    <contour>
+      <point x="85.05263157894737" y="378.63157894736844" type="line"/>
+      <point x="227.89473684210526" y="430.63157894736844"/>
+      <point x="367.7894736842105" y="481.6842105263158"/>
+      <point x="488.5263157894737" y="525.6842105263158" type="curve"/>
+      <point x="697.0526315789474" y="603.0526315789474" type="line"/>
+      <point x="815.8947368421053" y="646.1052631578947"/>
+      <point x="955.7894736842105" y="697.1578947368421"/>
+      <point x="1098.6315789473683" y="749.1578947368421" type="curve"/>
+      <point x="1147.4736842105262" y="979.4736842105262" type="line"/>
+      <point x="1027.578947368421" y="1031.4736842105262"/>
+      <point x="908.7368421052631" y="1082.5263157894738"/>
+      <point x="808.8421052631579" y="1125.578947368421" type="curve"/>
+      <point x="632.1052631578947" y="1202.9473684210527" type="line"/>
+      <point x="531.3684210526316" y="1246.9473684210527"/>
+      <point x="411.4736842105263" y="1298.0"/>
+      <point x="291.57894736842104" y="1350.0" type="curve"/>
+      <point x="241.78947368421055" y="1121.578947368421" type="line"/>
+      <point x="355.2631578947368" y="1071.6842105263158"/>
+      <point x="476.63157894736844" y="1018.8421052631578"/>
+      <point x="592.0" y="968.0" type="curve"/>
+      <point x="777.3684210526316" y="886.8421052631579" type="line"/>
+      <point x="772.3157894736843" y="864.3157894736843" type="line"/>
+      <point x="554.7368421052631" y="785.2631578947368" type="line"/>
+      <point x="415.7894736842105" y="734.421052631579"/>
+      <point x="272.9473684210526" y="681.6842105263157"/>
+      <point x="138.0" y="632.8421052631579" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>20</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>6</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

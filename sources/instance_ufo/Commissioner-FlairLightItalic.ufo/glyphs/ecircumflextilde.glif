@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ecircumflextilde" format="2">
+  <advance width="1056.1052631578948"/>
+  <unicode hex="1EC5"/>
+  <anchor x="469.0947368421053" y="0.0" name="bottom"/>
+  <anchor x="679.8736842105263" y="0.0" name="ogonek"/>
+  <anchor x="661.3894736842105" y="990.8631578947368" name="top"/>
+  <outline>
+    <component base="e"/>
+    <component base="circumflexcomb_tildecomb" xOffset="-40.50526315789473"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

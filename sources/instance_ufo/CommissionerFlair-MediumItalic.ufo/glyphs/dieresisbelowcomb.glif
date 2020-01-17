@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresisbelowcomb" format="2">
+  <unicode hex="0324"/>
+  <anchor x="247.58947368421053" y="0.0" name="_bottom"/>
+  <outline>
+    <contour>
+      <point x="314.2105263157895" y="-215.65263157894736" type="curve" smooth="yes"/>
+      <point x="351.7578947368421" y="-215.65263157894736"/>
+      <point x="378.0736842105263" y="-201.6"/>
+      <point x="388.58947368421053" y="-149.25263157894736" type="curve" smooth="yes"/>
+      <point x="396.0526315789474" y="-111.57894736842105"/>
+      <point x="379.0736842105263" y="-82.56842105263158"/>
+      <point x="335.7263157894737" y="-82.56842105263158" type="curve" smooth="yes"/>
+      <point x="294.6631578947368" y="-82.56842105263158"/>
+      <point x="271.40000000000003" y="-97.6"/>
+      <point x="263.34736842105264" y="-134.32631578947368" type="curve" smooth="yes"/>
+      <point x="251.47368421052633" y="-187.62105263157892"/>
+      <point x="274.61052631578946" y="-215.65263157894736"/>
+    </contour>
+    <contour>
+      <point x="96.14736842105263" y="-215.65263157894736" type="curve" smooth="yes"/>
+      <point x="133.69473684210527" y="-215.65263157894736"/>
+      <point x="160.42105263157893" y="-201.6"/>
+      <point x="170.52631578947367" y="-149.25263157894736" type="curve" smooth="yes"/>
+      <point x="177.57894736842107" y="-111.57894736842105"/>
+      <point x="161.0105263157895" y="-82.56842105263158"/>
+      <point x="117.66315789473684" y="-82.56842105263158" type="curve" smooth="yes"/>
+      <point x="76.6" y="-82.56842105263158"/>
+      <point x="53.33684210526316" y="-97.6"/>
+      <point x="45.284210526315796" y="-134.32631578947368" type="curve" smooth="yes"/>
+      <point x="33.41052631578948" y="-187.62105263157892"/>
+      <point x="56.547368421052624" y="-215.65263157894736"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>600</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>11</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>5</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

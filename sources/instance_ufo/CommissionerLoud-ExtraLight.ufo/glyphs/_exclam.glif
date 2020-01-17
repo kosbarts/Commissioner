@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_exclam" format="2">
+  <advance width="220.82105263157894"/>
+  <outline>
+    <contour>
+      <point x="91.96842105263158" y="238.1263157894737" type="curve"/>
+      <point x="130.85263157894738" y="239.21052631578948" type="line"/>
+      <point x="131.86315789473684" y="405.94736842105266"/>
+      <point x="138.45263157894738" y="571.6"/>
+      <point x="144.9578947368421" y="734.421052631579" type="curve"/>
+      <point x="76.77894736842104" y="732.0842105263158" type="line"/>
+      <point x="84.28421052631579" y="569.4315789473684"/>
+      <point x="90.87368421052632" y="405.69473684210527"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>7</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

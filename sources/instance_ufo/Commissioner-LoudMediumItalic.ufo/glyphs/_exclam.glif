@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_exclam" format="2">
+  <advance width="494.5052631578947"/>
+  <outline>
+    <contour>
+      <point x="162.65263157894736" y="508.2315789473684" type="curve"/>
+      <point x="340.2736842105263" y="511.0526315789474" type="line"/>
+      <point x="418.8421052631579" y="834.7368421052631"/>
+      <point x="502.9473684210526" y="1154.7789473684209"/>
+      <point x="587.4105263157894" y="1472.1052631578948" type="curve"/>
+      <point x="316.2736842105263" y="1464.821052631579" type="line"/>
+      <point x="269.66315789473686" y="1150.778947368421"/>
+      <point x="220.69473684210524" y="832.2736842105263"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>7</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

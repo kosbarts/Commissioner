@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="omacron" format="2">
+  <advance width="1195.0526315789473"/>
+  <unicode hex="014D"/>
+  <anchor x="597.0526315789474" y="0.0" name="bottom"/>
+  <anchor x="597.0526315789474" y="498.2105263157895" name="center"/>
+  <anchor x="770.2105263157895" y="0.0" name="ogonek"/>
+  <anchor x="597.0526315789474" y="1387.578947368421" name="top"/>
+  <anchor x="1054.9473684210527" y="996.421052631579" name="topright"/>
+  <outline>
+    <component base="o"/>
+    <component base="macroncomb" xOffset="-2.947368421052632"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

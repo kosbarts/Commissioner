@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb" format="2">
+  <unicode hex="0302"/>
+  <anchor x="600" y="988" name="_top"/>
+  <anchor x="598" y="1490" name="top"/>
+  <outline>
+    <contour>
+      <point x="862" y="1170" type="curve"/>
+      <point x="928" y="1172" type="line"/>
+      <point x="830" y="1300"/>
+      <point x="734" y="1428"/>
+      <point x="638" y="1554" type="curve"/>
+      <point x="556" y="1554" type="line"/>
+      <point x="660" y="1424"/>
+      <point x="758" y="1300"/>
+    </contour>
+    <contour>
+      <point x="266" y="1174" type="curve"/>
+      <point x="332" y="1174" type="line"/>
+      <point x="436" y="1302"/>
+      <point x="534" y="1424"/>
+      <point x="638" y="1554" type="curve"/>
+      <point x="556" y="1554" type="line"/>
+      <point x="458" y="1428"/>
+      <point x="364" y="1300"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>1502</integer>
+            <integer>52</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

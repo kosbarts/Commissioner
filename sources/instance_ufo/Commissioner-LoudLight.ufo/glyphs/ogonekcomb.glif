@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ogonekcomb" format="2">
+  <unicode hex="0328"/>
+  <anchor x="598.0" y="0.0" name="_ogonek"/>
+  <outline>
+    <contour>
+      <point x="494.9655172413793" y="-410.1609195402299" type="curve" smooth="yes"/>
+      <point x="511.31034482758616" y="-410.1609195402299"/>
+      <point x="562.0" y="-403.37931034482756"/>
+      <point x="607.5632183908046" y="-397.3793103448276" type="curve"/>
+      <point x="607.5632183908046" y="-302.2068965517241" type="line"/>
+      <point x="587.9080459770115" y="-306.2068965517241"/>
+      <point x="546.2528735632184" y="-312.2068965517241"/>
+      <point x="509.0344827586207" y="-316.2068965517241" type="curve"/>
+      <point x="441.37931034482756" y="-313.4252873563218"/>
+      <point x="397.7241379310345" y="-287.7701149425287"/>
+      <point x="397.7241379310345" y="-226.45977011494253" type="curve" smooth="yes"/>
+      <point x="397.7241379310345" y="-150.62068965517238"/>
+      <point x="485.5632183908046" y="-62.7816091954023"/>
+      <point x="600.3448275862069" y="0.0" type="curve"/>
+      <point x="567.4022988505748" y="47.81609195402299" type="line"/>
+      <point x="500.2298850574713" y="42.3448275862069" type="line"/>
+      <point x="500.2298850574713" y="11.402298850574713" type="line"/>
+      <point x="358.735632183908" y="-72.4367816091954"/>
+      <point x="290.39080459770116" y="-163.2183908045977"/>
+      <point x="290.39080459770116" y="-252.7816091954023" type="curve" smooth="yes"/>
+      <point x="290.39080459770116" y="-347.9080459770115"/>
+      <point x="365.51724137931035" y="-410.1609195402299"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>21</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>6</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>12</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>9</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

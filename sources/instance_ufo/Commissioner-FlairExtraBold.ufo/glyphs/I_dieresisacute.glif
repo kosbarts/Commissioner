@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Idieresisacute" format="2">
+  <advance width="685.4736842105264"/>
+  <unicode hex="1E2E"/>
+  <anchor x="335.2105263157895" y="0.0" name="bottom"/>
+  <anchor x="577.157894736842" y="0.0" name="ogonek"/>
+  <anchor x="332.84210526315786" y="2298.4210526315787" name="top"/>
+  <anchor x="64.21052631578948" y="1426.0" name="topleft"/>
+  <outline>
+    <component base="I"/>
+    <component base="dieresiscomb.case" xOffset="-262.7894736842105" yOffset="424.94736842105266"/>
+    <component base="acutecomb.case" xOffset="-266.7894736842105" yOffset="827.3157894736842"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

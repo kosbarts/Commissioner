@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="jdotless" format="2">
+  <advance width="265.9157894736842"/>
+  <unicode hex="0237"/>
+  <anchor x="44.242105263157896" y="-192.0" name="bottom"/>
+  <anchor x="185.18947368421053" y="497.2842105263158" name="top"/>
+  <outline>
+    <contour>
+      <point x="-85.90526315789472" y="-195.6421052631579" type="curve"/>
+      <point x="25.599999999999998" y="-192.0" type="line"/>
+      <point x="52.93684210526317" y="-151.7684210526316"/>
+      <point x="134.59999999999997" y="-31.83157894736842"/>
+      <point x="143.5263157894737" y="9.515789473684212" type="curve" smooth="yes"/>
+      <point x="159.9368421052632" y="83.33684210526316"/>
+      <point x="169.4736842105263" y="162.29473684210527"/>
+      <point x="191.95789473684212" y="267.7157894736842" type="curve"/>
+      <point x="215.11578947368423" y="360.62105263157895"/>
+      <point x="231.34736842105264" y="424.7473684210526"/>
+      <point x="250.7578947368421" y="497.2842105263158" type="curve"/>
+      <point x="121.97894736842106" y="497.2842105263158" type="line"/>
+      <point x="110.62105263157893" y="424.7473684210526"/>
+      <point x="99.49473684210527" y="360.62105263157895"/>
+      <point x="83.13684210526316" y="267.7157894736842" type="curve"/>
+      <point x="72.72631578947369" y="217.7157894736842" type="line"/>
+      <point x="25.368421052631575" y="7.799999999999997" type="line"/>
+      <point x="-14.884210526315792" y="-68.43157894736842"/>
+      <point x="-44.70526315789474" y="-124.5157894736842"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>10</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="underscore" format="2">
+  <advance width="496.17894736842106"/>
+  <unicode hex="005F"/>
+  <outline>
+    <contour>
+      <point x="-10.0" y="-141.7263157894737" type="line"/>
+      <point x="54.97894736842105" y="-139.31578947368422"/>
+      <point x="118.6" y="-138.0842105263158"/>
+      <point x="169.70526315789473" y="-137.26315789473685" type="curve"/>
+      <point x="243.13684210526316" y="-137.26315789473685" type="line"/>
+      <point x="294.2421052631579" y="-138.0842105263158"/>
+      <point x="357.86315789473684" y="-139.31578947368422"/>
+      <point x="422.8421052631579" y="-141.7263157894737" type="curve"/>
+      <point x="422.8421052631579" y="-43.22105263157894" type="line"/>
+      <point x="357.86315789473684" y="-45.63157894736842"/>
+      <point x="294.2421052631579" y="-46.86315789473684"/>
+      <point x="243.13684210526316" y="-47.68421052631579" type="curve"/>
+      <point x="169.70526315789473" y="-47.68421052631579" type="line"/>
+      <point x="118.6" y="-46.86315789473684"/>
+      <point x="54.97894736842105" y="-45.63157894736842"/>
+      <point x="-10.0" y="-43.22105263157894" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_strokeshortcomb.Tbar" format="2">
+  <advance width="1472.7368421052631"/>
+  <anchor x="783.0526315789474" y="714.0" name="_center"/>
+  <outline>
+    <contour>
+      <point x="332.84210526315786" y="568.5263157894738" type="line"/>
+      <point x="468.6842105263158" y="580.421052631579"/>
+      <point x="594.5263157894736" y="583.0526315789474"/>
+      <point x="705.6842105263158" y="583.0526315789474" type="curve"/>
+      <point x="805.578947368421" y="583.0526315789474" type="line"/>
+      <point x="916.7368421052631" y="583.0526315789474"/>
+      <point x="1042.5789473684213" y="580.421052631579"/>
+      <point x="1171.7894736842106" y="568.5263157894738" type="curve"/>
+      <point x="1229.2105263157894" y="843.1052631578947" type="line"/>
+      <point x="1095.3684210526317" y="832.5263157894736"/>
+      <point x="968.2105263157895" y="828.578947368421"/>
+      <point x="857.0526315789474" y="828.578947368421" type="curve"/>
+      <point x="757.1578947368422" y="828.578947368421" type="line"/>
+      <point x="646.0" y="828.578947368421"/>
+      <point x="521.4736842105262" y="832.5263157894736"/>
+      <point x="390.2631578947369" y="843.1052631578947" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

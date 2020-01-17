@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaaccentcomb" format="2">
+  <unicode hex="0326"/>
+  <anchor x="300.0" y="0.0" name="_bottom"/>
+  <anchor x="300.0" y="-274.6842105263158" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="243.86315789473684" y="-282.9263157894737" type="curve"/>
+      <point x="273.2526315789474" y="-281.8421052631579" type="line"/>
+      <point x="309.1263157894737" y="-248.0842105263158"/>
+      <point x="341.4842105263158" y="-197.2526315789474"/>
+      <point x="341.4842105263158" y="-152.96842105263158" type="curve" smooth="yes"/>
+      <point x="341.4842105263158" y="-127.86315789473684"/>
+      <point x="329.2105263157895" y="-109.6"/>
+      <point x="303.2526315789474" y="-108.34736842105264" type="curve"/>
+      <point x="272.7578947368421" y="-110.02105263157895" type="line"/>
+      <point x="274.85263157894735" y="-127.78947368421052"/>
+      <point x="276.0210526315789" y="-146.47368421052633"/>
+      <point x="276.0210526315789" y="-164.2421052631579" type="curve"/>
+      <point x="276.0210526315789" y="-210.32631578947368"/>
+      <point x="270.6842105263158" y="-244.7473684210526"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>600</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>10</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

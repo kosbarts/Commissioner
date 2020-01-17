@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="brevecomb" format="2">
+  <unicode hex="0306"/>
+  <anchor x="706" y="1004" name="_top"/>
+  <anchor x="796" y="1438" name="top"/>
+  <outline>
+    <contour>
+      <point x="764" y="1076" type="curve" smooth="yes"/>
+      <point x="1052" y="1076"/>
+      <point x="1170" y="1208"/>
+      <point x="1234" y="1522" type="curve"/>
+      <point x="940" y="1522" type="line"/>
+      <point x="922" y="1432"/>
+      <point x="884" y="1372"/>
+      <point x="784" y="1360" type="curve"/>
+      <point x="690" y="1372"/>
+      <point x="662" y="1424"/>
+      <point x="686" y="1536" type="curve"/>
+      <point x="388" y="1522" type="line"/>
+      <point x="326" y="1218"/>
+      <point x="480" y="1076"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+    </dict>
+  </lib>
+</glyph>

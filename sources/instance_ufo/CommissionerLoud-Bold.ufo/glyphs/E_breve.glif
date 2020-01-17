@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ebreve" format="2">
+  <advance width="600.2105263157895"/>
+  <unicode hex="0114"/>
+  <anchor x="312.10526315789474" y="0.0" name="bottom"/>
+  <anchor x="548.3947368421053" y="0.0" name="ogonek"/>
+  <anchor x="311.7631578947368" y="920.421052631579" name="top"/>
+  <anchor x="37.6578947368421" y="713.0" name="topleft"/>
+  <outline>
+    <component base="E"/>
+    <component base="brevecomb.case" xOffset="12.105263157894736" yOffset="213.73684210526315"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

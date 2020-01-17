@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="horncomb" format="2">
+  <unicode hex="031B"/>
+  <anchor x="300.0" y="500.5263157894737" name="_topright"/>
+  <outline>
+    <contour>
+      <point x="224.31578947368422" y="318.89473684210526" type="line"/>
+      <point x="396.86842105263156" y="318.89473684210526"/>
+      <point x="469.7105263157895" y="392.63157894736844"/>
+      <point x="469.7105263157895" y="499.7368421052632" type="curve" smooth="yes"/>
+      <point x="469.7105263157895" y="549.2368421052631"/>
+      <point x="453.8157894736842" y="592.8684210526316"/>
+      <point x="444.8157894736842" y="617.078947368421" type="curve"/>
+      <point x="312.4736842105263" y="610.1842105263158" type="line"/>
+      <point x="318.57894736842104" y="576.3684210526316"/>
+      <point x="325.3157894736842" y="538.5263157894736"/>
+      <point x="325.5" y="499.7368421052632" type="curve"/>
+      <point x="325.5" y="442.8421052631579"/>
+      <point x="306.5" y="410.5263157894737"/>
+      <point x="205.23684210526315" y="410.5263157894737" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>600</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>12</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>9</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

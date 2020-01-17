@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotaccentcomb" format="2">
+  <unicode hex="0307"/>
+  <anchor x="309.0736842105264" y="989.3473684210526" name="_top"/>
+  <anchor x="388.42105263157896" y="1376.0631578947368" name="top"/>
+  <outline>
+    <contour>
+      <point x="363.53684210526313" y="1259.157894736842" type="curve" smooth="yes"/>
+      <point x="418.4631578947368" y="1259.157894736842"/>
+      <point x="458.5263157894737" y="1284.1684210526316"/>
+      <point x="472.2105263157895" y="1348.421052631579" type="curve" smooth="yes"/>
+      <point x="485.38947368421054" y="1412.3157894736842"/>
+      <point x="456.84210526315786" y="1454.7157894736843"/>
+      <point x="403.9157894736842" y="1454.7157894736843" type="curve" smooth="yes"/>
+      <point x="352.4842105263158" y="1454.7157894736843"/>
+      <point x="308.58947368421053" y="1431.5157894736842"/>
+      <point x="295.2421052631579" y="1365.284210526316" type="curve" smooth="yes"/>
+      <point x="281.5578947368421" y="1300.863157894737"/>
+      <point x="312.27368421052637" y="1259.157894736842"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>390</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>5</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>11</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="strokelongcomb" format="2">
+  <unicode hex="0336"/>
+  <anchor x="327.82105263157894" y="357.0" name="_center"/>
+  <outline>
+    <contour>
+      <point x="7.368421052631575" y="521.5894736842106" type="line"/>
+      <point x="76.15789473684211" y="524.6631578947369"/>
+      <point x="140.12631578947367" y="525.021052631579"/>
+      <point x="195.73684210526315" y="525.021052631579" type="curve"/>
+      <point x="531.042105263158" y="525.021052631579" type="line"/>
+      <point x="586.6526315789474" y="525.021052631579"/>
+      <point x="650.2631578947369" y="524.6631578947369"/>
+      <point x="717.0526315789474" y="521.5894736842106" type="curve"/>
+      <point x="730.0631578947368" y="580.1052631578947" type="line"/>
+      <point x="661.0947368421052" y="577.2105263157895"/>
+      <point x="597.3052631578947" y="576.6736842105263"/>
+      <point x="541.6947368421053" y="576.6736842105263" type="curve"/>
+      <point x="206.38947368421054" y="576.6736842105263" type="line"/>
+      <point x="150.77894736842106" y="576.6736842105263"/>
+      <point x="86.98947368421052" y="577.2105263157895"/>
+      <point x="20.37894736842105" y="580.1052631578947" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>600</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

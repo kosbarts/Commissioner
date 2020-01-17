@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Zacute" format="2">
+  <advance width="1408"/>
+  <unicode hex="0179"/>
+  <anchor x="704" y="0" name="bottom"/>
+  <anchor x="704" y="714" name="center"/>
+  <anchor x="704" y="1920" name="top"/>
+  <outline>
+    <component base="Z"/>
+    <component base="acutecomb.case" xOffset="104" yOffset="422"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="udieresis" format="2">
+  <advance width="567.8842105263158"/>
+  <unicode hex="00FC"/>
+  <anchor x="231.21052631578945" y="0.0" name="bottom"/>
+  <anchor x="451.28421052631575" y="0.0" name="ogonek"/>
+  <anchor x="374.08421052631576" y="689.3684210526316" name="top"/>
+  <anchor x="593.8105263157895" y="497.2842105263158" name="topright"/>
+  <outline>
+    <component base="u"/>
+    <component base="dieresiscomb" xOffset="-15.789473684210527"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

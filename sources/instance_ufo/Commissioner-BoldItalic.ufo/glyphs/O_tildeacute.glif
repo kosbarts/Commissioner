@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Otildeacute" format="2">
+  <advance width="1627.4736842105262"/>
+  <unicode hex="1E4C"/>
+  <anchor x="709.421052631579" y="0.0" name="bottom"/>
+  <anchor x="859.421052631579" y="714.0" name="center"/>
+  <anchor x="1001.6842105263158" y="0.0" name="ogonek"/>
+  <anchor x="1194.8947368421054" y="2314.8947368421054" name="top"/>
+  <anchor x="245.42105263157896" y="1426.0" name="topleft"/>
+  <anchor x="1584.6315789473683" y="1426.0" name="topright"/>
+  <outline>
+    <component base="O"/>
+    <component base="tildecomb.case" xOffset="304.10526315789474" yOffset="427.4736842105263"/>
+    <component base="acutecomb.case" xOffset="395.8421052631579" yOffset="866.8421052631579"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

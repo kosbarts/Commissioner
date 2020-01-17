@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iogonek" format="2">
+  <advance width="499.6210526315789"/>
+  <unicode hex="012F"/>
+  <anchor x="145.45263157894735" y="0.0" name="bottom"/>
+  <anchor x="217.38947368421054" y="0.0" name="ogonek"/>
+  <anchor x="436.67368421052635" y="1382.8842105263159" name="top"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dotaccentcomb" xOffset="38.77894736842106"/>
+    <component base="ogonekcomb" xOffset="-276.61052631578946"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

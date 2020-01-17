@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="z" format="2">
+  <advance width="482"/>
+  <unicode hex="007A"/>
+  <guideline x="218" y="249" angle="232.6668"/>
+  <guideline x="260" y="255" angle="52.6668"/>
+  <anchor x="239" y="0" name="bottom"/>
+  <anchor x="239" y="247" name="center"/>
+  <anchor x="239" y="494" name="top"/>
+  <outline>
+    <contour>
+      <point x="44" y="0" type="line"/>
+      <point x="442" y="0" type="line"/>
+      <point x="442" y="31" type="line"/>
+      <point x="368" y="29"/>
+      <point x="268" y="28"/>
+      <point x="208" y="28" type="curve"/>
+      <point x="75" y="28" type="line"/>
+      <point x="80" y="19" type="line"/>
+      <point x="260" y="255" type="line"/>
+      <point x="314" y="326"/>
+      <point x="383" y="415"/>
+      <point x="425" y="469" type="curve"/>
+      <point x="425" y="494" type="line"/>
+      <point x="44" y="494" type="line"/>
+      <point x="44" y="463" type="line"/>
+      <point x="124" y="466"/>
+      <point x="225" y="466"/>
+      <point x="284" y="466" type="curve"/>
+      <point x="404" y="466" type="line"/>
+      <point x="397" y="484" type="line"/>
+      <point x="218" y="249" type="line"/>
+      <point x="167" y="182"/>
+      <point x="106" y="104"/>
+      <point x="44" y="23" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.annotations</key>
+      <array>
+        <dict>
+          <key>position</key>
+          <array>
+            <real>178.566</real>
+            <real>409.396</real>
+          </array>
+          <key>type</key>
+          <string>Text</string>
+          <key>width</key>
+          <integer>100</integer>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

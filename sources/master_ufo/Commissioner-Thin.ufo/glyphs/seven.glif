@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seven" format="2">
+  <advance width="1022"/>
+  <unicode hex="0037"/>
+  <outline>
+    <contour>
+      <point x="250" y="0" type="curve"/>
+      <point x="320" y="0" type="line"/>
+      <point x="400" y="172"/>
+      <point x="480" y="346"/>
+      <point x="558" y="514" type="curve"/>
+      <point x="694" y="806" type="line"/>
+      <point x="776" y="984"/>
+      <point x="852" y="1148"/>
+      <point x="932" y="1320" type="curve"/>
+      <point x="932" y="1368" type="line"/>
+      <point x="50" y="1368" type="line"/>
+      <point x="50" y="1308" type="line"/>
+      <point x="228" y="1308"/>
+      <point x="406" y="1308"/>
+      <point x="582" y="1308" type="curve"/>
+      <point x="880" y="1308" type="line"/>
+      <point x="868" y="1328" type="line"/>
+      <point x="818" y="1220"/>
+      <point x="768" y="1114"/>
+      <point x="718" y="1006" type="curve"/>
+      <point x="514" y="568" type="line"/>
+      <point x="428" y="382"/>
+      <point x="338" y="190"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>22</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>9</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>10</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="horncomb" format="2">
+  <unicode hex="031B"/>
+  <anchor x="600.0" y="996.421052631579" name="_topright"/>
+  <outline>
+    <contour>
+      <point x="459.0526315789474" y="678.3157894736842" type="line"/>
+      <point x="739.8947368421052" y="678.3157894736842"/>
+      <point x="869.3684210526316" y="806.1052631578948"/>
+      <point x="869.3684210526316" y="1001.7894736842105" type="curve" smooth="yes"/>
+      <point x="869.3684210526316" y="1027.6842105263156"/>
+      <point x="842.0" y="1145.3684210526314"/>
+      <point x="820.9473684210527" y="1231.2631578947369" type="curve"/>
+      <point x="629.578947368421" y="1220.9473684210527" type="line"/>
+      <point x="641.3684210526314" y="1152.9473684210525"/>
+      <point x="654.1052631578948" y="1075.578947368421"/>
+      <point x="662.0" y="1001.7894736842105" type="curve"/>
+      <point x="662.0" y="891.4736842105264"/>
+      <point x="624.0" y="816.421052631579"/>
+      <point x="423.7894736842105" y="816.421052631579" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>12</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>9</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

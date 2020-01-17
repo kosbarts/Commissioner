@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="A" format="2">
+  <advance width="1425.4736842105262"/>
+  <unicode hex="0041"/>
+  <anchor x="608.2105263157894" y="0.0" name="bottom"/>
+  <anchor x="1289.157894736842" y="0.0" name="ogonek"/>
+  <anchor x="906.1052631578947" y="1426.0" name="top"/>
+  <outline>
+    <contour>
+      <point x="-79.89473684210527" y="0.0" type="curve"/>
+      <point x="275.36842105263156" y="0.0" type="line"/>
+      <point x="346.63157894736844" y="155.68421052631578"/>
+      <point x="423.89473684210526" y="324.6315789473685"/>
+      <point x="494.2105263157894" y="478.42105263157896" type="curve"/>
+      <point x="851.0526315789474" y="1178.2105263157896" type="line"/>
+      <point x="873.578947368421" y="1178.2105263157896" type="line"/>
+      <point x="941.0526315789474" y="475.3684210526316" type="line"/>
+      <point x="948.0" y="324.5263157894737"/>
+      <point x="955.7894736842105" y="151.89473684210526"/>
+      <point x="962.7368421052632" y="0.0" type="curve"/>
+      <point x="1295.4736842105262" y="0.0" type="line"/>
+      <point x="1269.578947368421" y="147.89473684210526"/>
+      <point x="1238.6315789473683" y="327.1578947368421"/>
+      <point x="1211.7894736842104" y="480.7368421052632" type="curve"/>
+      <point x="1150.9473684210527" y="974.0" type="line"/>
+      <point x="1139.6842105263156" y="1144.1052631578948"/>
+      <point x="1130.3157894736842" y="1279.7894736842109"/>
+      <point x="1120.9473684210527" y="1426.0" type="curve"/>
+      <point x="697.263157894737" y="1426.0" type="line"/>
+      <point x="623.8947368421054" y="1277.9999999999998"/>
+      <point x="557.4736842105262" y="1142.9473684210527"/>
+      <point x="474.2105263157895" y="974.9473684210526" type="curve"/>
+      <point x="207.4736842105263" y="486.0" type="line"/>
+      <point x="116.63157894736842" y="332.9473684210526"/>
+      <point x="11.894736842105269" y="154.94736842105263"/>
+    </contour>
+    <contour>
+      <point x="330.7368421052631" y="314.42105263157896" type="line"/>
+      <point x="1044.9473684210527" y="314.42105263157896" type="line"/>
+      <point x="1065.3684210526314" y="532.3157894736842" type="line"/>
+      <point x="404.8421052631579" y="532.3157894736842" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>25</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>3</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

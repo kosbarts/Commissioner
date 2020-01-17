@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hbar" format="2">
+  <advance width="1502"/>
+  <unicode hex="0126"/>
+  <anchor x="752" y="0" name="bottom"/>
+  <anchor x="752" y="714" name="center"/>
+  <anchor x="752" y="1426" name="top"/>
+  <anchor x="76" y="1426" name="topleft"/>
+  <outline>
+    <component base="H.bar"/>
+    <component base="strokelongcomb" xOffset="142"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

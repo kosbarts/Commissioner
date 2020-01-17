@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ohorn" format="2">
+  <advance width="650.4631578947368"/>
+  <unicode hex="01A1"/>
+  <anchor x="298.41052631578947" y="0.0" name="bottom"/>
+  <anchor x="298.41052631578947" y="248.6421052631579" name="center"/>
+  <anchor x="380.2421052631579" y="0.0" name="ogonek"/>
+  <anchor x="298.41052631578947" y="497.2842105263158" name="top"/>
+  <anchor x="529.7894736842105" y="497.2842105263158" name="topright"/>
+  <outline>
+    <component base="o"/>
+    <component base="horncomb" xOffset="229.78947368421052"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>o</string>
+      <key>com.schriftgestaltung.componentsAlignment</key>
+      <array>
+        <integer>-1</integer>
+        <integer>0</integer>
+      </array>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

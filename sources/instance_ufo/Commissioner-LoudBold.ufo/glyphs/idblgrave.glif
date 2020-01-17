@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idblgrave" format="2">
+  <advance width="562.8421052631579"/>
+  <unicode hex="0209"/>
+  <anchor x="281.42105263157896" y="0.0" name="bottom"/>
+  <anchor x="455.57894736842104" y="0.0" name="ogonek"/>
+  <anchor x="280.7368421052632" y="1512.7894736842106" name="top"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dblgravecomb" xOffset="-318.57894736842104"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

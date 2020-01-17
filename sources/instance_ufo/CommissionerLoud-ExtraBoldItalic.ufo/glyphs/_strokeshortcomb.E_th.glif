@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_strokeshortcomb.Eth" format="2">
+  <advance width="735.7368421052631"/>
+  <anchor x="391.05600000000004" y="357.0" name="_center"/>
+  <outline>
+    <contour>
+      <point x="-9.31578947368421" y="277.60526315789474" type="line"/>
+      <point x="54.13157894736841" y="281.05263157894734"/>
+      <point x="113.36842105263158" y="283.5"/>
+      <point x="166.8421052631579" y="286.13157894736844" type="curve"/>
+      <point x="214.4736842105263" y="286.13157894736844" type="line"/>
+      <point x="268.3947368421053" y="283.5"/>
+      <point x="325.1842105263158" y="280.2368421052632"/>
+      <point x="387.0" y="277.60526315789474" type="curve"/>
+      <point x="419.2894736842106" y="431.5263157894737" type="line"/>
+      <point x="357.47368421052636" y="428.8947368421053"/>
+      <point x="298.23684210526324" y="425.63157894736844"/>
+      <point x="243.3157894736842" y="423.0" type="curve"/>
+      <point x="195.68421052631578" y="423.0" type="line"/>
+      <point x="142.39473684210526" y="425.63157894736844"/>
+      <point x="85.60526315789471" y="428.0789473684211"/>
+      <point x="22.973684210526315" y="431.5263157894737" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

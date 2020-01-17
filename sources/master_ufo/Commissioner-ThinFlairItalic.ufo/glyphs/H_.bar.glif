@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="H.bar" format="2">
+  <advance width="1500"/>
+  <anchor x="646" y="0" name="bottom"/>
+  <anchor x="796" y="714" name="center"/>
+  <anchor x="946" y="1426" name="top"/>
+  <anchor x="268" y="1426" name="topleft"/>
+  <outline>
+    <contour>
+      <point x="1106" y="0" type="curve"/>
+      <point x="1180" y="0" type="line"/>
+      <point x="1208" y="162"/>
+      <point x="1236" y="298"/>
+      <point x="1274" y="476" type="curve"/>
+      <point x="1374" y="946" type="line"/>
+      <point x="1412" y="1124"/>
+      <point x="1442" y="1264"/>
+      <point x="1480" y="1426" type="curve"/>
+      <point x="1406" y="1426" type="line"/>
+      <point x="1376" y="1264"/>
+      <point x="1348" y="1124"/>
+      <point x="1310" y="946" type="curve"/>
+      <point x="1210" y="476" type="line"/>
+      <point x="1174" y="302"/>
+      <point x="1144" y="162"/>
+    </contour>
+    <contour>
+      <point x="112" y="0" type="curve"/>
+      <point x="186" y="0" type="line"/>
+      <point x="214" y="162"/>
+      <point x="242" y="298"/>
+      <point x="280" y="476" type="curve"/>
+      <point x="380" y="946" type="line"/>
+      <point x="418" y="1124"/>
+      <point x="448" y="1264"/>
+      <point x="486" y="1426" type="curve"/>
+      <point x="412" y="1426" type="line"/>
+      <point x="382" y="1264"/>
+      <point x="354" y="1124"/>
+      <point x="316" y="946" type="curve"/>
+      <point x="216" y="476" type="line"/>
+      <point x="180" y="302"/>
+      <point x="150" y="162"/>
+    </contour>
+    <contour>
+      <point x="284" y="694" type="line"/>
+      <point x="1304" y="694" type="line"/>
+      <point x="1318" y="756" type="line"/>
+      <point x="298" y="756" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

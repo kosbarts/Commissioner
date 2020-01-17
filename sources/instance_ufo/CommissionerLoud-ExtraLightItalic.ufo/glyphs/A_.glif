@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="A" format="2">
+  <advance width="675.1578947368421"/>
+  <unicode hex="0041"/>
+  <anchor x="285.53684210526313" y="0.0" name="bottom"/>
+  <anchor x="592.8526315789474" y="0.0" name="ogonek"/>
+  <anchor x="435.36842105263156" y="713.0" name="top"/>
+  <outline>
+    <contour>
+      <point x="-24.03157894736842" y="0.0" type="curve"/>
+      <point x="42.18947368421052" y="0.0" type="line"/>
+      <point x="92.41052631578945" y="88.89473684210526"/>
+      <point x="145.63157894736844" y="182.21052631578948"/>
+      <point x="194.93684210526314" y="269.2736842105263" type="curve"/>
+      <point x="425.0842105263158" y="662.9368421052632" type="line"/>
+      <point x="431.9263157894737" y="662.9368421052632" type="line"/>
+      <point x="495.2842105263158" y="268.1894736842105" type="line"/>
+      <point x="507.59999999999997" y="183.0421052631579"/>
+      <point x="521.6631578947369" y="85.2315789473684"/>
+      <point x="533.9789473684211" y="0.0" type="curve"/>
+      <point x="593.357894736842" y="0.0" type="line"/>
+      <point x="579.5263157894738" y="74.83157894736841"/>
+      <point x="563.6105263157895" y="162.25263157894736"/>
+      <point x="548.8631578947368" y="242.57894736842104" type="curve"/>
+      <point x="508.7157894736842" y="487.0" type="line"/>
+      <point x="496.89473684210526" y="571.1684210526316"/>
+      <point x="486.90526315789464" y="641.6631578947369"/>
+      <point x="476.91578947368424" y="713.0" type="curve"/>
+      <point x="396.821052631579" y="713.0" type="line"/>
+      <point x="354.8315789473684" y="638.9999999999999"/>
+      <point x="316.75789473684216" y="571.9157894736842"/>
+      <point x="268.93684210526317" y="487.9157894736842" type="curve"/>
+      <point x="124.9578947368421" y="243.0" type="line"/>
+      <point x="78.21052631578948" y="166.9157894736842"/>
+      <point x="23.631578947368418" y="77.9157894736842"/>
+    </contour>
+    <contour>
+      <point x="133.97894736842105" y="195.67368421052632" type="line"/>
+      <point x="522.9157894736842" y="195.67368421052632" type="line"/>
+      <point x="529.5894736842105" y="238.30526315789473" type="line"/>
+      <point x="144.94736842105263" y="238.30526315789473" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>25</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>1</integer>
+            <integer>3</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>1</integer>
+            <integer>2</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="itilde" format="2">
+  <advance width="513.9368421052632"/>
+  <unicode hex="0129"/>
+  <anchor x="256.9684210526316" y="0.0" name="bottom"/>
+  <anchor x="339.5157894736842" y="0.0" name="ogonek"/>
+  <anchor x="256.9684210526316" y="1389.4105263157894" name="top"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="tildecomb.narrow" xOffset="-343.0315789473684"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

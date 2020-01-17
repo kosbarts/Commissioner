@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ogonekcomb" format="2">
+  <unicode hex="0328"/>
+  <anchor x="299.0" y="0.0" name="_ogonek"/>
+  <outline>
+    <contour>
+      <point x="245.6206896551724" y="-207.77011494252875" type="curve" smooth="yes"/>
+      <point x="254.41379310344826" y="-207.77011494252875"/>
+      <point x="281.0" y="-204.17241379310346"/>
+      <point x="304.1954022988506" y="-201.17241379310346" type="curve"/>
+      <point x="304.1954022988506" y="-144.27586206896552" type="line"/>
+      <point x="294.98850574712645" y="-146.27586206896552"/>
+      <point x="274.7816091954023" y="-149.27586206896552"/>
+      <point x="256.37931034482756" y="-151.27586206896552" type="curve"/>
+      <point x="223.17241379310346" y="-149.67816091954023"/>
+      <point x="201.96551724137933" y="-137.4712643678161"/>
+      <point x="201.96551724137933" y="-108.05747126436782" type="curve" smooth="yes"/>
+      <point x="201.96551724137933" y="-72.82758620689654"/>
+      <point x="243.19540229885058" y="-31.597701149425287"/>
+      <point x="300.7931034482759" y="0.0" type="curve"/>
+      <point x="281.42528735632186" y="25.977011494252874" type="line"/>
+      <point x="238.52873563218392" y="21.79310344827586" type="line"/>
+      <point x="238.52873563218392" y="3.4252873563218387" type="line"/>
+      <point x="171.0919540229885" y="-35.804597701149426"/>
+      <point x="136.29885057471265" y="-81.40229885057471"/>
+      <point x="136.29885057471265" y="-126.59770114942529" type="curve" smooth="yes"/>
+      <point x="136.29885057471265" y="-174.98850574712642"/>
+      <point x="174.6896551724138" y="-207.77011494252875"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>600</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>21</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>6</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>12</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>9</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

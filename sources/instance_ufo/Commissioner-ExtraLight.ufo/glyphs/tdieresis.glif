@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tdieresis" format="2">
+  <advance width="806.0631578947368"/>
+  <unicode hex="1E97"/>
+  <anchor x="473.1578947368421" y="0.0" name="bottom"/>
+  <anchor x="413.2" y="494.6736842105263" name="center"/>
+  <anchor x="391.36842105263156" y="1623.9789473684211" name="top"/>
+  <anchor x="445.4947368421053" y="989.3473684210526" name="topright"/>
+  <outline>
+    <component base="t"/>
+    <component base="dieresiscomb" xOffset="-204.6315789473684" yOffset="268.0842105263158"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

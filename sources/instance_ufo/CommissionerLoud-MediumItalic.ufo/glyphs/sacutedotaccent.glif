@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="sacutedotaccent" format="2">
+  <advance width="459.13684210526316"/>
+  <unicode hex="1E65"/>
+  <anchor x="178.21052631578948" y="0.0" name="bottom"/>
+  <anchor x="369.29473684210524" y="912.5684210526315" name="top"/>
+  <outline>
+    <component base="s"/>
+    <component base="acutecomb" xOffset="-69.37894736842105"/>
+    <component base="dotaccentcomb" xOffset="158.76842105263157" yOffset="212.78947368421052"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

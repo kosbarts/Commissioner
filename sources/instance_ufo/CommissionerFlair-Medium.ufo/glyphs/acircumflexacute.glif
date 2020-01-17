@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acircumflexacute" format="2">
+  <advance width="522.978947368421"/>
+  <unicode hex="1EA5"/>
+  <anchor x="263.82105263157894" y="0.0" name="bottom"/>
+  <anchor x="454.3263157894737" y="0.0" name="ogonek"/>
+  <anchor x="263.82105263157894" y="497.2842105263158" name="top"/>
+  <outline>
+    <component base="a"/>
+    <component base="circumflexcomb_acutecomb" xOffset="-35.589473684210525"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

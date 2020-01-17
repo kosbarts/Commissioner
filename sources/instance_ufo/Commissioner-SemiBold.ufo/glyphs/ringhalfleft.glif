@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ringhalfleft" format="2">
+  <advance width="395.36842105263156"/>
+  <unicode hex="02BF"/>
+  <outline>
+    <contour>
+      <point x="339.1578947368421" y="1108.2105263157894" type="curve"/>
+      <point x="339.1578947368421" y="1224.2105263157894" type="line"/>
+      <point x="268.5263157894737" y="1224.2105263157894"/>
+      <point x="220.10526315789474" y="1264.1052631578948"/>
+      <point x="220.10526315789474" y="1338.421052631579" type="curve" smooth="yes"/>
+      <point x="220.10526315789474" y="1404.6315789473683"/>
+      <point x="268.5263157894737" y="1451.578947368421"/>
+      <point x="341.1578947368421" y="1451.578947368421" type="curve"/>
+      <point x="341.1578947368421" y="1566.5263157894738" type="line"/>
+      <point x="186.21052631578948" y="1566.5263157894738"/>
+      <point x="83.15789473684211" y="1476.842105263158"/>
+      <point x="83.15789473684211" y="1339.4736842105262" type="curve" smooth="yes"/>
+      <point x="83.15789473684211" y="1187.6842105263158"/>
+      <point x="186.21052631578948" y="1108.2105263157894"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>13</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>0</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>6</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>7</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>10</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>3</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="asciicircum" format="2">
+  <advance width="595.7263157894737"/>
+  <unicode hex="005E"/>
+  <outline>
+    <contour>
+      <point x="513.6210526315788" y="389.36842105263156" type="curve"/>
+      <point x="560.4947368421052" y="390.4526315789474" type="line"/>
+      <point x="510.5894736842106" y="488.22105263157897"/>
+      <point x="464.51578947368426" y="586.7368421052631"/>
+      <point x="421.70526315789476" y="684.5052631578948" type="curve"/>
+      <point x="349.2421052631579" y="684.5052631578948" type="line"/>
+      <point x="269.6842105263158" y="588.8210526315789"/>
+      <point x="187.4421052631579" y="493.63157894736844"/>
+      <point x="96.21052631578947" y="392.4526315789474" type="curve"/>
+      <point x="150.43157894736842" y="392.4526315789474" type="line"/>
+      <point x="228.4842105263158" y="475.7578947368421"/>
+      <point x="304.0315789473685" y="559.8105263157895"/>
+      <point x="378.66315789473686" y="643.1157894736842" type="curve"/>
+      <point x="385.42105263157896" y="643.1157894736842" type="line"/>
+      <point x="427.65263157894736" y="558.8105263157895"/>
+      <point x="468.8842105263158" y="473.6736842105263"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>11</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

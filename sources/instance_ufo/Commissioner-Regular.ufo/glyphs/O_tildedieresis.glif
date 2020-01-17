@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Otildedieresis" format="2">
+  <advance width="1633.621052631579"/>
+  <unicode hex="1E4E"/>
+  <anchor x="816.3578947368421" y="0.0" name="bottom"/>
+  <anchor x="816.3578947368421" y="714.0" name="center"/>
+  <anchor x="1008.2526315789473" y="0.0" name="ogonek"/>
+  <anchor x="814.3578947368421" y="2170.757894736842" name="top"/>
+  <anchor x="52.357894736842105" y="1426.0" name="topleft"/>
+  <anchor x="1429.7684210526315" y="1426.0" name="topright"/>
+  <outline>
+    <component base="O"/>
+    <component base="tildecomb.case" xOffset="216.3578947368421" yOffset="433.62105263157895"/>
+    <component base="dieresiscomb.case" xOffset="218.3578947368421" yOffset="816.1263157894737"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

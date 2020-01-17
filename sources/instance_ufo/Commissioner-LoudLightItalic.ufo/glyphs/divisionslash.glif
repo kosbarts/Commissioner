@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="divisionslash" format="2">
+  <advance width="753.3473684210526"/>
+  <unicode hex="2215"/>
+  <outline>
+    <contour>
+      <point x="-41.95789473684211" y="0.0" type="curve"/>
+      <point x="106.69473684210527" y="0.0" type="line"/>
+      <point x="183.8315789473684" y="146.71578947368423"/>
+      <point x="248.96842105263156" y="270.3578947368421"/>
+      <point x="346.6736842105263" y="456.0" type="curve"/>
+      <point x="614.9473684210526" y="947.6421052631579" type="line"/>
+      <point x="722.2315789473683" y="1138.9263157894736"/>
+      <point x="792.5894736842106" y="1264.0"/>
+      <point x="884.5894736842106" y="1426.0" type="curve"/>
+      <point x="736.2947368421053" y="1426.0" type="line"/>
+      <point x="655.5157894736842" y="1273.6421052631579"/>
+      <point x="588.378947368421" y="1144.0"/>
+      <point x="486.67368421052635" y="952.3578947368421" type="curve"/>
+      <point x="216.0421052631579" y="456.0" type="line"/>
+      <point x="112.4" y="272.7157894736842"/>
+      <point x="41.11578947368421" y="147.43157894736842"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>u</string>
+            <string>p</string>
+          </array>
+          <key>type</key>
+          <string>BottomGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>8</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

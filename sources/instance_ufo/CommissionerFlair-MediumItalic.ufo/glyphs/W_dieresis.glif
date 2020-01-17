@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Wdieresis" format="2">
+  <advance width="1028.5578947368422"/>
+  <unicode hex="1E84"/>
+  <anchor x="460.13684210526316" y="0.0" name="bottom"/>
+  <anchor x="648.0105263157894" y="899.1894736842105" name="top"/>
+  <outline>
+    <component base="W"/>
+    <component base="dieresiscomb.case" xOffset="258.7263157894737" yOffset="215.7157894736842"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

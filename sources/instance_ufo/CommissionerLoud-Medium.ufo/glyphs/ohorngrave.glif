@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ohorngrave" format="2">
+  <advance width="650.4631578947368"/>
+  <unicode hex="1EDD"/>
+  <anchor x="298.41052631578947" y="0.0" name="bottom"/>
+  <anchor x="298.41052631578947" y="248.6421052631579" name="center"/>
+  <anchor x="380.2421052631579" y="0.0" name="ogonek"/>
+  <anchor x="297.82105263157894" y="715.9684210526316" name="top"/>
+  <anchor x="529.7894736842105" y="497.2842105263158" name="topright"/>
+  <outline>
+    <component base="ohorn"/>
+    <component base="gravecomb" xOffset="-1.5894736842105264"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

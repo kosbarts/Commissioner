@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb.case" format="2">
+  <anchor x="352.8157894736842" y="500.5263157894737" name="_top"/>
+  <anchor x="403.07894736842104" y="741.3157894736842" name="top"/>
+  <outline>
+    <contour>
+      <point x="456.49999999999994" y="557.0526315789473" type="curve"/>
+      <point x="571.3421052631578" y="558.8684210526316" type="line"/>
+      <point x="549.3947368421053" y="623.2105263157895"/>
+      <point x="527.8947368421053" y="688.1052631578946"/>
+      <point x="505.94736842105266" y="753.2631578947369" type="curve"/>
+      <point x="318.4736842105263" y="753.2631578947369" type="line"/>
+      <point x="344.0526315789474" y="700.6052631578948"/>
+      <point x="406.89473684210526" y="619.9473684210526"/>
+    </contour>
+    <contour>
+      <point x="157.31578947368422" y="558.2368421052631" type="curve"/>
+      <point x="283.23684210526324" y="558.2368421052631" type="line"/>
+      <point x="351.5" y="620.3157894736843"/>
+      <point x="440.2368421052631" y="701.421052631579"/>
+      <point x="482.2894736842106" y="753.2631578947369" type="curve"/>
+      <point x="295.3421052631579" y="753.2631578947369" type="line"/>
+      <point x="249.39473684210523" y="688.7368421052631"/>
+      <point x="204.26315789473685" y="624.578947368421"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>600</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <integer>726</integer>
+            <integer>24</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

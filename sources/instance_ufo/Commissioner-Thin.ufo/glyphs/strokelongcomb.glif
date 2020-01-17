@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="strokelongcomb" format="2">
+  <unicode hex="0336"/>
+  <anchor x="610" y="714" name="_center"/>
+  <outline>
+    <contour>
+      <point x="-80" y="1064" type="line"/>
+      <point x="52" y="1064"/>
+      <point x="176" y="1064"/>
+      <point x="284" y="1064" type="curve"/>
+      <point x="936" y="1064" type="line"/>
+      <point x="1044" y="1064"/>
+      <point x="1168" y="1064"/>
+      <point x="1300" y="1064" type="curve"/>
+      <point x="1300" y="1124" type="line"/>
+      <point x="1168" y="1124"/>
+      <point x="1044" y="1124"/>
+      <point x="936" y="1124" type="curve"/>
+      <point x="284" y="1124" type="line"/>
+      <point x="176" y="1124"/>
+      <point x="52" y="1124"/>
+      <point x="-80" y="1124" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>1200</integer>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>15</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>14</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+      <key>public.markColor</key>
+      <string>0.25,0.25,0.25,1</string>
+    </dict>
+  </lib>
+</glyph>

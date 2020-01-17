@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ihookabove" format="2">
+  <advance width="668.7894736842105"/>
+  <unicode hex="1EC8"/>
+  <anchor x="221.421052631579" y="0.0" name="bottom"/>
+  <anchor x="437.78947368421046" y="0.0" name="ogonek"/>
+  <anchor x="637.5263157894738" y="1981.4736842105262" name="top"/>
+  <anchor x="250.42105263157896" y="1426.0" name="topleft"/>
+  <outline>
+    <component base="I"/>
+    <component base="hookabovecomb.case" xOffset="-184.21052631578945" yOffset="424.94736842105266"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

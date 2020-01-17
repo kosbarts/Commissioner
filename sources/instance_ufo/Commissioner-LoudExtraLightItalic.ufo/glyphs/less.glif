@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="less" format="2">
+  <advance width="1125.0526315789473"/>
+  <unicode hex="003C"/>
+  <outline>
+    <contour>
+      <point x="919.6631578947369" y="161.38947368421051" type="curve"/>
+      <point x="941.8947368421052" y="262.69473684210527" type="line"/>
+      <point x="804.2736842105262" y="326.9894736842105"/>
+      <point x="650.3368421052631" y="398.61052631578946"/>
+      <point x="509.0526315789474" y="464.7368421052631" type="curve"/>
+      <point x="279.4736842105263" y="576.8421052631579" type="line"/>
+      <point x="283.64210526315793" y="590.5263157894736" type="line"/>
+      <point x="558.6947368421053" y="702.2947368421053" type="line"/>
+      <point x="728.2947368421053" y="768.2526315789473"/>
+      <point x="912.5473684210525" y="839.8736842105263"/>
+      <point x="1078.4842105263156" y="904.0" type="curve"/>
+      <point x="1101.221052631579" y="1019.6631578947367" type="line"/>
+      <point x="971.8526315789472" y="964.9894736842105"/>
+      <point x="847.4947368421053" y="912.6526315789473"/>
+      <point x="739.1368421052632" y="868.1473684210526" type="curve"/>
+      <point x="522.4842105263158" y="780.1684210526316" type="line"/>
+      <point x="417.9578947368421" y="738.5052631578948"/>
+      <point x="293.4315789473684" y="689.0105263157895"/>
+      <point x="166.4" y="641.178947368421" type="curve"/>
+      <point x="144.16842105263157" y="539.8736842105263" type="line"/>
+      <point x="251.2" y="492.0421052631579"/>
+      <point x="355.89473684210526" y="442.5473684210526"/>
+      <point x="440.7578947368421" y="400.88421052631577" type="curve"/>
+      <point x="622.0842105263158" y="312.90526315789475" type="line"/>
+      <point x="710.2736842105263" y="268.40000000000003"/>
+      <point x="814.2947368421051" y="214.2315789473684"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>=|greater</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>greater</string>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>10</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <string>d</string>
+            <string>o</string>
+            <string>w</string>
+            <string>n</string>
+          </array>
+          <key>type</key>
+          <string>TopGhost</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>origin</key>
+          <array>
+            <integer>0</integer>
+            <integer>18</integer>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>target</key>
+          <array>
+            <integer>0</integer>
+            <integer>4</integer>
+          </array>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

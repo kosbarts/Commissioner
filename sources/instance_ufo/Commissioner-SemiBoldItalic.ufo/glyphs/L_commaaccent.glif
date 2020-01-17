@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Lcommaaccent" format="2">
+  <advance width="1140.421052631579"/>
+  <unicode hex="013B"/>
+  <anchor x="390.73684210526324" y="-567.0526315789474" name="bottom"/>
+  <anchor x="915.2631578947369" y="717.1578947368421" name="center"/>
+  <anchor x="637.8947368421052" y="1426.0" name="top"/>
+  <anchor x="702.1052631578948" y="996.421052631579" name="topright"/>
+  <outline>
+    <component base="L"/>
+    <component base="commaaccentcomb" xOffset="15.894736842105264"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>
