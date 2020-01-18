@@ -1139,8 +1139,8 @@ after ttfautohint usage versus unhinted font files.
 
 |  | ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf |
 |:--- | ---:|
-| Dehinted Size | 370.2kb |
-| Hinted Size | 369.3kb |
+| Dehinted Size | 370.3kb |
+| Hinted Size | 369.4kb |
 | Increase | -872 bytes |
 | Change   | -0.2 % |
  [code: size-impact]
@@ -1250,7 +1250,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, GPOS, prep, GSUB, loca, gasp]
+* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, prep, loca, gasp, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
