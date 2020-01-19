@@ -440,23 +440,6 @@ variable fonts in their web browsers.
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> Name table ID 6 (PostScript name) must be consistent across platforms.</summary>
-
-* [com.adobe.fonts/check/name/postscript_name_consistency](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.adobe.fonts/check/name/postscript_name_consistency)
-<pre>--- Rationale ---
-
-The PostScript name entries in the font&#x27;s &#x27;name&#x27; table should be consistent
-across platforms.
-
-This is the TTF/CFF2 equivalent of the CFF &#x27;postscript_name_cff_vs_name&#x27; check.
-
-
-</pre>
-
-* 🔥 **FAIL** Entries in the "name" table for ID 6 (PostScript name) are not consistent. Names found: ['Commissioner', 'Commissioner-Thin']. [code: inconsistency]
-
-</details>
-<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 achVendID.</summary>
 
 * [com.google.fonts/check/vendor_id](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id)
@@ -1174,9 +1157,9 @@ after ttfautohint usage versus unhinted font files.
 |  | ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf |
 |:--- | ---:|
 | Dehinted Size | 371.4kb |
-| Hinted Size | 370.4kb |
-| Increase | -948 bytes |
-| Change   | -0.2 % |
+| Hinted Size | 370.5kb |
+| Increase | -968 bytes |
+| Change   | -0.3 % |
  [code: size-impact]
 
 </details>
@@ -1268,7 +1251,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, gasp, prep, GPOS, DSIG, GSUB]
+* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, loca, GPOS, prep, gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1470,6 +1453,22 @@ much added benefit.
 </pre>
 
 * 🍞 **PASS** Font em size is good (unitsPerEm = 2000).
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries.</summary>
+
+* [com.google.fonts/check/name/subfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/subfamilyname)
+
+* 🍞 **PASS** FONT_SUBFAMILY_NAME entries are all good.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.</summary>
+
+* [com.google.fonts/check/name/typographicsubfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicsubfamilyname)
+
+* 🍞 **PASS** TYPOGRAPHIC_SUBFAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -2051,6 +2050,23 @@ Also we should report an error for glyphs not of average width
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Name table ID 6 (PostScript name) must be consistent across platforms.</summary>
+
+* [com.adobe.fonts/check/name/postscript_name_consistency](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.adobe.fonts/check/name/postscript_name_consistency)
+<pre>--- Rationale ---
+
+The PostScript name entries in the font&#x27;s &#x27;name&#x27; table should be consistent
+across platforms.
+
+This is the TTF/CFF2 equivalent of the CFF &#x27;postscript_name_cff_vs_name&#x27; check.
+
+
+</pre>
+
+* 🍞 **PASS** Entries in the "name" table for ID 6 (PostScript name) are consistent.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Does the number of glyphs in the loca table match the maxp table?</summary>
 
 * [com.google.fonts/check/loca/maxp_num_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/loca.html#com.google.fonts/check/loca/maxp_num_glyphs)
@@ -2282,5 +2298,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 5 | 5 | 74 | 6 | 72 | 0 |
-| 1% | 3% | 3% | 45% | 4% | 44% | 0% |
+| 1 | 2 | 5 | 74 | 6 | 75 | 0 |
+| 1% | 1% | 3% | 45% | 4% | 46% | 0% |

@@ -31,7 +31,7 @@
     <!-- ===== WEIGHT ===== -->
     <AxisValue index="0" Format="1">
       <AxisIndex value="0"/>
-			<!-- ElidedFallbackNameID value (Thin) -->
+	  <!-- ElidedFallbackNameID value (Thin) -->
       <Flags value="2"/>
       <!-- Thin -->
       <ValueNameID value="260"/>
@@ -57,7 +57,7 @@
       <!-- Regular -->
       <ValueNameID value="263"/>
       <Value value="400.0"/>
-			<LinkedValue value="700"/>
+	  <LinkedValue value="700"/>
     </AxisValue>
     <AxisValue index="4" Format="1">
       <AxisIndex value="0"/>
@@ -149,7 +149,7 @@
 
 <name>
   <!-- PLATFORM 1: MAC -->
-  <namerecord nameID="0" platformID="1" platEncID="0" langID="0x409">
+  <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">
     Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)
   </namerecord>
   <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
@@ -159,18 +159,18 @@
     Thin
   </namerecord>
   <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    1.000;IDKB;Commissioner
+    1.000;IDKB;Commissioner-Thin
   </namerecord>
   <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner
+    Commissioner Thin
   </namerecord>
   <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
     Version 1.000; ttfautohint (v1.8.3)
   </namerecord>
   <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner
+    Commissioner-Thin
   </namerecord>
-  <namerecord nameID="7" platformID="1" platEncID="0" langID="0x409">
+  <namerecord nameID="7" platformID="1" platEncID="0" langID="0x0" unicode="True">
     Commissioner is a trademark of Kostas Bartsokas
   </namerecord>
   <namerecord nameID="8" platformID="1" platEncID="0" langID="0x0" unicode="True">
@@ -393,10 +393,10 @@
     Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)
   </namerecord>
   <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-    Commissioner
+    Commissioner Thin
   </namerecord>
   <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
-    Thin
+    Regular
   </namerecord>
   <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
     1.000;IDKB;Commissioner-Thin
@@ -430,6 +430,12 @@
   </namerecord>
   <namerecord nameID="14" platformID="3" platEncID="1" langID="0x409">
     http://scripts.sil.org/OFL
+  </namerecord>
+  <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
+    Commissioner
+  </namerecord>
+  <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
+    Thin
   </namerecord>
   <namerecord nameID="19" platformID="3" platEncID="1" langID="0x409">
     How quickly daft jumping zebras vex.
