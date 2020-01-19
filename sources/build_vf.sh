@@ -13,10 +13,10 @@ set -e
 ######### generate variable font ###########
 
 
-#echo "Generating VFs"
-#mkdir -p ../fonts/variable
-#fontmake -g Commissioner-Variable.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
-#rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
+echo "Generating VFs"
+mkdir -p ../fonts/variable
+fontmake -g Commissioner-Variable.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
+rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
 
 
 ######### generate variable font ###########

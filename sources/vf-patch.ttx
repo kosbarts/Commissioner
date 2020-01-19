@@ -2,7 +2,7 @@
 <ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.43">
 
 <STAT>
-  <Version value="0x00010001"/>
+  <Version value="0x00010002"/>
   <DesignAxisRecordSize value="8"/>
   <!-- DesignAxisCount=4 -->
   <DesignAxisRecord>
@@ -130,10 +130,8 @@
 	  <AxisCount value="2"/>
 	  <Flags value="0"/>
 	  <ValueNameID value="317"/>
-	  <AxisIndex value="2"/>
-	  <Value value="100.0"/>
 	  <AxisIndex value="3"/>
-	  <Value value="100.0"/>
+	  <Value value="100"/>
     </AxisValue>
 
   </AxisValueArray>
@@ -603,6 +601,18 @@
   </namerecord>
   <namerecord nameID="313" platformID="3" platEncID="1" langID="0x409">
     Loud Black Italic
+  </namerecord>
+  <namerecord nameID="314" platformID="3" platEncID="1" langID="0x409">
+	  Normal
+  </namerecord>
+  <namerecord nameID="315" platformID="3" platEncID="1" langID="0x409">
+	  Italic
+  </namerecord>
+  <namerecord nameID="316" platformID="3" platEncID="1" langID="0x409">
+	  Flair
+  </namerecord>
+  <namerecord nameID="317" platformID="3" platEncID="1" langID="0x409">
+	  Loud
   </namerecord>
 </name>
 
