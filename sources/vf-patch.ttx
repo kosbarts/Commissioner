@@ -116,24 +116,30 @@
   <!-- ===== FLAIR ===== -->
   <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. -->
     <AxisValue index="11" Format="4">
-      <AxisCount value="1"/>
+      <!-- AxisCount=1 -->
       <Flags value="0"/>
 	  <ValueNameID value="316"/>
-	  <AxisIndex value="2"/>
-	  <Value value="100"/>
+      <AxisValueRecord index="0">
+        <AxisIndex value="2"/>
+        <Value value="100.0"/>
+      </AxisValueRecord>
     </AxisValue>
 
 		
   <!-- ===== VOLUME ===== -->
   <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. -->
     <AxisValue index="12" Format="4">
-	  <AxisCount value="2"/>
+      <!-- AxisCount=2 -->
 	  <Flags value="0"/>
 	  <ValueNameID value="317"/>
-	  <AxisIndex value="2"/>
-	  <Value value="100"/>
-	  <AxisIndex value="3"/>
-	  <Value value="100"/>
+      <AxisValueRecord index="0">
+        <AxisIndex value="2"/>
+        <Value value="100.0"/>
+      </AxisValueRecord>
+      <AxisValueRecord index="1">
+        <AxisIndex value="3"/>
+        <Value value="100.0"/>
+      </AxisValueRecord>
     </AxisValue>
 
   </AxisValueArray>
@@ -189,7 +195,7 @@
     Commissioner
   </namerecord>
   <namerecord nameID="17" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Τhin
+    Thin
   </namerecord>
   <namerecord nameID="19" platformID="1" platEncID="0" langID="0x0">
     How quickly daft jumping zebras vex.

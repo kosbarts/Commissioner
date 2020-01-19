@@ -363,6 +363,22 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Check name table: FONT_SUBFAMILY_NAME entries.</summary>
+
+* [com.google.fonts/check/name/subfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/subfamilyname)
+
+* 🔥 **FAIL** SUBFAMILY_NAME for Win "Thin" must be "Regular" [code: bad-familyname]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.</summary>
+
+* [com.google.fonts/check/name/typographicsubfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicsubfamilyname)
+
+* 🔥 **FAIL** TYPOGRAPHIC_SUBFAMILY_NAME for Win is missing. It must be "Thin". [code: missing-typo-win]
+
+</details>
+<details>
 <summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
 
 * [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
@@ -421,6 +437,23 @@ variable fonts in their web browsers.
 * 🔥 **FAIL** Instance name "Loud ExtraBold Italic" is incorrect. It should be "ExtraBold Italic" [code: bad-name]
 * 🔥 **FAIL** Instance name "Loud Black Italic" is incorrect. It should be "Black Italic" [code: bad-name]
 * 🔥 **FAIL** This will cause problems with some of the Google Fonts systems that look up fonts by their style names. This must be fixed! [code: bad-instance-names]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Name table ID 6 (PostScript name) must be consistent across platforms.</summary>
+
+* [com.adobe.fonts/check/name/postscript_name_consistency](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.adobe.fonts/check/name/postscript_name_consistency)
+<pre>--- Rationale ---
+
+The PostScript name entries in the font&#x27;s &#x27;name&#x27; table should be consistent
+across platforms.
+
+This is the TTF/CFF2 equivalent of the CFF &#x27;postscript_name_cff_vs_name&#x27; check.
+
+
+</pre>
+
+* 🔥 **FAIL** Entries in the "name" table for ID 6 (PostScript name) are not consistent. Names found: ['Commissioner', 'Commissioner-Thin']. [code: inconsistency]
 
 </details>
 <details>
@@ -583,6 +616,7 @@ edited by hand.
 
 * [com.google.fonts/check/has_ttfautohint_params](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/has_ttfautohint_params)
 
+* 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint. [code: not-hinted]
 * 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint. [code: not-hinted]
 
 </details>
@@ -1139,27 +1173,11 @@ after ttfautohint usage versus unhinted font files.
 
 |  | ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf |
 |:--- | ---:|
-| Dehinted Size | 370.3kb |
-| Hinted Size | 369.4kb |
-| Increase | -872 bytes |
+| Dehinted Size | 371.4kb |
+| Hinted Size | 370.4kb |
+| Increase | -948 bytes |
 | Change   | -0.2 % |
  [code: size-impact]
-
-</details>
-<details>
-<summary>ℹ <b>INFO:</b> Font has old ttfautohint applied?</summary>
-
-* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
-<pre>--- Rationale ---
-
-This check finds which version of ttfautohint was used, by inspecting name
-table entries and then finds which version of ttfautohint is currently
-installed in the system.
-
-
-</pre>
-
-* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 1.000'] [code: version-not-detected]
 
 </details>
 <details>
@@ -1228,7 +1246,7 @@ enforcing it.
 
 </pre>
 
-* ℹ **INFO** Version string is: "Version 1.000"
+* ℹ **INFO** Version string is: "Version 1.000; ttfautohint (v1.8.3)"
 The version string must ideally include a git commit hash and either a "dev" or a "release" suffix such as in the example below:
 "Version 1.3; git-0d08353-release" [code: bad-format]
 
@@ -1250,7 +1268,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, prep, loca, gasp, DSIG]
+* ℹ **INFO** This font contains the following optional tables [loca, gasp, prep, GPOS, DSIG, GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1359,6 +1377,22 @@ Longer strings are likely instances of the FontLab bug.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font has old ttfautohint applied?</summary>
+
+* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
+<pre>--- Rationale ---
+
+This check finds which version of ttfautohint was used, by inspecting name
+table entries and then finds which version of ttfautohint is currently
+installed in the system.
+
+
+</pre>
+
+* 🍞 **PASS** ttfautohint available in the system (1.8.3) is older than the one used in the font (1.8.3).
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Make sure family name does not begin with a digit.</summary>
 
 * [com.google.fonts/check/name/familyname_first_char](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname_first_char)
@@ -1401,6 +1435,7 @@ Arabic / etc.
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
 * 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -1435,22 +1470,6 @@ much added benefit.
 </pre>
 
 * 🍞 **PASS** Font em size is good (unitsPerEm = 2000).
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries.</summary>
-
-* [com.google.fonts/check/name/subfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/subfamilyname)
-
-* 🍞 **PASS** FONT_SUBFAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.</summary>
-
-* [com.google.fonts/check/name/typographicsubfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicsubfamilyname)
-
-* 🍞 **PASS** TYPOGRAPHIC_SUBFAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -2032,23 +2051,6 @@ Also we should report an error for glyphs not of average width
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Name table ID 6 (PostScript name) must be consistent across platforms.</summary>
-
-* [com.adobe.fonts/check/name/postscript_name_consistency](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.adobe.fonts/check/name/postscript_name_consistency)
-<pre>--- Rationale ---
-
-The PostScript name entries in the font&#x27;s &#x27;name&#x27; table should be consistent
-across platforms.
-
-This is the TTF/CFF2 equivalent of the CFF &#x27;postscript_name_cff_vs_name&#x27; check.
-
-
-</pre>
-
-* 🍞 **PASS** Entries in the "name" table for ID 6 (PostScript name) are consistent.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Does the number of glyphs in the loca table match the maxp table?</summary>
 
 * [com.google.fonts/check/loca/maxp_num_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/loca.html#com.google.fonts/check/loca/maxp_num_glyphs)
@@ -2280,5 +2282,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 2 | 5 | 74 | 7 | 74 | 0 |
-| 1% | 1% | 3% | 45% | 4% | 45% | 0% |
+| 1 | 5 | 5 | 74 | 6 | 72 | 0 |
+| 1% | 3% | 3% | 45% | 4% | 44% | 0% |

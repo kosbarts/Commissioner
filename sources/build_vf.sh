@@ -63,7 +63,7 @@ do
 	# patch Name and STAT table #	
 	ttx -m $vf vf-patch.ttx
 	mv vf-patch.ttf "../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf"
-	rm vf-patch.ttf
+	#rm vf-patch.ttf
 	
 	
 	
