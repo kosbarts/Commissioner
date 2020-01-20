@@ -5,9 +5,6 @@
 #source ../venv/bin/activate
 set -e
 
-#echo "Generating Static fonts"
-#mkdir -p ../fonts/static/ttfs
-#fontmake -g Commissioner-Variable.glyphs -i -a -o ttf --output-dir ../fonts/static/ttfs/
 
 ############################################
 ######### generate variable font ###########
@@ -23,22 +20,13 @@ rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
 ############################################
 
 
+
+
 ############################################
 ########## opentype table fixes ############
 
 
-echo "Post processing"
-
-#ttfs=$(ls ../fonts/static/ttfs/*.ttf)
-#echo $ttfs
-#for ttf in $ttfs
-#do
-#	gftools fix-dsig -f $ttf;
-#	gftools fix-nonhinting $ttf "$ttf.fix";
-#	gftools fix-hinting $ttf;
-#	mv "$ttf.fix" $ttf;
-#done
-#rm ../fonts/static/ttfs/*backup*.ttf
+echo "Post processing variable fonts"
 
 vfs=$(ls ../fonts/variable/*.ttf)
 for vf in $vfs
@@ -63,12 +51,8 @@ do
 	# patch Name and STAT table #	
 	ttx -m $vf vf-patch.ttx
 	mv vf-patch.ttf "../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf"
-	#rm vf-patch.ttf
-	
-	
-	
+	#rm vf-patch.ttf	
 done
-
 # remove any backup files #
 rm ../fonts/variable/*backup*.ttf
 
@@ -77,12 +61,13 @@ rm ../fonts/variable/*backup*.ttf
 ############################################
 
 
+
+
 ############################################
 ############### font bake ##################
 
 
 fontbakery check-googlefonts ../fonts/variable/*.ttf --ghmarkdown ../checks/checks_variable.md
-#fontbakery check-googlefonts ../fonts/static/ttfs/*.ttf --ghmarkdown ../checks/checks_static.md
 
 
 ############### font bake ##################

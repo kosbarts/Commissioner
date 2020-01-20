@@ -1235,7 +1235,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, loca, GPOS, prep, gasp]
+* ℹ **INFO** This font contains the following optional tables [GSUB, loca, gasp, prep, DSIG, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
