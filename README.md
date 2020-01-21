@@ -47,6 +47,14 @@ pip install -U -r requirements.txt
 
 ### Step 2: Build the fonts
 
+**Design vs Production source file**
+
+TTFautohint doesn't like components which have been flipped. Commissioner-Variable.glyphs is the working design file with all components kept in place. If you are planning to make changes in the desing you should work on this one. 
+
+For production it is suggested to copy the file and rename it to Commissioner-Variable-production.glyphs which is the file name that the Builds use. Add the script `sources/helpers/decompose-transformed-components.py` to your Glyphs scripts folder and run it before production. Affected glyphs show up in a new tab and you should check for any compatability issues. 
+
+**Building the fonts**
+
 The scripts for building the fonts are in the `sources/` folder.
 
 To build the variable font run:
@@ -61,7 +69,7 @@ To build the static ttfs run:
 sources/build_statics.sh
 ```
 
-To build variable font and static ttfs run:
+To build the variable font and the static ttfs run:
 
 ```
 sources/build_all.sh
