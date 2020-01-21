@@ -1,5 +1,7 @@
 # Commissioner
-Commissioner is a variable and static sans typeface.
+Commissioner is a variable and static sans typeface designed by Kostas Bartsokas.
+
+---
 
 ## Basic Information
 Commissioner is a humanist sans-serif with almost classical proportions, conceived as a variable family. In essence it is an experiment on a low-contrast distant relative of Optima. The family consists of three “voices”. As the flare axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic. The volume axis transforms the glyphic serifs to wedge-like ones. 
@@ -10,6 +12,8 @@ Commissioner supports the Google Latin Plus and Google Latin Pro character sets.
 Further expansions to scripts support include Greek and Cyrillic and are coming in 2020.
 
 This typeface was funded by Google and is distributed by Google Fonts.
+
+---
 
 ## Building the fonts
 
@@ -58,7 +62,7 @@ sources/scripts/build_all.sh
 If you want to build otf's do so through Glyphs using the source Glyphs file. 
 
 
-### Step 2: Weight Class Fix
+**Weight Class Fix**
 
 The usWeightClass for Thins and UltraLight are set to 100 and 200 consecutively. There is a debate on whether these values cause the fonts to get blurred on certain versions of Windows. (https://github.com/googlefonts/fontbakery/issues/2364) 
 
@@ -68,6 +72,8 @@ If you want to change them to 250 and 275 copy the script `sources/fix_usWeightC
 cd fontfolder # make sure to change to the directory that includes the ttf's or otf's
 python fix_usWeightClass.py
 ```
+
+---
 
 ## ChangeLog
 
