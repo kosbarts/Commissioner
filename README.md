@@ -11,7 +11,67 @@ Further expansions to scripts support include Greek and Cyrillic and are coming 
 
 This typeface was funded by Google and is distributed by Google Fonts.
 
+## Building the fonts
+
+### Step 1: Install Requirements
+
+Set up a virtual environment in the root directory:
+
+```
+virtualenv -p python3 venv
+```
+
+Activate the virtual environment with:
+
+```
+source venv/bin/activate
+```
+
+Install requirements with:
+
+```
+pip install -U -r requirements.txt
+```
+
+### Step 2: Build the fonts
+
+The scripts for building the fonts are in the `sources/` folder.
+
+To build the variable font run:
+
+```
+sources/scripts/build_vf.sh
+```
+
+To build the static ttfs run:
+
+```
+sources/scripts/build_statics.sh
+```
+
+To build variable font and static ttfs run:
+
+```
+sources/scripts/build_all.sh
+```  
+
+If you want to build otf's do so through Glyphs using the source Glyphs file. 
+
+
+### Step 2: Weight Class Fix
+
+The usWeightClass for Thins and UltraLight are set to 100 and 200 consecutively. There is a debate on whether these values cause the fonts to get blurred on certain versions of Windows. (https://github.com/googlefonts/fontbakery/issues/2364) 
+
+If you want to change them to 250 and 275 copy the script `sources/fix_usWeightClass.py` to your fonts directory and run it as follows.
+
+```
+cd fontfolder # make sure to change to the directory that includes the ttf's or otf's
+python fix_usWeightClass.py
+```
+
 ## ChangeLog
+
+This is version 1.000. No changes to report. 
 
 ## License
 
