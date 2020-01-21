@@ -60,19 +60,19 @@ The scripts for building the fonts are in the `sources/` folder.
 To build the variable font run:
 
 ```
-sources/build_vf.sh
+sh sources/build_vf.sh
 ```
 
 To build the static ttfs run:
 
 ```
-sources/build_statics.sh
+sh sources/build_statics.sh
 ```
 
 To build the variable font and the static ttfs run:
 
 ```
-sources/build_all.sh
+sh sources/build_all.sh
 ```  
 
 If you want to build otf's do so through Glyphs using the source Glyphs file. 
