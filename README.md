@@ -61,7 +61,6 @@ sources/scripts/build_all.sh
 
 If you want to build otf's do so through Glyphs using the source Glyphs file. 
 
-
 **Weight Class Fix**
 
 The usWeightClass for Thins and UltraLight are set to 100 and 200 consecutively. There is a debate on whether these values cause the fonts to get blurred on certain versions of Windows. (https://github.com/googlefonts/fontbakery/issues/2364) 
@@ -78,6 +77,8 @@ python fix_usWeightClass.py
 ## ChangeLog
 
 This is version 1.000. No changes to report. 
+
+---
 
 ## License
 
