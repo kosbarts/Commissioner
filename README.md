@@ -1,8 +1,6 @@
 # Commissioner
 Commissioner is a variable and static sans typeface designed by Kostas Bartsokas.
 
----
-
 ## Basic Information
 Commissioner is a humanist sans-serif with almost classical proportions, conceived as a variable family. In essence it is an experiment on a low-contrast distant relative of Optima. The family consists of three “voices”. As the flare axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic. The volume axis transforms the glyphic serifs to wedge-like ones. 
 
@@ -24,8 +22,6 @@ Commisioner has the following axes:
 - Flair (FLAR) - 0 to 100. The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). As the flare axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic.
 
 - Volume (VOLM) - 0 to 100. The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). The volume axis works only in combination with the Flair axis. It transforms the glyphic serifs to wedge-like ones and add a little more edge to details.  
-
----
 
 ## Building the fonts
 
@@ -84,13 +80,9 @@ cd fontfolder # make sure to change to the directory that includes the ttf's or 
 python fix_usWeightClass.py
 ```
 
----
-
 ## ChangeLog
 
 This is version 1.000. No changes to report. 
-
----
 
 ## License
 
