@@ -12,7 +12,7 @@ set -e
 
 echo "Generating VFs"
 mkdir -p ../fonts/variable
-fontmake -g Commissioner-Variable.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
+fontmake -g Commissioner-Variable-production.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
 rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
 
 
@@ -49,9 +49,8 @@ do
 	rm $new_file
 	
 	# patch Name and STAT table #	
-	ttx -m $vf vf-patch.ttx
-	mv vf-patch.ttf "../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf"
-	#rm vf-patch.ttf	
+	ttx -m $vf "../sources/helpers/vf-patch.ttx"
+	mv "../sources/helpers/vf-patch.ttf" "../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf"
 done
 # remove any backup files #
 rm ../fonts/variable/*backup*.ttf
