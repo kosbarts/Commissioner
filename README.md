@@ -13,6 +13,18 @@ Further expansions to scripts support include Greek and Cyrillic and are coming 
 
 This typeface was funded by Google and is distributed by Google Fonts.
 
+**Variable Axes**
+
+Commisioner has the following axes:
+
+- Weight (wght) - 100 to 900. Controls the darkness of the composed text. Thin, UltraLight, ExtraBold, and Black are ideally used for display sizes, while Light, Regular, Medium, Semibold, Bold can be used for both display and text sizes.
+
+- Slant (slnt) - 0 to -12 degrees. Controls the slant of the letters. A stronger slant creates more emphasis and contrast to upright styles. 
+
+- Flair (FLAR) - 0 to 100. The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). As the flare axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic.
+
+- Volume (VOLM) - 0 to 100. The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). The volume axis works only in combination with the Flair axis. It transforms the glyphic serifs to wedge-like ones and add a little more edge to details.  
+
 ---
 
 ## Building the fonts
