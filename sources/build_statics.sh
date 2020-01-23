@@ -54,7 +54,7 @@ rm ../fonts/static/ttfs/*backup*.ttf
 ############### font bake ##################
 
 
-fontbakery check-googlefonts ../fonts/static/ttfs/*.ttf --ghmarkdown ../checks/checks_static.md
+fontbakery check-googlefonts ../fonts/static/ttfs/*.ttf --ghmarkdown ../sources/checks/checks_static.md
 
 
 ############### font bake ##################

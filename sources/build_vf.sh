@@ -66,7 +66,7 @@ rm ../fonts/variable/*backup*.ttf
 ############### font bake ##################
 
 
-fontbakery check-googlefonts ../fonts/variable/*.ttf --ghmarkdown ../checks/checks_variable.md
+fontbakery check-googlefonts ../fonts/variable/*.ttf --ghmarkdown ../sources/checks/checks_variable.md
 
 
 ############### font bake ##################
