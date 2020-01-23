@@ -9,7 +9,7 @@ Each voice of Commissioner comes in a range of styles from Thin to Black includi
 Commissioner supports the Google Latin Plus and Google Latin Pro character sets.
 Further expansions to scripts support include Greek and Cyrillic and are coming in 2020.
 
-This typeface was funded by Google and is distributed by Google Fonts.
+This typeface project received financial support from Google, and in the future may be available in Google Fonts.
 
 **Variable Axes**
 
