@@ -9,7 +9,7 @@ Each voice of Commissioner comes in a range of styles from Thin to Black includi
 Commissioner supports the Google Latin Plus and Google Latin Pro character sets.
 Further expansions to scripts support include Greek and Cyrillic and are coming in 2020.
 
-This typeface was funded by Google and is distributed by Google Fonts.
+This typeface project received financial support from Google, and in the future may be available in Google Fonts.
 
 **Variable Axes**
 
@@ -60,19 +60,19 @@ The scripts for building the fonts are in the `sources/` folder.
 To build the variable font run:
 
 ```
-sources/build_vf.sh
+sh sources/build_vf.sh
 ```
 
 To build the static ttfs run:
 
 ```
-sources/build_statics.sh
+sh sources/build_statics.sh
 ```
 
 To build the variable font and the static ttfs run:
 
 ```
-sources/build_all.sh
+sh sources/build_all.sh
 ```  
 
 If you want to build otf's do so through Glyphs using the source Glyphs file. 
