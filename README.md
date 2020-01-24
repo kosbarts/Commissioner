@@ -1,6 +1,8 @@
 # Commissioner
 Commissioner is a variable and static sans typeface designed by Kostas Bartsokas.
 
+![](sources/proofs/Commissioner_temporary.gif) 
+
 ## Basic Information
 Commissioner is a low-contrast humanist sans-serif with almost classical proportions, conceived as a variable family. The family consists of three “voices”. The default style is a grotesque with straight stems. As the flair axis grows the straight grotesque terminals develop a swelling and become almost glyphic serifs and the joints become more idiosyncratic. The volume axis transforms the glyphic serifs to wedge-like ones. 
 
