@@ -12,7 +12,7 @@ set -e
 
 echo "Generating Static fonts"
 mkdir -p ../fonts/static/ttfs
-rm ../fonts/static/ttfs/*.ttf
+rm -rf ../fonts/static/ttfs/*
 fontmake -g Commissioner-Variable-production.glyphs -i -a -o ttf --output-dir ../fonts/static/ttfs/
 rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
 
