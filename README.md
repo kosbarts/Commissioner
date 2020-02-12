@@ -17,13 +17,13 @@ This typeface project received financial support from Google, and in the future 
 
 Commisioner has the following axes:
 
-- Weight (wght) - 100 to 900. Controls the darkness of the composed text. Thin, UltraLight, ExtraBold, and Black are ideally used for display sizes, while Light, Regular, Medium, Semibold, Bold can be used for both display and text sizes.
+- Weight (wght) - 100 to 900. (Default 100) Controls the darkness of the composed text. Thin, UltraLight, ExtraBold, and Black are ideally used for display sizes, while Light, Regular, Medium, Semibold, Bold can be used for both display and text sizes.
 
-- Slant (slnt) - 0 to -12 degrees. Controls the slant of the letters. A stronger slant creates more emphasis and contrast to upright styles. 
+- Slant (slnt) - 0 to -12 degrees. (Default 0) Controls the slant of the letters. A stronger slant creates more emphasis and contrast to upright styles. 
 
-- Flair (FLAR) - 0 to 100. The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). As the flare axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic.
+- Flair (FLAR) - 0 to 100. (Default 0) The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). As the flair axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic. The flair axis was originally called Flare, referring to the flaring of the stems, but at some point I decided to name it flair, as in stylisness and panache. 
 
-- Volume (VOLM) - 0 to 100. The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). The volume axis works only in combination with the Flair axis. It transforms the glyphic serifs to wedge-like ones and add a little more edge to details.  
+- Volume (VOLM) - 0 to 100. (Default 0) The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). The volume axis works only in combination with the Flair axis. It transforms the glyphic serifs to wedge-like ones and add a little more edge to details.  
 
 ## Building the fonts
 
