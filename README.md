@@ -57,24 +57,27 @@ For production it is suggested to copy the file and rename it to Commissioner-Va
 
 **Building the fonts**
 
-The scripts for building the fonts are in the `sources/` folder.
+The scripts for building the fonts are in the `/sources/` folder.
 
 To build the variable font run:
 
 ```
-sh sources/build_vf.sh
+cd sources
+sh build_vf.sh
 ```
 
 To build the static ttfs run:
 
 ```
-sh sources/build_statics.sh
+cd sources
+sh build_statics.sh
 ```
 
 To build the variable font and the static ttfs run:
 
 ```
-sh sources/build_all.sh
+cd sources
+sh build_all.sh
 ```  
 
 If you want to build otf's do so through Glyphs using the source Glyphs file. 
