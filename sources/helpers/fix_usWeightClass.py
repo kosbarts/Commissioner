@@ -34,12 +34,17 @@ def fixusWeightClass(fontPath):
         
         # Set to 250
         os2.usWeightClass = 250
+        print (fontPath + " changed " + str(wght) + " to " + str(os2.usWeightClass))
+		        
+        # Save font
+        font.save(fontPath)
 		
     # Check if UltraLight	
     elif wght == 200:
 		
         # Set to 275
         os2.usWeightClass = 275
+        print (fontPath + " changed " + str(wght) + " to " + str(os2.usWeightClass))
         
         # Save font
         font.save(fontPath)
