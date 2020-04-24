@@ -27,108 +27,157 @@
     <AxisOrdering value="3"/>
     </Axis>
   </DesignAxisRecord>
+  
   <AxisValueArray>
     <!-- ===== WEIGHT ===== -->
-    <AxisValue index="0" Format="1">
+	
+    <AxisValue index="0" Format="2">
       <AxisIndex value="0"/>
 	  <!-- ElidedFallbackNameID value (Thin) -->
       <Flags value="2"/>
-      <!-- Thin -->
-      <ValueNameID value="260"/>
-      <Value value="100.0"/>
+      <ValueNameID value="260"/> <!-- Thin -->
+      <NominalValue value="100.0"/>
+      <RangeMinValue value="100.0"/>
+      <RangeMaxValue value="150.0"/>
     </AxisValue>
-    <AxisValue index="1" Format="1">
+	
+    <AxisValue index="1" Format="2">
       <AxisIndex value="0"/>
       <Flags value="0"/>
       <!-- ExtraLight -->
-      <ValueNameID value="261"/>
-      <Value value="200.0"/>
+      <ValueNameID value="261"/> <!-- ExtraLight -->
+      <NominalValue value="200.0"/>
+      <RangeMinValue value="150.0"/>
+      <RangeMaxValue value="250.0"/>
     </AxisValue>
-    <AxisValue index="2" Format="1">
+	
+    <AxisValue index="2" Format="2">
       <AxisIndex value="0"/>
       <Flags value="0"/>
-      <!-- Light -->
-      <ValueNameID value="262"/>
-      <Value value="300.0"/>
+      <ValueNameID value="262"/> <!-- Light -->
+      <NominalValue value="300.0"/>
+      <RangeMinValue value="250.0"/>
+      <RangeMaxValue value="350.0"/>
     </AxisValue>
-    <AxisValue index="3" Format="3">
+	
+    <AxisValue index="3" Format="2">
       <AxisIndex value="0"/>
       <Flags value="0"/>
-      <!-- Regular -->
-      <ValueNameID value="263"/>
-      <Value value="400.0"/>
+      <ValueNameID value="263"/> <!-- Regular -->
+      <NominalValue value="400.0"/>
+      <RangeMinValue value="350.0"/>
+      <RangeMaxValue value="450.0"/>
+    </AxisValue>
+	
+    <AxisValue index="4" Format="2">
+      <AxisIndex value="0"/>
+      <Flags value="0"/>
+      <ValueNameID value="264"/> <!-- Medium -->
+      <NominalValue value="500.0"/>
+      <RangeMinValue value="450.0"/>
+      <RangeMaxValue value="550.0"/>
+    </AxisValue>
+	
+    <AxisValue index="5" Format="2">
+      <AxisIndex value="0"/>
+      <Flags value="0"/>
+      <ValueNameID value="265"/> <!-- SemiBold -->
+      <NominalValue value="600.0"/>
+      <RangeMinValue value="550.0"/>
+      <RangeMaxValue value="650.0"/>
+    </AxisValue>
+	
+    <AxisValue index="6" Format="2">
+      <AxisIndex value="0"/>
+      <Flags value="0"/>
+      <ValueNameID value="266"/> <!-- Bold -->
+      <NominalValue value="700.0"/>
+      <RangeMinValue value="650.0"/>
+      <RangeMaxValue value="750.0"/>
+    </AxisValue>
+	
+    <AxisValue index="7" Format="2">
+      <AxisIndex value="0"/>
+      <Flags value="0"/>
+      <ValueNameID value="267"/> <!-- ExtraBold -->
+      <NominalValue value="800.0"/>
+      <RangeMinValue value="750.0"/>
+      <RangeMaxValue value="850.0"/>
+    </AxisValue>
+	
+    <AxisValue index="8" Format="2">
+      <AxisIndex value="0"/>
+      <Flags value="0"/>
+      <ValueNameID value="268"/> <!-- Black -->
+      <NominalValue value="900.0"/>
+      <RangeMinValue value="850.0"/>
+      <RangeMaxValue value="900.0"/>
+    </AxisValue>
+	
+	<!-- ===== STYLE LINKING REGULAR-BOLD ===== -->
+    <AxisValue index="9" Format="3">
+      <AxisIndex value="0"/>
+      <Flags value="0"/>
+      <ValueNameID value="263"/> <!-- Regular -->
+      <Value value="400"/>
 	  <LinkedValue value="700"/>
-    </AxisValue>
-    <AxisValue index="4" Format="1">
-      <AxisIndex value="0"/>
-      <Flags value="0"/>
-      <!-- Medium -->
-      <ValueNameID value="264"/>
-      <Value value="500.0"/>
-    </AxisValue>
-    <AxisValue index="5" Format="1">
-      <AxisIndex value="0"/>
-      <Flags value="0"/>
-      <!-- SemiBold -->
-      <ValueNameID value="265"/>
-      <Value value="600.0"/>
-    </AxisValue>
-    <AxisValue index="6" Format="1">
-      <AxisIndex value="0"/>
-      <Flags value="0"/>
-      <!-- Bold -->
-      <ValueNameID value="266"/>
-      <Value value="700.0"/>
-    </AxisValue>
-    <AxisValue index="7" Format="1">
-      <AxisIndex value="0"/>
-      <Flags value="0"/>
-      <!-- ExtraBold -->
-      <ValueNameID value="267"/>
-      <Value value="800.0"/>
-    </AxisValue>
-    <AxisValue index="8" Format="1">
-      <AxisIndex value="0"/>
-      <Flags value="0"/>
-      <!-- Black -->
-      <ValueNameID value="268"/>
-      <Value value="900.0"/>
     </AxisValue>
 
     <!-- ===== SLANT ===== -->
-    <AxisValue index="9" Format="3">
+    <AxisValue index="10" Format="3">
       <AxisIndex value="1"/>
 	  <!-- ElidedFallbackNameID value (Upright) -->
       <Flags value="2"/>
-      <!-- Upright -->
-      <ValueNameID value="314"/>
+      <ValueNameID value="314"/> <!-- Upright -->
       <Value value="0"/>
 	  <LinkedValue value="-12"/>
     </AxisValue>
-    <AxisValue index="10" Format="1">
+	
+    <AxisValue index="11" Format="1">
 	  <AxisIndex value="1"/>
       <Flags value="0"/>
-      <!-- Italic -->
-	  <ValueNameID value="315"/>
+	  <ValueNameID value="315"/> <!-- Italic -->
       <Value value="-12"/>
     </AxisValue>
+	
+
+  <!-- ===== NORMAL ===== -->
+  <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. --> 
+    
+	<AxisValue index="13" Format="4">
+      <!-- AxisCount=2 -->
+      <Flags value="2"/>
+	  <ValueNameID value="318"/>
+      <AxisValueRecord index="0">
+        <AxisIndex value="2"/>
+        <Value value="0.0"/> 
+      </AxisValueRecord>
+      <AxisValueRecord index="1">
+        <AxisIndex value="3"/>
+        <Value value="0.0"/>
+      </AxisValueRecord>
+    </AxisValue>  
 		
   <!-- ===== FLAIR ===== -->
-  <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. -->
-    <AxisValue index="11" Format="4">
-      <!-- AxisCount=1 -->
+  <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. --> 
+  
+    <AxisValue index="13" Format="4">
+      <!-- AxisCount=2 -->
       <Flags value="0"/>
 	  <ValueNameID value="316"/>
       <AxisValueRecord index="0">
         <AxisIndex value="2"/>
-        <Value value="100.0"/>
+        <Value value="100.0"/> 
+      </AxisValueRecord>
+      <AxisValueRecord index="1">
+        <AxisIndex value="3"/>
+        <Value value="0.0"/>
       </AxisValueRecord>
     </AxisValue>
-
 		
   <!-- ===== VOLUME ===== -->
   <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. -->
-    <AxisValue index="12" Format="4">
+    <AxisValue index="13" Format="4">
       <!-- AxisCount=2 -->
 	  <Flags value="0"/>
 	  <ValueNameID value="317"/>
@@ -141,6 +190,7 @@
         <Value value="100.0"/>
       </AxisValueRecord>
     </AxisValue>
+  
 
   </AxisValueArray>
   <!-- Thin -->
@@ -375,7 +425,7 @@
     Loud Black Italic
   </namerecord>
   <namerecord nameID="314" platformID="1" platEncID="0" langID="0x0" unicode="True">
-	  Normal
+	  Upright
   </namerecord>
   <namerecord nameID="315" platformID="1" platEncID="0" langID="0x0" unicode="True">
 	  Italic
@@ -385,6 +435,9 @@
   </namerecord>
   <namerecord nameID="317" platformID="1" platEncID="0" langID="0x0" unicode="True">
 	  Loud
+  </namerecord>
+  <namerecord nameID="318" platformID="1" platEncID="0" langID="0x0" unicode="True">
+	  Normal
   </namerecord>
 
 
@@ -440,8 +493,6 @@
   <namerecord nameID="19" platformID="3" platEncID="1" langID="0x409">
     How quickly daft jumping zebras vex.
   </namerecord>
-
-
   <namerecord nameID="256" platformID="3" platEncID="1" langID="0x409">
     Weight
   </namerecord>
@@ -617,7 +668,7 @@
     Loud Black Italic
   </namerecord>
   <namerecord nameID="314" platformID="3" platEncID="1" langID="0x409">
-	  Normal
+	  Upright
   </namerecord>
   <namerecord nameID="315" platformID="3" platEncID="1" langID="0x409">
 	  Italic
@@ -627,6 +678,9 @@
   </namerecord>
   <namerecord nameID="317" platformID="3" platEncID="1" langID="0x409">
 	  Loud
+  </namerecord>
+  <namerecord nameID="318" platformID="3" platEncID="1" langID="0x409">
+	  Normal
   </namerecord>
 </name>
 
