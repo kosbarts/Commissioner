@@ -33,8 +33,7 @@
 	
     <AxisValue index="0" Format="2">
       <AxisIndex value="0"/>
-	  <!-- ElidedFallbackNameID value (Thin) -->
-      <Flags value="2"/>
+      <Flags value="0"/>
       <ValueNameID value="260"/> <!-- Thin -->
       <NominalValue value="100.0"/>
       <RangeMinValue value="100.0"/>
@@ -62,7 +61,7 @@
 	
     <AxisValue index="3" Format="2">
       <AxisIndex value="0"/>
-      <Flags value="0"/>
+      <Flags value="2"/>
       <ValueNameID value="263"/> <!-- Regular -->
       <NominalValue value="400.0"/>
       <RangeMinValue value="350.0"/>
@@ -126,7 +125,6 @@
     <!-- ===== SLANT ===== -->
     <AxisValue index="10" Format="3">
       <AxisIndex value="1"/>
-	  <!-- ElidedFallbackNameID value (Upright) -->
       <Flags value="2"/>
       <ValueNameID value="314"/> <!-- Upright -->
       <Value value="0"/>
@@ -144,7 +142,7 @@
   <!-- ===== NORMAL ===== -->
   <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. --> 
     
-	<AxisValue index="13" Format="4">
+	<AxisValue index="12" Format="4">
       <!-- AxisCount=2 -->
       <Flags value="2"/>
 	  <ValueNameID value="318"/>
@@ -177,7 +175,7 @@
 		
   <!-- ===== VOLUME ===== -->
   <!-- Note: Use of format 4 axis value tables is especially recommended for non-analytic sub-family names and the corresponding axis-value combinations in static-font families or in variable fonts that also involve 'wght' or 'wdth' axes, or “Italic” or “Oblique” variants.  ATTENTION: Using format 4 axis values bumps the STAT table version from 1.1 to 1.2. At the time of this writing (February 2019), version 1.2 is not supported by Windows. -->
-    <AxisValue index="13" Format="4">
+    <AxisValue index="14" Format="4">
       <!-- AxisCount=2 -->
 	  <Flags value="0"/>
 	  <ValueNameID value="317"/>
@@ -193,8 +191,8 @@
   
 
   </AxisValueArray>
-  <!-- Thin -->
-  <ElidedFallbackNameID value="2"/>
+  <!-- Regular -->
+  <ElidedFallbackNameID value="2"/> <!-- Regular -->
 </STAT>
 
 <name>
@@ -206,19 +204,19 @@
     Commissioner
   </namerecord>
   <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Thin
+    Regular
   </namerecord>
   <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    1.000;IDKB;Commissioner-Thin
+    1.000;IDKB;Commissioner
   </namerecord>
   <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner Thin
+    Commissioner
   </namerecord>
   <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Version 1.000; ttfautohint (v1.8.3)
+    Version 1.000;
   </namerecord>
   <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner-Thin
+    Commissioner
   </namerecord>
   <namerecord nameID="7" platformID="1" platEncID="0" langID="0x0" unicode="True">
     Commissioner is a trademark of Kostas Bartsokas
@@ -240,12 +238,6 @@
   </namerecord>
   <namerecord nameID="14" platformID="1" platEncID="0" langID="0x0" unicode="True">
     http://scripts.sil.org/OFL
-  </namerecord>
-  <namerecord nameID="16" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner
-  </namerecord>
-  <namerecord nameID="17" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Thin
   </namerecord>
   <namerecord nameID="19" platformID="1" platEncID="0" langID="0x0">
     How quickly daft jumping zebras vex.
@@ -446,22 +438,22 @@
     Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)
   </namerecord>
   <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-    Commissioner Thin
+    Commissioner
   </namerecord>
   <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
     Regular
   </namerecord>
   <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-    1.000;IDKB;Commissioner-Thin
+    1.000;IDKB;Commissioner
   </namerecord>
   <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
-    Commissioner Thin
+    Commissioner
   </namerecord>
   <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
     Version 1.000
   </namerecord>
   <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
-    Commissioner-Thin
+    Commissioner
   </namerecord>
   <namerecord nameID="7" platformID="3" platEncID="1" langID="0x409">
     Commissioner is a trademark of Kostas Bartsokas
@@ -488,7 +480,7 @@
     Commissioner
   </namerecord>
   <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
-    Thin
+    Regular
   </namerecord>
   <namerecord nameID="19" platformID="3" platEncID="1" langID="0x409">
     How quickly daft jumping zebras vex.

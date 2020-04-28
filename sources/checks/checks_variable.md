@@ -217,6 +217,22 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <details>
 <summary><b>[153] Commissioner[FLAR,VOLM,slnt,wght].ttf</b></summary>
 <details>
+<summary>🔥 <b>FAIL:</b> Check name table: FONT_SUBFAMILY_NAME entries.</summary>
+
+* [com.google.fonts/check/name/subfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/subfamilyname)
+
+* 🔥 **FAIL** SUBFAMILY_NAME for Mac "Regular" must be "Thin" [code: bad-familyname]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.</summary>
+
+* [com.google.fonts/check/name/typographicsubfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicsubfamilyname)
+
+* 🔥 **FAIL** TYPOGRAPHIC_SUBFAMILY_NAME for Win "Regular" is incorrect. It must be "Thin". [code: bad-typo-win]
+
+</details>
+<details>
 <summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
 
 * [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
@@ -1294,10 +1310,26 @@ of hinted versus unhinted font files.
 	|  | ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf |
 	|:--- | ---:|
 	| Dehinted Size | 378.4kb |
-	| Hinted Size | 377.4kb |
-	| Increase | -984 bytes |
+	| Hinted Size | 377.3kb |
+	| Increase | -1060 bytes |
 	| Change   | -0.3 % |
  [code: size-impact]
+
+</details>
+<details>
+<summary>ℹ <b>INFO:</b> Font has old ttfautohint applied?</summary>
+
+* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
+<pre>--- Rationale ---
+
+This check finds which version of ttfautohint was used, by inspecting name
+table entries and then finds which version of ttfautohint is currently
+installed in the system.
+
+
+</pre>
+
+* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 1.000;', 'Version 1.000'] [code: version-not-detected]
 
 </details>
 <details>
@@ -1366,7 +1398,7 @@ enforcing it.
 
 </pre>
 
-* ℹ **INFO** Version string is: "Version 1.000; ttfautohint (v1.8.3)"
+* ℹ **INFO** Version string is: "Version 1.000;"
 The version string must ideally include a git commit hash and either a "dev" or a "release" suffix such as in the example below:
 "Version 1.3; git-0d08353-release" [code: bad-format]
 
@@ -1388,7 +1420,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, DSIG, GPOS, GSUB, prep, gasp]
+* ℹ **INFO** This font contains the following optional tables [GPOS, GSUB, loca, gasp, DSIG, prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1531,22 +1563,6 @@ Longer strings are likely instances of the FontLab bug.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Font has old ttfautohint applied?</summary>
-
-* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
-<pre>--- Rationale ---
-
-This check finds which version of ttfautohint was used, by inspecting name
-table entries and then finds which version of ttfautohint is currently
-installed in the system.
-
-
-</pre>
-
-* 🍞 **PASS** ttfautohint available in the system (1.8.3) is older than the one used in the font (1.8.3).
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Make sure family name does not begin with a digit.</summary>
 
 * [com.google.fonts/check/name/familyname_first_char](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname_first_char)
@@ -1624,22 +1640,6 @@ much added benefit.
 </pre>
 
 * 🍞 **PASS** Font em size is good (unitsPerEm = 2000).
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries.</summary>
-
-* [com.google.fonts/check/name/subfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/subfamilyname)
-
-* 🍞 **PASS** FONT_SUBFAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries.</summary>
-
-* [com.google.fonts/check/name/typographicsubfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicsubfamilyname)
-
-* 🍞 **PASS** TYPOGRAPHIC_SUBFAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -2554,5 +2554,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 7 | 73 | 7 | 79 | 0 |
-| 0% | 1% | 4% | 44% | 4% | 47% | 0% |
+| 0 | 3 | 7 | 73 | 8 | 76 | 0 |
+| 0% | 2% | 4% | 44% | 5% | 46% | 0% |

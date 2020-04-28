@@ -36,8 +36,8 @@ do
     gftools fix-dsig --autofix $ttf
 	
 	# fix hinting #
-	gftools fix-nonhinting $ttf $ttf.fix;
-	gftools fix-hinting $ttf; 
+	gftools fix-nonhinting $ttf $ttf.fix; #run if the fonts are unhinted
+	#gftools fix-hinting $ttf;  #run if the fonts have been previously hinted
 	mv "$ttf.fix" $ttf;	
 done
 # remove any backup files #

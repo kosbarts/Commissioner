@@ -42,8 +42,8 @@ do
     gftools fix-dsig --autofix $ttf
 	
 	# fix hinting #
-	gftools fix-nonhinting $ttf $ttf.fix;
-	gftools fix-hinting $ttf; 
+	gftools fix-nonhinting $ttf $ttf.fix; #run if the fonts are unhinted
+	#gftools fix-hinting $ttf;  #run if the fonts have been previously hinted
 	mv "$ttf.fix" $ttf;	
 done
 # remove any backup files #
@@ -60,8 +60,8 @@ do
     gftools fix-dsig --autofix $vf
 	
 	# fix hinting #
-	gftools fix-nonhinting $vf $vf.fix;
-	gftools fix-hinting $vf; 
+	gftools fix-nonhinting $vf $vf.fix; #run if fonts have not been released with Google yet
+	#gftools fix-hinting $vf;  #run if the fonts have been previously autohinted with ttfautohint-vf
 	mv "$vf.fix" $vf;
 	
 	# drop MVAR. Table has issue with DW #
