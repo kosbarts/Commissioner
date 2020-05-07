@@ -43,7 +43,6 @@
     <AxisValue index="1" Format="2">
       <AxisIndex value="0"/>
       <Flags value="0"/>
-      <!-- ExtraLight -->
       <ValueNameID value="261"/> <!-- ExtraLight -->
       <NominalValue value="200.0"/>
       <RangeMinValue value="150.0"/>
@@ -197,51 +196,6 @@
 
 <name>
   <!-- PLATFORM 1: MAC -->
-  <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)
-  </namerecord>
-  <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner
-  </namerecord>
-  <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Regular
-  </namerecord>
-  <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    1.000;IDKB;Commissioner
-  </namerecord>
-  <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner
-  </namerecord>
-  <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Version 1.000;
-  </namerecord>
-  <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner
-  </namerecord>
-  <namerecord nameID="7" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Commissioner is a trademark of Kostas Bartsokas
-  </namerecord>
-  <namerecord nameID="8" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Kostas Bartsokas
-  </namerecord>
-  <namerecord nameID="9" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    Kostas Bartsokas
-  </namerecord>
-  <namerecord nameID="11" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    http://www.kostasbartsokas.com
-  </namerecord>
-  <namerecord nameID="12" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    http://www.kostasbartsokas.com
-  </namerecord>
-  <namerecord nameID="13" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
-  </namerecord>
-  <namerecord nameID="14" platformID="1" platEncID="0" langID="0x0" unicode="True">
-    http://scripts.sil.org/OFL
-  </namerecord>
-  <namerecord nameID="19" platformID="1" platEncID="0" langID="0x0">
-    How quickly daft jumping zebras vex.
-  </namerecord>
   <namerecord nameID="256" platformID="1" platEncID="0" langID="0x0" unicode="True">
     Weight
   </namerecord>
@@ -438,22 +392,22 @@
     Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)
   </namerecord>
   <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-    Commissioner
+    Commissioner Thin
   </namerecord>
   <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
     Regular
   </namerecord>
   <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-    1.000;IDKB;Commissioner
+    1.000;IDKB;Commissioner Thin
   </namerecord>
   <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
-    Commissioner
+    Commissioner Thin
   </namerecord>
   <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
     Version 1.000
   </namerecord>
   <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
-    Commissioner
+    Commissioner-Thin
   </namerecord>
   <namerecord nameID="7" platformID="3" platEncID="1" langID="0x409">
     Commissioner is a trademark of Kostas Bartsokas
@@ -480,10 +434,13 @@
     Commissioner
   </namerecord>
   <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
-    Regular
+    Thin
   </namerecord>
   <namerecord nameID="19" platformID="3" platEncID="1" langID="0x409">
     How quickly daft jumping zebras vex.
+  </namerecord>
+  <namerecord nameID="25" platformID="3" platEncID="1" langID="0x409">
+    Commissioner
   </namerecord>
   <namerecord nameID="256" platformID="3" platEncID="1" langID="0x409">
     Weight

@@ -42,12 +42,12 @@ do
     gftools fix-dsig --autofix $ttf
 	
 	# fix hinting #
-	gftools fix-nonhinting $ttf $ttf.fix; #run if the fonts are unhinted
-	#gftools fix-hinting $ttf;  #run if the fonts have been previously hinted
+	#gftools fix-nonhinting $ttf $ttf.fix; #run if the fonts are unhinted
+	gftools fix-hinting $ttf;  #run if the fonts have been previously hinted
 	mv "$ttf.fix" $ttf;	
 done
 # remove any backup files #
-rm ../fonts/static/ttfs/*backup*.ttf
+rm -f ../fonts/static/ttfs/*backup*.ttf
 
 
 echo "Post processing variable fonts"
@@ -77,7 +77,7 @@ do
 	mv "../sources/helpers/vf-patch.ttf" "../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf"
 done
 # remove any backup files #
-rm ../fonts/variable/*backup*.ttf
+rm -f ../fonts/variable/*backup*.ttf
 
 
 ########## opentype table fixes ############
