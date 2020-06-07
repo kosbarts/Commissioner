@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: ttfautohint-py
+Version: 0.4.3
+Summary: Python wrapper for ttfautohint, a free auto-hinter for TrueType fonts
+Home-page: https://github.com/fonttools/ttfautohint-py
+Author: Cosimo Lupo
+Author-email: cosimo@anthrotype.com
+License: MIT
+Platform: posix
+Platform: nt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing :: Fonts
+Classifier: Topic :: Multimedia :: Graphics
+
+|Travis CI Status| |Appveyor CI Status| |PyPI| |Codecov|
+
+ttfautohint-py
+~~~~~~~~~~~~~~
+
+``ttfautohint-py`` is a Python wrapper for `ttfautohint
+<https://www.freetype.org/ttfautohint>`__, a free auto-hinter for TrueType fonts
+created by Werner Lemberg (`@lemzwerg <https://github/lemzwerg>`__).
+
+It uses `ctypes <https://docs.python.org/3/library/ctypes.html>`__ to load the
+``libttfautohint`` shared library and call the ``TTF_autohint`` function.
+
+Binary "wheel" packages are available for Linux (``manylinux1``), macOS and
+Windows, for both Python 2.7 and Python 3.x, with 32 and 64 bit architecture.
+They can be installed from the Python Package Index
+(`PyPI <https://pypi.python.org/pypi/ttfautohint-py>`__) using the
+`pip <https://pip.pypa.io/en/stable/>`__ installer.
+
+.. code:: sh
+
+    $ pip install ttfautohint-py
+
+The wheels include a precompiled ``libttfautohint.so`` (``*.dylib`` on
+macOS, or ``*.dll`` on Windows) shared library which has no other dependency
+apart from system libraries. The `FreeType <https://www.freetype.org>`__ and
+the `HarfBuzz <https://github.com/harfbuzz/harfbuzz>`__ libraries are compiled
+from source as static libraries and embedded in ``libttfautohint``.
+
+To compile the ``libttfautohint.dll`` from source on Windows, you need to
+install `MSYS2 <http://www.msys2.org/>`__ and the latest MinGW-w64 toolchain.
+This is because the ``ttfautohint`` build system is based on autotools and
+thus requires a Unix-like environment.
+
+A ``Makefile`` is used to build the library and its static dependencies, thus
+the GNU `make <https://www.gnu.org/software/make/>`__ executable must be on the
+``$PATH``, as this is called upon by the ``setup.py`` script.
+
+Because we build ``freetype``, ``harfbuzz`` and ``ttfautohint`` from their git
+source (checked in as git submodules), some relatively recent versions of the
+following development tools are also required: ``autoconf``, ``automake``,
+``libtool``, ``flex``, ``bison`` and ``ragel``. Please check the respective
+documentation of these libraries for more information.
+
+.. |Travis CI Status| image:: https://travis-ci.org/fonttools/ttfautohint-py.svg
+   :target: https://travis-ci.org/fonttools/ttfautohint-py
+.. |Appveyor CI Status| image:: https://ci.appveyor.com/api/projects/status/v3aoglkmbhtgsfao/branch/master?svg=true
+   :target: https://ci.appveyor.com/project/fonttools/ttfautohint-py/
+.. |PyPI| image:: https://img.shields.io/pypi/v/ttfautohint-py.svg
+   :target: https://pypi.python.org/pypi/ttfautohint-py
+.. |Codecov| image:: https://codecov.io/gh/fonttools/ttfautohint-py/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/fonttools/ttfautohint-py
+
+

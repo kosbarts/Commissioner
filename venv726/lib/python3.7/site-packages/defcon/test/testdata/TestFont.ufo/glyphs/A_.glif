@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="A" format="1">
+  <advance width="700" height="500"/>
+  <unicode hex="0041"/>
+  <outline>
+    <contour>
+      <point x="100" y="100" type="move" name="Anchor Test 1"/>
+    </contour>
+    <contour>
+      <point x="200" y="100" type="move" name="Anchor Test 2"/>
+    </contour>
+    <contour>
+      <point x="0" y="0" type="line"/>
+      <point x="700" y="0" type="line"/>
+      <point x="700" y="700" type="line"/>
+      <point x="0" y="700" type="line"/>
+    </contour>
+    <contour>
+      <point x="175" y="525" type="line"/>
+      <point x="525" y="525" type="line"/>
+      <point x="525" y="175" type="line"/>
+      <point x="175" y="175" type="line"/>
+    </contour>
+  </outline>
+</glyph>

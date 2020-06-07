@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: fontmake
+Version: 2.1.3
+Summary: Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType).
+Home-page: https://github.com/googlei18n/fontmake
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Multimedia :: Graphics :: Editors :: Vector-Based
+Classifier: Topic :: Text Processing :: Fonts
+Requires-Python: >=3.6
+Requires-Dist: fonttools[lxml,ufo,unicode] (>=4.9.0)
+Requires-Dist: cu2qu (>=1.6.7)
+Requires-Dist: glyphsLib (>=5.1.10)
+Requires-Dist: ufo2ft (>=2.13.0)
+Requires-Dist: fontMath (>=0.5.2)
+Requires-Dist: booleanOperations (>=0.9.0)
+Requires-Dist: ufoLib2 (>=0.7.1)
+Requires-Dist: attrs (>=19)
+Provides-Extra: lxml
+Provides-Extra: mutatormath
+Requires-Dist: MutatorMath (>=2.1.2) ; extra == 'mutatormath'
+Provides-Extra: pathops
+Requires-Dist: skia-pathops (>=0.3.0) ; extra == 'pathops'
+
+|Travis Build Status| |Python Versions| |PyPI Version|
+
+fontmake
+========
+
+This library provides a wrapper for several other Python libraries which
+together compile fonts from various sources (.glyphs, .ufo) into
+binaries (.otf, .ttf).
+
+
+Installation
+~~~~~~~~~~~~
+
+Fontmake requires Python 3.6 or later.
+
+Releases are available on `PyPI`_ and can be installed with `pip`_.
+
+.. code:: bash
+
+    pip install fontmake
+
+Use the ``-U``, ``--upgrade`` option to update fontmake and its dependencies
+to the newest available release:
+
+.. code:: bash
+
+    pip install -U fontmake
+
+Alternatively, you can download the git repository and install from source:
+
+.. code:: bash
+
+    git clone https://github.com/googlefonts/fontmake
+    cd fontmake
+    pip install .
+
+Developers who want to quickly test changes to the source code without
+re-installing, can use the "--editable" option when installing from a local
+source checkout:
+
+.. code:: bash
+
+    pip install -e .
+
+It is recommended to install fontmake inside a "virtual environment" to prevent
+conflicts between its dependencies and other modules installed globally.
+
+You could also use the `pipx`_ tool to automate the installation/upgrade of
+python apps like fontmake in isolated environments.
+
+Usage
+~~~~~
+
+After installation, you can use the ``fontmake`` console script. For example:
+
+.. code:: bash
+
+    fontmake -g MyFont.glyphs  # outputs binary font files for masters only
+
+Use ``fontmake -h`` to see options for specifying different types of input and
+output.
+
+You can also use fontmake as a module to run intermediate steps in the build
+process, via methods of the ``fontmake.font_project.FontProject`` class.
+
+.. _virtualenv: https://virtualenv.pypa.io
+.. _venv: https://docs.python.org/3/library/venv.html
+.. _pip: https://pip.pypa.io
+.. _pip documentation: https://pip.readthedocs.io/en/stable/user_guide/#requirements-files
+.. _PyPI: https://pypi.org/project/fontmake
+.. _Github releases: https://github.com/googlefonts/fontmake/releases
+.. _pipx: https://github.com/pipxproject/pipx
+.. |Travis Build Status| image:: https://travis-ci.org/googlefonts/fontmake.svg
+   :target: https://travis-ci.org/googlefonts/fontmake
+.. |Python Versions| image:: https://img.shields.io/badge/python-3.6-blue.svg
+.. |PyPI Version| image:: https://img.shields.io/pypi/v/fontmake.svg
+   :target: https://pypi.org/project/fontmake/
+
+

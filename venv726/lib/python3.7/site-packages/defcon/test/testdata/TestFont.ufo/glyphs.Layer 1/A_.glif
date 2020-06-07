@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="A" format="2">
+  <advance height="400" width="300"/>
+  <unicode hex="0041"/>
+  <note>
+    Blah blah blah
+  </note>
+  <image fileName="image 1.png" xScale="0.5" yScale="0.5" color="0.1,0.2,0.3,0.4"/>
+  <guideline y="720" name="top overshoot" identifier="guide1"/>
+  <guideline y="-100" name="bottom overshoot" identifier="guide2"/>
+  <outline>
+    <contour identifier="T8s8JqbAzw">
+      <point type="line" x="23" y="-93" identifier="umpOQKb0oN"/>
+      <point type="line" x="9" y="90" identifier="anhTEcN6fg"/>
+      <point type="line" x="-67" y="-70" identifier="RTPDhyq9iK"/>
+      <point type="line" x="50" y="-65" identifier="pZr5qNfuIw"/>
+      <point type="line" x="-86" y="-26" identifier="XBQvKxBX3q"/>
+      <point type="line" x="-66" y="-80" identifier="io3rUnUyWd"/>
+      <point type="line" x="-7" y="27" identifier="779bmEKTXp"/>
+      <point type="line" x="-47" y="-45" identifier="PIP2WTdBXf"/>
+      <point type="line" x="2" y="48" identifier="Xzws53f6iT"/>
+      <point type="line" x="-69" y="38" identifier="Zvc0lT6j7u"/>
+    </contour>
+    <contour identifier="3Xj2127pwE">
+      <point type="line" x="28" y="20" identifier="93l5z81oKa"/>
+      <point type="line" x="7" y="-29" identifier="9o1PCIwNZN"/>
+      <point type="line" x="71" y="57" identifier="JLDq49Un0Z"/>
+      <point type="line" x="26" y="-86" identifier="zKKq7R63wd"/>
+      <point type="line" x="-25" y="26" identifier="cDwXTq3rhH"/>
+      <point type="line" x="-23" y="78" identifier="CjY6nCSrLA"/>
+      <point type="line" x="-83" y="95" identifier="6vDanwMAP0"/>
+      <point type="line" x="88" y="80" identifier="IQlpMjfEx3"/>
+      <point type="line" x="-67" y="-68" identifier="qniHSHhU7s"/>
+      <point type="line" x="-80" y="100" identifier="LfgTqX817V"/>
+    </contour>
+    <contour identifier="8YpEFwj3HU">
+      <point type="line" x="34" y="35" identifier="9gjay0xU2T"/>
+      <point type="line" x="18" y="-35" identifier="6E8mADiFJm"/>
+      <point type="line" x="-87" y="-67" identifier="Gw7cige3BP"/>
+      <point type="line" x="8" y="94" identifier="ntg9xJIu1l"/>
+      <point type="line" x="-33" y="-40" identifier="XpkC0m4Llv"/>
+      <point type="line" x="-19" y="2" identifier="iUqEmqZnV9"/>
+      <point type="line" x="-19" y="90" identifier="eQBdJ78FqT"/>
+      <point type="line" x="-21" y="26" identifier="jTc1JfrhG1"/>
+      <point type="line" x="90" y="8" identifier="cYBffGcEXg"/>
+      <point type="line" x="-57" y="84" identifier="FZ7wCcjPin"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typesupply.defcon.test</key>
+      <string>hello</string>
+    </dict>
+  </lib>
+</glyph>
