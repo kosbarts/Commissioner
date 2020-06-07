@@ -12,7 +12,7 @@ set -e
 
 echo "Generating VFs"
 mkdir -p ../fonts-tests/variable
-fontmake -g Commissioner-Variable-Cyrillic-Greek-Ext-production.glyphs -o variable --output-path ../fonts-tests/variable_fm214/Commissioner-fm214[FLAR,VOLM,slnt,wght].ttf
+fontmake -g Commissioner-Variable-Cyrillic-Greek-Ext-production.glyphs -o variable --output-path ../fonts-tests/variable_fm214/Commissioner-fm214-original[FLAR,VOLM,slnt,wght].ttf
 rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
 
 
@@ -50,7 +50,7 @@ do
 	
 	# patch Name and STAT table #	
 	ttx -m $vf "../sources/helpers/vf-patch.ttx"
-	mv "../sources/helpers/vf-patch.ttf" "../fonts-tests/variable_fm214/Commissioner-fm214[FLAR,VOLM,slnt,wght].ttf"
+	mv "../sources/helpers/vf-patch.ttf" "../fonts-tests/variable_fm214/Commissioner-fm214-patched[FLAR,VOLM,slnt,wght].ttf"
 done
 # remove any backup files #
 rm ../fonts-tests/variable_fm214/*backup*.ttf
