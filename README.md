@@ -8,8 +8,7 @@ Commissioner is a low-contrast humanist sans-serif with almost classical proport
 
 Each voice of Commissioner comes in a range of styles from Thin to Black including italics. The diverse proportions of lowercase and capitals add warmth and appeal to texts across sizes, while the different voices can express a variation in the typographic texture that ranges from delicate in text sizes to exuberant in larger sizes. 
 
-Commissioner supports the Google Latin Plus and Google Latin Pro character sets.
-Further expansions to scripts support include Greek and Cyrillic and are coming in 2020.
+Commissioner supports the Google Latin Plus, Latin Pro, Cyrillic Plus, Cyrillic Plus .locl, Cyrillic Pro, and Greek Core character sets.
 
 This typeface project received financial support from Google, and in the future may be available in Google Fonts.
 
@@ -51,9 +50,14 @@ pip install -U -r requirements.txt
 
 **Design vs Production source file**
 
-TTFautohint doesn't like components which have been flipped. Commissioner-Variable.glyphs is the working design file with all components kept in place. If you are planning to make changes in the desing you should work on this one. 
+TTFautohint doesn't like components which have been flipped. Commissioner.glyphs is the working design file with all components kept in place. If you are planning to make changes in the desing you should work on this one. The file features 2 (two) sets of 54 instances, with one set activated. 
 
-For production it is suggested to copy the file and rename it to Commissioner-Variable-production.glyphs which is the file name that the Builds use. Add the script `sources/helpers/decompose-transformed-components.py` to your Glyphs scripts folder and run it before production. Affected glyphs show up in a new tab and you should check for any compatability issues. 
+For production it is suggested to copy the file and rename it accordingly to a file name that the Builds use. Rename to: 
+- Commissioner-production.glyphs . Keep the active instances. The file can be used to generate either the variable font, or the static ttf's, or both. The instances are named so that they can produce the static ttf's in 3 subfamilies. The variable font during the build will be patched automatically (vf_patch.ttx) to add the STAT table, and amend the name and fvar table.
+- Commissioner-Variable-production.glyphs . Deactivate the active instances and activate the second set of instances. The file can be used to produce just the variable font. The second sets of instances are named in a variable friendly way so that there is no need to patch the fvar table during production. The variable font during the build process will be patched automatically (vf_Variablepatch) to add the STAT table and amend the name table. 
+
+After you copy and rename the new file, add the script `sources/helpers/decompose-transformed-components.py` to your Glyphs scripts folder, reload scripts (opt+sft+cmd+Y), and run it on the new file before production. Affected glyphs show up in a new tab and you should check for any compatability issues.  
+
 
 **Building the fonts**
 
