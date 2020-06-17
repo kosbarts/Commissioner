@@ -13,12 +13,12 @@ set -e
 echo "Generating Static fonts"
 mkdir -p ../fonts/static/ttfs
 rm -rf ../fonts/static/ttfs/*
-fontmake -g Commissioner-Variable-production.glyphs -i -a -o ttf --output-dir ../fonts/static/ttfs/
+fontmake -g Commissioner-production.glyphs -i -a -o ttf --output-dir ../fonts/static/ttfs/
 
 
 echo "Generating VFs"
 mkdir -p ../fonts/variable
-fontmake -g Commissioner-Variable-production.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
+fontmake -g Commissioner-production.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
 rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
 
 

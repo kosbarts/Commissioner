@@ -12,7 +12,7 @@ set -e
 
 echo "Generating VFs"
 mkdir -p ../fonts/variable
-fontmake -g Commissioner-Variable-production.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
+fontmake -g Commissioner-production.glyphs -o variable --output-path ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf
 rm -rf master_ufo/ instance_ufo/ #deletes everything in root directory
 
 
