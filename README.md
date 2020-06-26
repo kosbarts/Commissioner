@@ -8,7 +8,7 @@ Commissioner is a low-contrast humanist sans-serif with almost classical proport
 
 Each voice of Commissioner comes in a range of styles from Thin to Black including italics. The diverse proportions of lowercase and capitals add warmth and appeal to texts across sizes, while the different voices can express a variation in the typographic texture that ranges from delicate in text sizes to exuberant in larger sizes. 
 
-Commissioner supports the Google Latin Plus, Latin Pro, Cyrillic Plus, Cyrillic Plus .locl, Cyrillic Pro, and Greek Core character sets.
+Commissioner supports the Google Latin Plus, Latin Pro, Cyrillic Plus, Cyrillic Plus .locl, Cyrillic Pro, and Greek Core character sets. The Cyrillic was done with the valuable consultation of Maria Doreuli (maria@contrastfoundry.com).
 
 This typeface project received financial support from Google, and in the future may be available in Google Fonts.
 
