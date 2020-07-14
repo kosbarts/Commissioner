@@ -9,8 +9,9 @@ Fontbakery version: 0.7.27
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.27)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.27 (latest)
+* ℹ **INFO** fontbakery (0.7.28)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.27
+  LATEST:    0.7.28
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -1331,8 +1332,8 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 724.7kb |
-	| Hinted Size | 723.4kb |
+	| Dehinted Size | 724.6kb |
+	| Hinted Size | 723.3kb |
 	| Increase | -1336 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
@@ -1442,7 +1443,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, gasp, DSIG, prep, loca, GPOS]
+* ℹ **INFO** This font contains the following optional tables [prep, DSIG, gasp, loca, GPOS, GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
