@@ -51,6 +51,9 @@ do
 	# patch Name and STAT table #	
 	ttx -m $vf "../sources/helpers/vf-Variablepatch.ttx"
 	mv "../sources/helpers/vf-Variablepatch.ttf" "../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf"
+
+	# remove unwanted instances
+	python ../sources/helpers/removeUnwantedVFInstances.py $vf
 done
 # remove any backup files #
 rm ../fonts/variable/*backup*.ttf
