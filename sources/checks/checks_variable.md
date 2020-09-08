@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.27
+Fontbakery version: 0.7.29
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -9,9 +9,8 @@ Fontbakery version: 0.7.27
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.28)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.27
-  LATEST:    0.7.28
+* ℹ **INFO** fontbakery (0.7.29)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.29 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -216,7 +215,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[161] Commissioner[FLAR,VOLM,slnt,wght].ttf</b></summary>
+<summary><b>[163] Commissioner[FLAR,VOLM,slnt,wght].ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Check correctness of STAT table strings </summary>
 
@@ -230,6 +229,27 @@ variation axes other than &#x27;ital&#x27;.
 </pre>
 
 * 💔 **ERROR** Failed with AttributeError: AxisIndex
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Ensure VFs do not contain slnt or ital axes. </summary>
+
+* [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
+<pre>--- Rationale ---
+
+The &#x27;ital&#x27; axis is not supported yet in Google Chrome. The &#x27;opsz&#x27; axis also has
+patchy support.
+
+For the time being, we need to ensure that VFs do not contain either of these
+axes. Once browser support is better, we can deprecate this check.
+
+For more info regarding ital and opsz browser support, see:
+https://arrowtype.github.io/vf-slnt-test/
+
+
+</pre>
+
+* 🔥 **FAIL** The "slnt" axis is not yet well supported on Google Chrome. [code: unsupported-slnt]
 
 </details>
 <details>
@@ -315,6 +335,10 @@ All ligatures in a font must have corresponding caret (text cursor) positions
 defined in the GDEF table, otherwhise, users may experience issues with caret
 rendering.
 
+If using GlyphsApp, ligature carets can be set directly on canvas by accessing
+the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
+shortcut.
+
 
 </pre>
 
@@ -346,86 +370,6 @@ https://github.com/impallari/Raleway/issues/14).
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Check variable font instances have correct names</summary>
-
-* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
-
-* ⚠ **WARN** Instance "Flair Thin": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Thin": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair ExtraLight": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair ExtraLight": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Light": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Light": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Regular": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Regular": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Medium": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Medium": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair SemiBold": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair SemiBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Bold": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Bold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair ExtraBold": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair ExtraBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Black": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Black": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Thin Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Thin Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair ExtraLight Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair ExtraLight Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Light Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Light Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Medium Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Medium Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair SemiBold Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair SemiBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Bold Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Bold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair ExtraBold Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair ExtraBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Flair Black Italic": contains the following unparsable tokens "['Flair']"
-* ⚠ **WARN** Instance "Flair Black Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Thin": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Thin": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud ExtraLight": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud ExtraLight": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Light": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Light": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Regular": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Regular": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Medium": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Medium": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud SemiBold": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud SemiBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Bold": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Bold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud ExtraBold": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud ExtraBold": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Black": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Black": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Thin Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Thin Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud ExtraLight Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud ExtraLight Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Light Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Light Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Medium Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Medium Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud SemiBold Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud SemiBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Bold Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Bold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud ExtraBold Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud ExtraBold Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Instance "Loud Black Italic": contains the following unparsable tokens "['Loud']"
-* ⚠ **WARN** Instance "Loud Black Italic": cannot determine instance name due to unparsable tokens
-* ⚠ **WARN** Check has either failed or produced a warning. See our wip spec for further info https://gist.github.com/m4rc1e/8f4c4498519e8a36cd54e16a004275cb
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
@@ -433,12 +377,12 @@ https://github.com/impallari/Raleway/issues/14).
 
 The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
 family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+it must be properly working.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -461,7 +405,7 @@ any other git-based version control service.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: description_html
 
 </details>
 <details>
@@ -470,17 +414,19 @@ any other git-based version control service.
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
 <pre>--- Rationale ---
 
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
+Sometimes people write malformed HTML markup. This check should ensure the file
+is good.
 
-This file needs to either be replaced with an existing description file or
-edited by hand.
+Additionally, when packaging families for being pushed to the `google/fonts`
+git repo, if there is no DESCRIPTION.en_us.html file, some older versions of
+the `add_font.py` tool insert a dummy description file which contains invalid
+html. This file needs to either be replaced with an existing description file
+or edited by hand.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: descfile
+* 💤 **SKIP** Unfulfilled Conditions: description
 
 </details>
 <details>
@@ -531,7 +477,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at '../fonts/variable' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at '../fonts/variable' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -600,6 +546,28 @@ match exactly those declared on the METADATA.pb file.
 
 Also, to avoid confusion, we expect that font files (other than statics) are
 not placed on subdirectories.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb category field is valid.</summary>
+
+* [com.google.fonts/check/metadata/category](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/category)
+<pre>--- Rationale ---
+
+There are only five acceptable values for the category field in a METADATA.pb
+file:
+- MONOSPACE
+- SANS_SERIF
+- SERIF
+- DISPLAY
+- HANDWRITING
+
+This check is meant to avoid typos in this field.
 
 
 </pre>
@@ -1193,6 +1161,21 @@ result in WARNs.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Ensure indic fonts have the Indian Rupee Sign glyph. </summary>
+
+* [com.google.fonts/check/rupee](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/rupee)
+<pre>--- Rationale ---
+
+Per Bureau of Indian Standards every font supporting one of the official Indian
+languages needs to include Unicode Character “₹” (U+20B9) Indian Rupee Sign.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_indic_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Is the CFF subr/gsubr call depth > 10?</summary>
 
 * [com.adobe.fonts/check/cff_call_depth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_call_depth)
@@ -1332,8 +1315,8 @@ of hinted versus unhinted font files.
 
 	|  | ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 724.6kb |
-	| Hinted Size | 723.3kb |
+	| Dehinted Size | 727.5kb |
+	| Hinted Size | 726.2kb |
 	| Increase | -1336 bytes |
 	| Change   | -0.2 % |
  [code: size-impact]
@@ -1443,7 +1426,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [prep, DSIG, gasp, loca, GPOS, GSUB]
+* ℹ **INFO** This font contains the following optional tables [GSUB, prep, DSIG, gasp, GPOS, loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1674,7 +1657,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner/Authors.txt)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2019 The Commissioner Project Authors (https://github.com/kosbarts/Commissioner)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -1690,20 +1673,12 @@ Even though the OpenType spec allows unitsPerEm to be any value between 16 and
 The spec suggests usage of powers of two in order to get some performance
 improvements on legacy renderers, so those values are acceptable.
 
-But value of 500 or 1000 are also acceptable, with the added benefit that it
+But values of 500 or 1000 are also acceptable, with the added benefit that it
 makes upm math easier for designers, while the performance hit of not using a
 power of two is most likely negligible nowadays.
 
-Another acceptable value is 2000. Since TT outlines are all integers (no
-floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is too small because it forces too many such compromises.
-
-Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
-conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
-10 units can do for 1000 UPM will know what 20 units does too.
-
-Additionally, values above 2048 would result in filesize increases with not
-much added benefit.
+Additionally, values above 2048 would likely result in unreasonable filesize
+increases.
 
 
 </pre>
@@ -2043,24 +2018,11 @@ should be checked in.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+<summary>🍞 <b>PASS:</b> Check variable font instances have correct names</summary>
 
-* [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
-<pre>--- Rationale ---
+* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
 
-The &#x27;ital&#x27; axis is not supported yet in Google Chrome. The &#x27;opsz&#x27; axis also has
-patchy support.
-
-For the time being, we need to ensure that VFs do not contain either of these
-axes. Once browser support is better, we can deprecate this check.
-
-For more info regarding ital and opsz browser support, see:
-https://arrowtype.github.io/vf-slnt-test/
-
-
-</pre>
-
-* 🍞 **PASS** Looks good!
+* 🍞 **PASS** Instance names are correct
 
 </details>
 <details>
@@ -2165,8 +2127,15 @@ space glyph. This might have been relevant for applications on MacOS 9.
 <summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
+This check enforces adherence to recommended whitespace (codepoints 0020 and
+00A0) glyph names according to the Adobe Glyph List.
+
+
+</pre>
+
+* 🍞 **PASS** Font has **AGL recommended** names for whitespace glyphs.
 
 </details>
 <details>
@@ -2741,5 +2710,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 0 | 6 | 75 | 8 | 85 | 0 |
-| 1% | 0% | 3% | 43% | 5% | 49% | 0% |
+| 1 | 1 | 5 | 77 | 8 | 85 | 0 |
+| 1% | 1% | 3% | 44% | 5% | 48% | 0% |
