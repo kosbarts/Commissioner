@@ -1,18 +1,28 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.29
+Fontbakery version: 0.7.34
 
 <details>
-<summary><b>[14] Family checks</b></summary>
+<summary><b>[15] Family checks</b></summary>
 <details>
-<summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
+<summary>ℹ <b>INFO:</b> Check axis ordering on the STAT table. </summary>
 
-* [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
+* [com.google.fonts/check/STAT/axis_order](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT/axis_order)
+<pre>--- Rationale ---
 
-* ℹ **INFO** fontbakery (0.7.29)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.29 (latest)
+This is (for now) a merely informative check to detect what&#x27;s the axis ordering
+declared on the STAT table of fonts in the Google Fonts collection.
 
-* 🍞 **PASS** Font Bakery is up-to-date
+We may later update this to enforce some unified axis ordering scheme, yet to
+be determined.
+
+
+</pre>
+
+* ℹ **INFO** From a total of 1 font files, 0 of them (0.00%) lack a STAT table.
+
+	And these are the most common STAT axis orderings:
+	('wght-slnt-FLAR-VOLM', 1) [code: summary]
 
 </details>
 <details>
@@ -65,6 +75,14 @@ the files from a single family spreaded in several separate directories).
 </pre>
 
 * 🍞 **PASS** All files are in the same directory.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Do we have the latest version of FontBakery installed?</summary>
+
+* [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
+
+* 🍞 **PASS** Font Bakery is up-to-date
 
 </details>
 <details>
@@ -142,8 +160,8 @@ https://twitter.com/typenerd1/status/690361887926697986
 <pre>--- Rationale ---
 
 Per the OpenType spec:
-&#x27;The Font Family name ... should be shared among at most four fonts that differ
-only in weight or style ...&#x27;
+&#x27;The Font Family name [...] should be shared among at most four fonts that
+differ only in weight or style [...]&#x27;
 
 
 </pre>
@@ -215,9 +233,80 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 <br>
 </details>
 <details>
-<summary><b>[163] Commissioner[FLAR,VOLM,slnt,wght].ttf</b></summary>
+<summary><b>[180] Commissioner[FLAR,VOLM,slnt,wght].ttf</b></summary>
 <details>
-<summary>💔 <b>ERROR:</b> Check correctness of STAT table strings </summary>
+<summary>💔 <b>ERROR:</b> Show hinting filesize impact.</summary>
+
+* [com.google.fonts/check/hinting_impact](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact)
+<pre>--- Rationale ---
+
+This check is merely informative, displaying and useful comparison of filesizes
+of hinted versus unhinted font files.
+
+
+</pre>
+
+* 💔 **ERROR** The condition <FontBakeryCondition:hinting_stats> had an error: OSError: Could not find the libc shared library
+
+</details>
+<details>
+<summary>💔 <b>ERROR:</b> Font has old ttfautohint applied?</summary>
+
+* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
+<pre>--- Rationale ---
+
+This check finds which version of ttfautohint was used, by inspecting name
+table entries and then finds which version of ttfautohint is currently
+installed in the system.
+
+
+</pre>
+
+* 💔 **ERROR** The check <FontBakeryCheck:com.google.fonts/check/old_ttfautohint> had an error: FailedConditionError: The condition <FontBakeryCondition:hinting_stats> had an error: OSError: Could not find the libc shared library
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Ensure VFs do not contain slnt or ital axes. </summary>
+
+* [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
+<pre>--- Rationale ---
+
+The &#x27;ital&#x27; and &#x27;slnt&#x27; axes are not supported yet in Google Chrome.
+
+For the time being, we need to ensure that VFs do not contain either of these
+axes. Once browser support is better, we can deprecate this check.
+
+For more info regarding browser support, see:
+https://arrowtype.github.io/vf-slnt-test/
+
+
+</pre>
+
+* 🔥 **FAIL** The "slnt" axis is not yet well supported on Google Chrome. [code: unsupported-slnt]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Validate STAT particle names and values match the fallback names in GFAxisRegistry. </summary>
+
+* [com.google.fonts/check/STAT/gf-axisregistry](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/STAT/gf-axisregistry)
+<pre>--- Rationale ---
+
+Check that particle names and values on STAT table match the fallback names in
+each axis entry at the Google Fonts Axis Registry, available at
+https://github.com/google/fonts/tree/master/axisregistry
+
+
+</pre>
+
+* 🔥 **FAIL** On the font variation axis 'slnt', the name 'Italic' is not among the expected ones (Default) according to the Google Fonts Axis Registry. [code: invalid-name]
+* ℹ **INFO** 'Normal' at (FLAR:0.0, VOLM:0.0) [code: format-4]
+* ℹ **INFO** 'Flair' at (FLAR:100.0, VOLM:0.0) [code: format-4]
+* ℹ **INFO** 'Loud' at (FLAR:100.0, VOLM:100.0) [code: format-4]
+* ℹ **INFO** The GF Axis Registry does not currently contain fallback names for the combination of values for more than a single axis, which is what these 'format 4' entries are designed to describe, so this check will ignore them for now. [code: format-4]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Check correctness of STAT table strings </summary>
 
 * [com.google.fonts/check/STAT_strings](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/STAT_strings)
 <pre>--- Rationale ---
@@ -228,101 +317,8 @@ variation axes other than &#x27;ital&#x27;.
 
 </pre>
 
-* 💔 **ERROR** Failed with AttributeError: AxisIndex
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Ensure VFs do not contain slnt or ital axes. </summary>
-
-* [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
-<pre>--- Rationale ---
-
-The &#x27;ital&#x27; axis is not supported yet in Google Chrome. The &#x27;opsz&#x27; axis also has
-patchy support.
-
-For the time being, we need to ensure that VFs do not contain either of these
-axes. Once browser support is better, we can deprecate this check.
-
-For more info regarding ital and opsz browser support, see:
-https://arrowtype.github.io/vf-slnt-test/
-
-
-</pre>
-
-* 🔥 **FAIL** The "slnt" axis is not yet well supported on Google Chrome. [code: unsupported-slnt]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
-<pre>--- Rationale ---
-
-A known licensing description must be provided in the NameID 14 (LICENSE
-DESCRIPTION) entries of the name table.
-
-The source of truth for this check (to determine which license is in use) is a
-file placed side-by-side to your font project including the licensing terms.
-
-Depending on the chosen license, one of the following string snippets is
-expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
-table:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 🍞 **PASS** Licensing entry on name table is correctly set.
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
-<pre>--- Rationale ---
-
-A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
-of the name table.
-
-The source of truth for this check is the licensing text found on the NameID 13
-entry (LICENSE DESCRIPTION).
-
-The string snippets used for detecting licensing terms are:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 🍞 **PASS** Font has a valid license URL in NAME table.
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=14] [code: http-in-license-info]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
+* 🔥 **FAIL** The following AxisValue entries on the STAT table should not contain "Italic":
+ ['nameID 315: Italic'] [code: bad-italic]
 
 </details>
 <details>
@@ -338,6 +334,10 @@ rendering.
 If using GlyphsApp, ligature carets can be set directly on canvas by accessing
 the `Glyph -&gt; Set Anchors` menu option or by pressing the `Cmd+U` keyboard
 shortcut.
+
+If designing with UFOs, (as of Oct 2020) ligature carets are not yet compiled
+by ufo2ft, and therefore will not build via FontMake. See
+googlefonts/ufo2ft/issues/329
 
 
 </pre>
@@ -640,6 +640,20 @@ This check is meant to avoid typos in this field.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb includes production subsets.</summary>
+
+* [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
+<pre>--- Rationale ---
+
+Check METADATA.pb file includes the same subsets as the family in production.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
 
 * [com.google.fonts/check/metadata/copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/copyright)
@@ -869,12 +883,11 @@ We may want to merge them all into a single check.
 
 Check METADATA.pb font weights are correct.
 
-For static fonts, the metadata weight should be the same
-as the static font&#x27;s OS/2 usWeightClass.
+For static fonts, the metadata weight should be the same as the static font&#x27;s
+OS/2 usWeightClass.
 
-For variable fonts, the weight value should be 400 if the
-font&#x27;s wght axis range includes 400, otherwise it should be the
-value closest to 400.
+For variable fonts, the weight value should be 400 if the font&#x27;s wght axis
+range includes 400, otherwise it should be the value closest to 400.
 
 
 </pre>
@@ -1073,7 +1086,7 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 * [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
 <pre>--- Rationale ---
 
-Variable font family directories kept in the google/fonts git repo must include
+Variable font family directories kept in the google/fonts git repo may include
 a static/ subdir containing static fonts.
 These files are meant to be served for users that still lack support for
 variable fonts in their web browsers.
@@ -1082,35 +1095,6 @@ variable fonts in their web browsers.
 </pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
-
-* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
-<pre>--- Rationale ---
-
-If the family already exists on Google Fonts, we need to ensure that the
-checked family&#x27;s vertical metrics are similar. This check will test the
-following schema which was outlined in Fontbakery issue #1162 [1]:
-
-- The family should visually have the same vertical metrics as the
-  Regular style hosted on Google Fonts.
-- If the family on Google Fonts has differing hhea and typo metrics,
-  the family being checked should use the typo metrics for both the
-  hhea and typo entries.
-- If the family on Google Fonts has use typo metrics not enabled and the
-  family being checked has it enabled, the hhea and typo metrics
-  should use the family on Google Fonts winAscent and winDescent values.
-- If the upms differ, the values must be scaled so the visual appearance
-  is the same.
-
-[1] https://github.com/googlefonts/fontbakery/issues/1162
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: remote_styles
 
 </details>
 <details>
@@ -1129,7 +1113,94 @@ https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font, not remote_styles
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Validate METADATA.pb axes values are within gf-axisregistry bounds. </summary>
+
+* [com.google.fonts/check/metadata/gf-axisregistry_bounds](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/gf-axisregistry_bounds)
+<pre>--- Rationale ---
+
+Each axis range in a METADATA.pb file must be registered, and within the bounds
+of the axis definition in the Google Fonts Axis Registry, available at
+https://github.com/google/fonts/tree/master/axisregistry
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Validate METADATA.pb axes tags are defined in gf-axisregistry. </summary>
+
+* [com.google.fonts/check/metadata/gf-axisregistry_valid_tags](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/gf-axisregistry_valid_tags)
+<pre>--- Rationale ---
+
+Ensure all axes in a METADATA.pb file are registered in the Google Fonts Axis
+Registry, available at https://github.com/google/fonts/tree/master/axisregistry
+
+Why does Google Fonts have its own Axis Registry?
+
+We support a superset of the OpenType axis registry axis set, and use
+additional metadata for each axis. Axes present in a font file but not in this
+registry will not function via our API. No variable font is expected to support
+all of the axes here.
+
+Any font foundry or distributor library that offers variable fonts has a
+implicit, latent, de-facto axis registry, which can be extracted by scanning
+the library for axes&#x27; tags, labels, and min/def/max values. While in 2016
+Microsoft originally offered to include more axes in the OpenType 1.8
+specification (github.com/microsoft/OpenTypeDesignVariationAxisTags), as of
+August 2020, this effort has stalled. We hope more foundries and distributors
+will publish documents like this that make their axes explicit, to encourage of
+adoption of variable fonts throughout the industry, and provide source material
+for a future update to the OpenType specification&#x27;s axis registry.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Validate VF axes match the ones declared on METADATA.pb. </summary>
+
+* [com.google.fonts/check/metadata/consistent_axis_enumeration](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/consistent_axis_enumeration)
+<pre>--- Rationale ---
+
+All font variation axes present in the font files must be properly declared on
+METADATA.pb so that they can be served by the GFonts API.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure METADATA.pb does not use escaped strings.</summary>
+
+* [com.google.fonts/check/metadata/escaped_strings](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/escaped_strings)
+<pre>--- Rationale ---
+
+In some cases we&#x27;ve seen designer names and other fields with escaped strings
+in METADATA files.
+Nowadays the strings can be full unicode strings and do not need escaping.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: metadata_file
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> METADATA.pb: Designer is listed with the correct name on the Google Fonts catalog of designers?</summary>
+
+* [com.google.fonts/check/metadata/designer_profiles](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/designer_profiles)
+
+* 💤 **SKIP** Unfulfilled Conditions: family_metadata
 
 </details>
 <details>
@@ -1202,6 +1273,26 @@ Per &quot;The CFF2 CharString Format&quot;, the &quot;Subr nesting, stack limit&
 </pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: is_cff2
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Does the font use deprecated CFF operators or operations?</summary>
+
+* [com.adobe.fonts/check/cff_deprecated_operators](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_deprecated_operators)
+<pre>--- Rationale ---
+
+The &#x27;dotsection&#x27; operator and the use of &#x27;endchar&#x27; to build accented
+characters from the Adobe Standard Encoding Character Set (&quot;seac&quot;) are
+deprecated in CFF. Adobe recommends repairing any fonts that use these,
+especially endchar-as-seac, because a rendering issue was discovered in
+Microsoft Word with a font that makes use of this operation. The check
+treats that useage as a FAIL. There are no known ill effects of using
+dotsection, so that check is a WARN.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cff
 
 </details>
 <details>
@@ -1300,42 +1391,77 @@ If a variable font has a &#x27;opsz&#x27; (Optical Size) axis, then the coordina
 
 </details>
 <details>
-<summary>ℹ <b>INFO:</b> Show hinting filesize impact.</summary>
+<summary>💤 <b>SKIP:</b> Are any segments inordinately short?</summary>
 
-* [com.google.fonts/check/hinting_impact](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact)
+* [com.google.fonts/check/outline_short_segments](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments)
 <pre>--- Rationale ---
 
-This check is merely informative, displaying and useful comparison of filesizes
-of hinted versus unhinted font files.
+This test looks for outline segments which seem particularly short (less than
+0.006%% of the overall path length).
+
+This test is not run for variable fonts, as they may legitimately have short
+segments. As this test is liable to generate significant numbers of false
+positives, the test will pass if there are more than 100 reported short
+segments.
 
 
 </pre>
 
-* ℹ **INFO** Hinting filesize impact:
-
-	|  | ../fonts/variable/Commissioner[FLAR,VOLM,slnt,wght].ttf |
-	|:--- | ---:|
-	| Dehinted Size | 729.0kb |
-	| Hinted Size | 727.7kb |
-	| Increase | -1340 bytes |
-	| Change   | -0.2 % |
- [code: size-impact]
+* 💤 **SKIP** Unfulfilled Conditions: is_not_variable_font
 
 </details>
 <details>
-<summary>ℹ <b>INFO:</b> Font has old ttfautohint applied?</summary>
+<summary>💤 <b>SKIP:</b> Do any segments have colinear vectors?</summary>
 
-* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
+* [com.google.fonts/check/outline_colinear_vectors](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors)
 <pre>--- Rationale ---
 
-This check finds which version of ttfautohint was used, by inspecting name
-table entries and then finds which version of ttfautohint is currently
-installed in the system.
+This test looks for consecutive line segments which have the same angle. This
+normally happens if an outline point has been added by accident.
+
+This test is not run for variable fonts, as they may legitimately have colinear
+vectors.
 
 
 </pre>
 
-* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 1.000'] [code: version-not-detected]
+* 💤 **SKIP** Unfulfilled Conditions: is_not_variable_font
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Do outlines contain any jaggy segments?</summary>
+
+* [com.google.fonts/check/outline_jaggy_segments](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments)
+<pre>--- Rationale ---
+
+This test heuristically detects outline segments which form a particularly
+small angle, indicative of an outline error. This may cause false positives in
+cases such as extreme ink traps, so should be regarded as advisory and backed
+up by manual inspection.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_not_variable_font
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Do outlines contain any semi-vertical or semi-horizontal lines?</summary>
+
+* [com.google.fonts/check/outline_semi_vertical](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical)
+<pre>--- Rationale ---
+
+This test detects line segments which are nearly, but not quite, exactly
+horizontal or vertical. Sometimes such lines are created by design, but often
+they are indicative of a design error.
+
+This test is disabled for italic styles, which often contain nearly-upright
+lines.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_not_variable_font
 
 </details>
 <details>
@@ -1426,7 +1552,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, prep, loca, GPOS, DSIG, gasp]
+* ℹ **INFO** This font contains the following optional tables [loca, prep, GPOS, GSUB, DSIG, gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1584,6 +1710,70 @@ An OFL.txt file&#x27;s first line should be the font copyright e.g:
 </pre>
 
 * 🍞 **PASS** looks good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
+<pre>--- Rationale ---
+
+A known licensing description must be provided in the NameID 14 (LICENSE
+DESCRIPTION) entries of the name table.
+
+The source of truth for this check (to determine which license is in use) is a
+file placed side-by-side to your font project including the licensing terms.
+
+Depending on the chosen license, one of the following string snippets is
+expected to be found on the NameID 13 (LICENSE DESCRIPTION) entries of the name
+table:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
+<pre>--- Rationale ---
+
+A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
+of the name table.
+
+The source of truth for this check is the licensing text found on the NameID 13
+entry (LICENSE DESCRIPTION).
+
+The string snippets used for detecting licensing terms are:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -2010,6 +2200,34 @@ should be checked in.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
+
+* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
+<pre>--- Rationale ---
+
+If the family already exists on Google Fonts, we need to ensure that the
+checked family&#x27;s vertical metrics are similar. This check will test the
+following schema which was outlined in Fontbakery issue #1162 [1]:
+
+- The family should visually have the same vertical metrics as the Regular
+style hosted on Google Fonts.
+- If the family on Google Fonts has differing hhea and typo metrics, the family
+being checked should use the typo metrics for both the hhea and typo entries.
+- If the family on Google Fonts has use typo metrics not enabled and the family
+being checked has it enabled, the hhea and typo metrics should use the family
+on Google Fonts winAscent and winDescent values.
+- If the upms differ, the values must be scaled so the visual appearance is the
+same.
+
+[1] https://github.com/googlefonts/fontbakery/issues/1162
+
+
+</pre>
+
+* 🍞 **PASS** Vertical metrics have not regressed.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -2023,6 +2241,48 @@ should be checked in.
 * [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
 
 * 🍞 **PASS** Instance names are correct
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check variable font instances don't have duplicate names</summary>
+
+* [com.google.fonts/check/varfont_duplicate_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_duplicate_instance_names)
+<pre>--- Rationale ---
+
+This check&#x27;s purpose is to detect duplicate named instances names in a given
+variable font.
+
+Repeating instance names may be the result of instances for several VF axes
+defined in `fvar`, but since currently only weight+italic tokens are allowed in
+instance names as per GF specs, they ended up repeating.
+
+Instead, only a base set of fonts for the most default representation of the
+family can be defined through instances in the `fvar` table, all other
+instances will have to be left to access through the `STAT` table.
+
+
+</pre>
+
+* 🍞 **PASS** Instance names are unique
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Ensure variable fonts include an avar table.</summary>
+
+* [com.google.fonts/check/mandatory_avar_table](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/mandatory_avar_table)
+<pre>--- Rationale ---
+
+All high quality variable fonts include an avar table to correctly define axes
+progression rates.
+
+For example, a weight axis from 0% to 100% doesn&#x27;t map directly to 100 to 1000,
+because a 10% progression from 0% may be too much to define the 200, while 90%
+may be too little to define the 900.
+
+
+</pre>
+
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -2095,24 +2355,24 @@ take care of their own situation.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+<summary>🍞 <b>PASS:</b> Font contains '.notdef' as its first glyph?</summary>
 
 * [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
 <pre>--- Rationale ---
 
 The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
+&#x27;.notdef&#x27; glyph without a codepoint assigned and with a drawing.
 
 https://docs.microsoft.com/en-us/typography/opentype/spec
 /recom#glyph-0-the-notdef-glyph
 
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
+Pre-v1.8, it was recommended that fonts should also contain &#x27;space&#x27;, &#x27;CR&#x27; and
+&#x27;.null&#x27; glyphs. This might have been relevant for MacOS 9 applications.
 
 
 </pre>
 
-* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -2464,7 +2724,7 @@ This is the TTF/CFF2 equivalent of the CFF &#x27;postscript_name_cff_vs_name&#x2
 Microsoft Office 2013 and below products expect fonts to have a digital
 signature declared in a DSIG table in order to implement OpenType features. The
 EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
-impact Microsoft Office 2016 and above products. 
+impact Microsoft Office 2016 and above products.
 
 This checks verifies that this signature is available in the font.
 
@@ -2536,11 +2796,11 @@ be in that class, in particular spacing glyphs.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Does GPOS table have kerning information?</summary>
+<summary>🍞 <b>PASS:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</summary>
 
 * [com.google.fonts/check/gpos_kerning_info](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info)
 
-* 🍞 **PASS** GPOS table has got kerning information.
+* 🍞 **PASS** GPOS table check for kerning information passed.
 
 </details>
 <details>
@@ -2595,8 +2855,8 @@ good-to-have (but optional) feature.
 * [com.google.fonts/check/glyf_non_transformed_duplicate_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components)
 <pre>--- Rationale ---
 
-There has been cases in which fonts had faulty double quote marks, with each of
-them containing two single quote marks as components with the same x, y
+There have been cases in which fonts had faulty double quote marks, with each
+of them containing two single quote marks as components with the same x, y
 coordinates which makes them visually look like single quote marks.
 
 This check ensures that glyphs do not contain duplicate components which have
@@ -2606,6 +2866,26 @@ the same x,y coordinates.
 </pre>
 
 * 🍞 **PASS** Glyphs do not contain duplicate components which have the same x,y coordinates.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check glyphs do not have components which are themselves components.</summary>
+
+* [com.google.fonts/check/glyf_nested_components](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_nested_components)
+<pre>--- Rationale ---
+
+There have been bugs rendering variable fonts with nested components.
+Additionally, some static fonts with nested components have been reported to
+have rendering and printing issues.
+
+For more info, see:
+* https://github.com/googlefonts/fontbakery/issues/2961
+* https://github.com/arrowtype/recursive/issues/412
+
+
+</pre>
+
+* 🍞 **PASS** Glyphs do not contain nested components.
 
 </details>
 <details>
@@ -2703,6 +2983,46 @@ scale used for the italicAngle field in the post table.
 * 🍞 **PASS** Looks good!
 
 </details>
+<details>
+<summary>🍞 <b>PASS:</b> All fvar axes have a correspondent Axis Record on STAT table? </summary>
+
+* [com.google.fonts/check/varfont/stat_axis_record_for_each_axis](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/stat.html#com.google.fonts/check/varfont/stat_axis_record_for_each_axis)
+<pre>--- Rationale ---
+
+cording to the OpenType spec, there must be an Axis Record for every axis
+defined in the fvar table.
+
+tps://docs.microsoft.com/en-us/typography/opentype/spec/stat#axis-records
+
+
+</pre>
+
+* 🍞 **PASS** STAT table has all necessary Axis Records
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Are there any misaligned on-curve points?</summary>
+
+* [com.google.fonts/check/outline_alignment_miss](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss)
+<pre>--- Rationale ---
+
+This test heuristically looks for on-curve points which are close to, but do
+not sit on, significant boundary coordinates. For example, a point which has a
+Y-coordinate of 1 or -1 might be a misplaced baseline point. As well as the
+baseline, the test also checks for points near the x-height (but only for lower
+case Latin letters), cap-height, ascender and descender Y coordinates.
+
+Not all such misaligned curve points are a mistake, and sometimes the design
+may call for points in locations near the boundaries. As this test is liable to
+generate significant numbers of false positives, the test will pass if there
+are more than 100 reported misalignments.
+
+
+</pre>
+
+* 🍞 **PASS** So many Y-coordinates of points were close to boundaries that this was probably by design.
+
+</details>
 <br>
 </details>
 
@@ -2710,5 +3030,5 @@ scale used for the italicAngle field in the post table.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 1 | 5 | 77 | 8 | 85 | 0 |
-| 1% | 1% | 3% | 44% | 5% | 48% | 0% |
+| 2 | 3 | 3 | 87 | 6 | 94 | 0 |
+| 1% | 2% | 2% | 45% | 3% | 48% | 0% |

@@ -125,7 +125,7 @@
     <AxisValue index="10" Format="3">
       <AxisIndex value="1"/>
       <Flags value="2"/>
-      <ValueNameID value="314"/> <!-- Upright -->
+      <ValueNameID value="314"/> <!-- Default -->
       <Value value="0"/>
 	  <LinkedValue value="-12"/>
     </AxisValue>
@@ -371,7 +371,7 @@
     Loud Black Italic
   </namerecord>
   <namerecord nameID="314" platformID="1" platEncID="0" langID="0x0" unicode="True">
-	  Upright
+	  Default
   </namerecord>
   <namerecord nameID="315" platformID="1" platEncID="0" langID="0x0" unicode="True">
 	  Italic
@@ -617,7 +617,7 @@
     Loud Black Italic
   </namerecord>
   <namerecord nameID="314" platformID="3" platEncID="1" langID="0x409">
-	  Upright
+	  Default
   </namerecord>
   <namerecord nameID="315" platformID="3" platEncID="1" langID="0x409">
 	  Italic
