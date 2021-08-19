@@ -22,7 +22,7 @@ Commisioner has the following axes:
 
 - Flair (FLAR) - 0 to 100. (Default 0) The values are arbitrary and the length of the axis could be narrower (i.e. 0 to 10). As the flair axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic. The flair axis was originally called Flare, referring to the flaring of the stems, but at some point I decided to name it flair, as in stylisness and panache. 
 
-- Volume (VOLM) - 0 to 100. (Default 0) The values are arbitrary and the lenght of the axis could be narrower (i.e. 0 to 10). The volume axis works only in combination with the Flair axis. It transforms the glyphic serifs to wedge-like ones and add a little more edge to details.  
+- Volume (VOLM) - 0 to 100. (Default 0) The values are arbitrary and the length of the axis could be narrower (i.e. 0 to 10). The volume axis works only in combination with the Flair axis. It transforms the glyphic serifs to wedge-like ones and add a little more edge to details.  
 
 **Language Support**
 <details>
