@@ -1,7 +1,10 @@
 sources:
     - Commissioner.glyphs
-buildStatic: false
 familyName: Commissioner
+buildOTF: true
+buildTTF: true
+buildVariable: true
+buildWebfont: true
 axisOrder:
     - FLAR
     - VOLM
