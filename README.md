@@ -62,39 +62,41 @@ pip install -U -r requirements.txt
 
 **Building the fonts**
 
-The scripts for building the fonts are in the `/sources/` folder.
-
-To build the variable font run:
+The configuration file for building the fonts is in the `/sources/` folder.
 
 ```
 cd sources
-sh build_vf.sh
+gftools builder config.yml
 ```
 
-To build the static ttfs run:
+If you want to export only the variable font, or only the webfonts etc. Open the `config.yml` and change `true`to `false` according to what you want.
+
+This is the current configuration, it builds all formats:
 
 ```
-cd sources
-sh build_statics.sh
+buildOTF: true
+buildTTF: true
+buildVariable: true
+buildWebfont: true
 ```
 
-To build the variable font and the static ttfs run:
+Following this scheme, you would only build the variable font:
 
 ```
-cd sources
-sh build_all.sh
-```  
-
-If you want to build otf's do so through Glyphs using the source Glyphs file. 
+buildOTF: false
+buildTTF: false
+buildVariable: true
+buildWebfont: false
+```
 
 **Weight Class Fix**
 
-The usWeightClass for Thins and UltraLight are set to 100 and 200 consecutively. There is a debate on whether these values cause the fonts to get blurred on certain versions of Windows. (https://github.com/googlefonts/fontbakery/issues/2364) 
+The usWeightClass for Thin and ExtraLight are set to 100 and 200 consecutively. There is a debate on whether these values cause the fonts to get blurred on certain versions of Windows. (https://github.com/googlefonts/fontbakery/issues/2364) 
 
 If you want to change them to 250 and 275 copy the script `sources/fix_usWeightClass.py` to your fonts directory and run it as follows.
 
 ```
-cd fontfolder # make sure to change to the directory that includes the ttf's or otf's
+cd fonts/otf 
 python fix_usWeightClass.py
 ```
 
