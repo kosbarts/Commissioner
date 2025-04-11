@@ -102,7 +102,7 @@ python fix_usWeightClass.py
 
 ## ChangeLog
 
-This is version 1.000. No changes to report. 
+This is version 1.011. It introduces Tabular Figures and Math symbols, Arrows, missing KaiSymbol, and a fix in the Greek OT Features. 
 
 ## License
 
