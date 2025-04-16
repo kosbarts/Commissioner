@@ -4,7 +4,7 @@ Commissioner is a variable and static sans typeface designed by Kostas Bartsokas
 ![](documentation/proofs/Commissioner-Promo-1.png)
 
 ## Basic Information
-Commissioner is a low-contrast humanist sans-serif with almost classical proportions, conceived as a variable family. The family consists of three “voices”. The default style is a grotesque with straight stems. As the flair axis grows the straight grotesque terminals develop a swelling and become almost glyphic serifs while joints become more idiosyncratic. The volume axis transforms the glyphic serifs to wedge-like ones. 
+Commissioner is a low-contrast humanist sans-serif with almost classical proportions, conceived as a variable family. The family consists of three “voices”. The default style is a grotesque with straight stems. As the flare axis grows the straight grotesque terminals develop a swelling and become almost glyphic serifs while joints become more idiosyncratic. The volume axis transforms the glyphic serifs to wedge-like ones. 
 
 ![](documentation/proofs/Commissioner-Promo-3.png)
 
@@ -25,7 +25,7 @@ Commisioner has the following axes:
 
 - Slant (slnt) - 0 to -12 degrees. (Default 0) Controls the slant of the letters. A stronger slant creates more emphasis and contrast to upright styles. 
 
-- Flair (FLAR) - 0 to 100. (Default 0) The values are arbitrary and the length of the axis could be narrower (i.e. 0 to 10). As the flair axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic. The flair axis was originally called Flare, referring to the flaring of the stems, but at some point I decided to name it flair, as in stylisness and panache. 
+- Flare (FLAR) (also Flair prior to v1.000 Google Fonts release) - 0 to 100. (Default 0) The values are arbitrary and the length of the axis could be narrower (i.e. 0 to 10). As the flare axis grows the straight grotesque terminals develop a swelling and joints become more idiosyncratic. The flare axis refers to the flaring of the stems, but in an earlier version I named it flair, as in stylisness and panache. 
 
 - Volume (VOLM) - 0 to 100. (Default 0) The values are arbitrary and the length of the axis could be narrower (i.e. 0 to 10). The volume axis works only in combination with the Flair axis. It transforms the glyphic serifs to wedge-like ones and add a little more edge to details.  
 
