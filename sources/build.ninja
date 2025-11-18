@@ -1,7 +1,7 @@
 # buildVariable: Build a variable font from a source file
 rule buildVariable
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner fontmake --output-path $out -o variable $
       $fontmake_type $in $args $stamp
   description = buildVariable
@@ -9,7 +9,7 @@ rule buildVariable
 # subspace: Run varLib.instancer to subspace a variable font
 rule subspace
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner fonttools varLib.instancer $args -o $out $
       $in $axes $stamp
   description = subspace
@@ -17,21 +17,21 @@ rule subspace
 # fix: Run gftools-fix
 rule fix
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
   description = fix
 
 # exec: Run an arbitrary executable
 rule exec
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner $exe $args $stamp
   description = exec
 
 # compress: Compress to webfont
 rule compress
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $
       $in $stamp
   description = compress
@@ -46,7 +46,7 @@ rule buildSTAT-postprocess
 # instantiateUfo: Create instance UFOs from a Glyphs or designspace file
 rule instantiateUfo
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner fontmake -i "$instance_name" -o ufo $
       $fontmake_type $in $args $stamp
   description = instantiateUfo
@@ -54,7 +54,7 @@ rule instantiateUfo
 # buildTTF: Build a TTF from a source file
 rule buildTTF
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner fontmake --output-path $out -o ttf $
       $fontmake_type $in $args $stamp
   description = buildTTF
@@ -62,14 +62,14 @@ rule buildTTF
 # autohint: Run gftools-autohint
 rule autohint
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner gftools-autohint $args -o $out $in $stamp
   description = autohint
 
 # buildOTF: Build a OTF from a source file
 rule buildOTF
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner fontmake --output-path $out -o otf $
       $fontmake_type $in $args $stamp
   description = buildOTF
@@ -77,12 +77,12 @@ rule buildOTF
 # copy: Copy a file
 rule copy
   command = $
-      /Users/kostas/Google_Drive_hi@kostasbartsokas.com/My_Typeface_Design_Files/Averta/AVERTA_GLYPHS/AVERTA/LAST_VERSION/V_2.0/venv/bin/python $
+      /Users/kostas/Documents/github-repos/Google/Commissioner/venv/bin/python $
       -m gftools.builder.jobrunner cp $in $out $stamp
   description = copy
 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0b_n1au7
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0b_n1au7: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcukt18es
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcukt18es: $
     buildVariable Commissioner.glyphs
   operation = buildVariable
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -523,14 +523,16 @@ build instance_ufos/CommissionerLoud-BlackItalic.ufo.json: instantiateUfo $
   args =  --ufo-structure=json --instance-dir instance_ufos
 # Postprocessing  with BuildSTAT
 build $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2il__3ws.buildStatstamp: $
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp87mtlzue.buildStatstamp: $
     buildSTAT-postprocess $
-    ../fonts/variable/Commissioner[FLAR,VOLM,wght].ttf | $
+    ../fonts/variable/Commissioner[FLAR,VOLM,wght].ttf $
+    ../fonts/variable/Commissioner-Italic[FLAR,VOLM,wght].ttf | $
+    ../fonts/variable/Commissioner[FLAR,VOLM,wght].ttf $
     ../fonts/variable/Commissioner-Italic[FLAR,VOLM,wght].ttf
   stamp =  && touch $
-      /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2il__3ws.buildStatstamp
+      /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp87mtlzue.buildStatstamp
   postprocess = buildStat
-  args = --src /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2yq6tiu0
+  args = --src /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphyhhmjo_
 # Generating ../fonts/webfonts/Commissioner-Thin.woff2
 build ../fonts/webfonts/Commissioner-Thin.woff2: compress $
     ../fonts/ttf/Commissioner-Thin.ttf
@@ -747,1721 +749,1721 @@ build ../fonts/webfonts/CommissionerLoud-ExtraBoldItalic.woff2: compress $
 build ../fonts/webfonts/CommissionerLoud-BlackItalic.woff2: compress $
     ../fonts/ttf/CommissionerLoud-BlackItalic.ttf
   operation = compress
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp80idqzkm
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp80idqzkm: $
-    subspace /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0b_n1au7
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpta21daje
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpta21daje: $
+    subspace /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcukt18es
   operation = subspace
   axes = slnt=0
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj20apbbe
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj20apbbe: $
-    subspace /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0b_n1au7
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkggd3j46
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkggd3j46: $
+    subspace /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcukt18es
   operation = subspace
   axes = slnt=-12
 # Generating ../fonts/variable/Commissioner[FLAR,VOLM,wght].ttf
 build ../fonts/variable/Commissioner[FLAR,VOLM,wght].ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp80idqzkm
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpta21daje
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2yz22k82
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2yz22k82: exec $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj20apbbe
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq_k3wpli
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq_k3wpli: exec $
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkggd3j46
   exe = gftools-fontsetter
-  args = -o /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2yz22k82 $
-      /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj20apbbe $
-      /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsl7usjhd
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppn_tjm2e
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppn_tjm2e: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2yz22k82
+  args = -o /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq_k3wpli $
+      /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkggd3j46 $
+      /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1hng9ll8
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_n2ah50
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_n2ah50: fix $
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq_k3wpli
   operation = fix
   args = --include-source-fixes
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpocpdubag
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpocpdubag: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppn_tjm2e
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8rhxvbab
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8rhxvbab: fix $
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_n2ah50
   operation = fix
   args = 
 # Generating ../fonts/webfonts/Commissioner[FLAR,VOLM,slnt,wght].woff2
 build ../fonts/webfonts/Commissioner[FLAR,VOLM,slnt,wght].woff2: compress $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpocpdubag
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8rhxvbab
   operation = compress
 # Generating ../fonts/variable/Commissioner-Italic[FLAR,VOLM,wght].ttf
 build ../fonts/variable/Commissioner-Italic[FLAR,VOLM,wght].ttf: copy $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpocpdubag
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkxh7uzvn
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkxh7uzvn: $
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8rhxvbab
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp096mkpj0
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp096mkpj0: $
     buildTTF instance_ufos/Commissioner-Thin.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnngf5ejs
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnngf5ejs: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp57vxhjdw
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp57vxhjdw: $
     buildOTF instance_ufos/Commissioner-Thin.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcbs_u6wd
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcbs_u6wd: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkxh7uzvn
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8lyadum5
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8lyadum5: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp096mkpj0
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-Thin.ttf
 build ../fonts/ttf/Commissioner-Thin.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcbs_u6wd
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8lyadum5
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-Thin.otf
 build ../fonts/otf/Commissioner-Thin.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnngf5ejs
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp57vxhjdw
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3dg7pdg5
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3dg7pdg5: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9r2ddfqh
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9r2ddfqh: $
     buildTTF instance_ufos/Commissioner-ExtraLight.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpy4_kkez5
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpy4_kkez5: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdj9morbx
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdj9morbx: $
     buildOTF instance_ufos/Commissioner-ExtraLight.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_0lksgk4
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_0lksgk4: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3dg7pdg5
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpucbmgfnn
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpucbmgfnn: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9r2ddfqh
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-ExtraLight.ttf
 build ../fonts/ttf/Commissioner-ExtraLight.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_0lksgk4
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpucbmgfnn
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-ExtraLight.otf
 build ../fonts/otf/Commissioner-ExtraLight.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpy4_kkez5
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdj9morbx
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgrepd4rd
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgrepd4rd: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpla7ya0kh
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpla7ya0kh: $
     buildTTF instance_ufos/Commissioner-Light.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_y1u5e4l
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_y1u5e4l: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpndqk5ack
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpndqk5ack: $
     buildOTF instance_ufos/Commissioner-Light.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnijfz9wn
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnijfz9wn: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgrepd4rd
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi8_2wrmb
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi8_2wrmb: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpla7ya0kh
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-Light.ttf
 build ../fonts/ttf/Commissioner-Light.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnijfz9wn
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi8_2wrmb
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-Light.otf
 build ../fonts/otf/Commissioner-Light.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_y1u5e4l
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpndqk5ack
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpk6rgqbty
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpk6rgqbty: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwqsixobh
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwqsixobh: $
     buildTTF instance_ufos/Commissioner-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmfbvux5h
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmfbvux5h: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpio2l5h2j
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpio2l5h2j: $
     buildOTF instance_ufos/Commissioner-Regular.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpb4w4f8tv
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpb4w4f8tv: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpk6rgqbty
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5os39_1v
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5os39_1v: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwqsixobh
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-Regular.ttf
 build ../fonts/ttf/Commissioner-Regular.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpb4w4f8tv
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5os39_1v
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-Regular.otf
 build ../fonts/otf/Commissioner-Regular.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmfbvux5h
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpio2l5h2j
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8vja_7_t
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8vja_7_t: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7_7knhzc
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7_7knhzc: $
     buildTTF instance_ufos/Commissioner-Medium.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9wp4fn3x
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9wp4fn3x: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4pdxmlut
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4pdxmlut: $
     buildOTF instance_ufos/Commissioner-Medium.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo9a4ek3x
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo9a4ek3x: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8vja_7_t
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwhk3rxql
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwhk3rxql: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7_7knhzc
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-Medium.ttf
 build ../fonts/ttf/Commissioner-Medium.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo9a4ek3x
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwhk3rxql
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-Medium.otf
 build ../fonts/otf/Commissioner-Medium.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9wp4fn3x
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4pdxmlut
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvu5yjw2z
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvu5yjw2z: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkcg47h1r
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkcg47h1r: $
     buildTTF instance_ufos/Commissioner-SemiBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpk4_hmrwz
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpk4_hmrwz: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsvrur31g
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsvrur31g: $
     buildOTF instance_ufos/Commissioner-SemiBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1yq8cusk
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1yq8cusk: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvu5yjw2z
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnfyserr4
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnfyserr4: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkcg47h1r
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-SemiBold.ttf
 build ../fonts/ttf/Commissioner-SemiBold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1yq8cusk
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnfyserr4
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-SemiBold.otf
 build ../fonts/otf/Commissioner-SemiBold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpk4_hmrwz
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsvrur31g
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0ytxecjj
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0ytxecjj: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2q1z5v80
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2q1z5v80: $
     buildTTF instance_ufos/Commissioner-Bold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwmyom2n7
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwmyom2n7: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpf74yqwq8
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpf74yqwq8: $
     buildOTF instance_ufos/Commissioner-Bold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpff7_6k60
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpff7_6k60: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0ytxecjj
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9_f95guj
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9_f95guj: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2q1z5v80
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-Bold.ttf
 build ../fonts/ttf/Commissioner-Bold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpff7_6k60
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9_f95guj
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-Bold.otf
 build ../fonts/otf/Commissioner-Bold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwmyom2n7
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpf74yqwq8
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmyn571y0
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmyn571y0: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7memhh99
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7memhh99: $
     buildTTF instance_ufos/Commissioner-ExtraBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5xqi1obe
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5xqi1obe: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplcicigge
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplcicigge: $
     buildOTF instance_ufos/Commissioner-ExtraBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp29zjd4wb
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp29zjd4wb: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmyn571y0
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnfhxnsro
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnfhxnsro: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7memhh99
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-ExtraBold.ttf
 build ../fonts/ttf/Commissioner-ExtraBold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp29zjd4wb
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnfhxnsro
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-ExtraBold.otf
 build ../fonts/otf/Commissioner-ExtraBold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5xqi1obe
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplcicigge
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc3dab28e
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc3dab28e: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp99nzx8pe
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp99nzx8pe: $
     buildTTF instance_ufos/Commissioner-Black.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpb8fjsklx
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpb8fjsklx: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2j8t94ay
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2j8t94ay: $
     buildOTF instance_ufos/Commissioner-Black.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsen8oq9p
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsen8oq9p: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc3dab28e
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3_zufj67
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3_zufj67: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp99nzx8pe
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-Black.ttf
 build ../fonts/ttf/Commissioner-Black.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsen8oq9p
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3_zufj67
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-Black.otf
 build ../fonts/otf/Commissioner-Black.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpb8fjsklx
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2j8t94ay
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfga0qguu
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfga0qguu: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkb0vqcc6
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkb0vqcc6: $
     buildTTF instance_ufos/Commissioner-ThinItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd9vs0r1o
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd9vs0r1o: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq3zd03n6
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq3zd03n6: $
     buildOTF instance_ufos/Commissioner-ThinItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp274nsf_z
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp274nsf_z: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfga0qguu
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4_872siv
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4_872siv: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkb0vqcc6
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-ThinItalic.ttf
 build ../fonts/ttf/Commissioner-ThinItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp274nsf_z
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4_872siv
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-ThinItalic.otf
 build ../fonts/otf/Commissioner-ThinItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd9vs0r1o
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq3zd03n6
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ttsj05m
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ttsj05m: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldke1h0a
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldke1h0a: $
     buildTTF instance_ufos/Commissioner-ExtraLightItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpns4rr6b_
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpns4rr6b_: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprlus3nez
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprlus3nez: $
     buildOTF instance_ufos/Commissioner-ExtraLightItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn88gtok6
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn88gtok6: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ttsj05m
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6fnvcax_
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6fnvcax_: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldke1h0a
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-ExtraLightItalic.ttf
 build ../fonts/ttf/Commissioner-ExtraLightItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn88gtok6
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6fnvcax_
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-ExtraLightItalic.otf
 build ../fonts/otf/Commissioner-ExtraLightItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpns4rr6b_
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprlus3nez
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_9jx522
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_9jx522: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0qda_d8e
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0qda_d8e: $
     buildTTF instance_ufos/Commissioner-LightItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsepa38x4
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsepa38x4: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgnd2fmbq
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgnd2fmbq: $
     buildOTF instance_ufos/Commissioner-LightItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpeqyb4s22
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpeqyb4s22: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_9jx522
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqwtgifyp
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqwtgifyp: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0qda_d8e
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-LightItalic.ttf
 build ../fonts/ttf/Commissioner-LightItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpeqyb4s22
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqwtgifyp
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-LightItalic.otf
 build ../fonts/otf/Commissioner-LightItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsepa38x4
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgnd2fmbq
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi2c_k0yc
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi2c_k0yc: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_pmrea7v
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_pmrea7v: $
     buildTTF instance_ufos/Commissioner-Italic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpy4ch0a0r
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpy4ch0a0r: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzsyym0lf
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzsyym0lf: $
     buildOTF instance_ufos/Commissioner-Italic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpagewqikd
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpagewqikd: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi2c_k0yc
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ji43l2u
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ji43l2u: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_pmrea7v
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-Italic.ttf
 build ../fonts/ttf/Commissioner-Italic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpagewqikd
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ji43l2u
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-Italic.otf
 build ../fonts/otf/Commissioner-Italic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpy4ch0a0r
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzsyym0lf
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_kn_7twb
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_kn_7twb: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfzpcpmtf
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfzpcpmtf: $
     buildTTF instance_ufos/Commissioner-MediumItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp00wt7u0u
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp00wt7u0u: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpus2qsq7l
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpus2qsq7l: $
     buildOTF instance_ufos/Commissioner-MediumItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn4722xit
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn4722xit: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_kn_7twb
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu97a1m43
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu97a1m43: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfzpcpmtf
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-MediumItalic.ttf
 build ../fonts/ttf/Commissioner-MediumItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn4722xit
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu97a1m43
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-MediumItalic.otf
 build ../fonts/otf/Commissioner-MediumItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp00wt7u0u
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpus2qsq7l
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps49bjcn6
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps49bjcn6: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8ylin0a_
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8ylin0a_: $
     buildTTF instance_ufos/Commissioner-SemiBoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1gsf1gya
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1gsf1gya: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4vltiv0g
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4vltiv0g: $
     buildOTF instance_ufos/Commissioner-SemiBoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcqjdpxs8
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcqjdpxs8: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps49bjcn6
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi5t98a23
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi5t98a23: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8ylin0a_
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-SemiBoldItalic.ttf
 build ../fonts/ttf/Commissioner-SemiBoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcqjdpxs8
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi5t98a23
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-SemiBoldItalic.otf
 build ../fonts/otf/Commissioner-SemiBoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1gsf1gya
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4vltiv0g
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdt97jst7
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdt97jst7: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp46b1iup3
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp46b1iup3: $
     buildTTF instance_ufos/Commissioner-BoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppedifp9l
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppedifp9l: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsa63qeda
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsa63qeda: $
     buildOTF instance_ufos/Commissioner-BoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp906nx2sc
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp906nx2sc: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdt97jst7
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppkhe9791
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppkhe9791: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp46b1iup3
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-BoldItalic.ttf
 build ../fonts/ttf/Commissioner-BoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp906nx2sc
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppkhe9791
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-BoldItalic.otf
 build ../fonts/otf/Commissioner-BoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppedifp9l
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsa63qeda
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1jr8djfe
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1jr8djfe: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9hc58t7a
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9hc58t7a: $
     buildTTF instance_ufos/Commissioner-ExtraBoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5mjh1hax
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5mjh1hax: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3ej6jxf1
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3ej6jxf1: $
     buildOTF instance_ufos/Commissioner-ExtraBoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6e1bbidy
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6e1bbidy: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1jr8djfe
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo_dwszmm
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo_dwszmm: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9hc58t7a
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-ExtraBoldItalic.ttf
 build ../fonts/ttf/Commissioner-ExtraBoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6e1bbidy
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo_dwszmm
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-ExtraBoldItalic.otf
 build ../fonts/otf/Commissioner-ExtraBoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5mjh1hax
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3ej6jxf1
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppv3jc6pn
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppv3jc6pn: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqxr3zz8r
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqxr3zz8r: $
     buildTTF instance_ufos/Commissioner-BlackItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwdjlot1k
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwdjlot1k: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ttew9_0
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ttew9_0: $
     buildOTF instance_ufos/Commissioner-BlackItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmph7fpv8uc
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmph7fpv8uc: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppv3jc6pn
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpijvzl7eu
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpijvzl7eu: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqxr3zz8r
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Commissioner-BlackItalic.ttf
 build ../fonts/ttf/Commissioner-BlackItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmph7fpv8uc
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpijvzl7eu
   operation = fix
   args = 
 # Generating ../fonts/otf/Commissioner-BlackItalic.otf
 build ../fonts/otf/Commissioner-BlackItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwdjlot1k
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5ttew9_0
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2iwuinzm
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2iwuinzm: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps63au8tm
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps63au8tm: $
     buildTTF instance_ufos/CommissionerFlare-Thin.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldwp660b
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldwp660b: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0_9bjnfq
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0_9bjnfq: $
     buildOTF instance_ufos/CommissionerFlare-Thin.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3o96ikbc
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3o96ikbc: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2iwuinzm
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj2t5fqjf
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj2t5fqjf: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps63au8tm
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-Thin.ttf
 build ../fonts/ttf/CommissionerFlare-Thin.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3o96ikbc
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj2t5fqjf
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-Thin.otf
 build ../fonts/otf/CommissionerFlare-Thin.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldwp660b
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0_9bjnfq
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc707a2vu
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc707a2vu: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8615y0wm
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8615y0wm: $
     buildTTF instance_ufos/CommissionerFlare-ExtraLight.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpm57mk62z
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpm57mk62z: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmusn_yib
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmusn_yib: $
     buildOTF instance_ufos/CommissionerFlare-ExtraLight.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2gxxjr0e
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2gxxjr0e: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc707a2vu
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplmpdv1py
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplmpdv1py: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8615y0wm
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-ExtraLight.ttf
 build ../fonts/ttf/CommissionerFlare-ExtraLight.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2gxxjr0e
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplmpdv1py
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-ExtraLight.otf
 build ../fonts/otf/CommissionerFlare-ExtraLight.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpm57mk62z
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmusn_yib
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv23oi08v
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv23oi08v: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppfar5flc
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppfar5flc: $
     buildTTF instance_ufos/CommissionerFlare-Light.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp96na_1k5
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp96na_1k5: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp60w43t7f
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp60w43t7f: $
     buildOTF instance_ufos/CommissionerFlare-Light.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpusyyi_rl
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpusyyi_rl: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv23oi08v
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprt06hgms
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprt06hgms: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppfar5flc
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-Light.ttf
 build ../fonts/ttf/CommissionerFlare-Light.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpusyyi_rl
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprt06hgms
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-Light.otf
 build ../fonts/otf/CommissionerFlare-Light.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp96na_1k5
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp60w43t7f
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe_5e99ja
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe_5e99ja: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv30hk2y8
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv30hk2y8: $
     buildTTF instance_ufos/CommissionerFlare-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd3ulgbkl
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd3ulgbkl: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmmx6oqty
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmmx6oqty: $
     buildOTF instance_ufos/CommissionerFlare-Regular.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwklrayju
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwklrayju: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe_5e99ja
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_mfee5jq
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_mfee5jq: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv30hk2y8
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-Regular.ttf
 build ../fonts/ttf/CommissionerFlare-Regular.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwklrayju
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_mfee5jq
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-Regular.otf
 build ../fonts/otf/CommissionerFlare-Regular.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd3ulgbkl
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmmx6oqty
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvb47za7k
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvb47za7k: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdones7b6
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdones7b6: $
     buildTTF instance_ufos/CommissionerFlare-Medium.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0lru8yab
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0lru8yab: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3hhy35l7
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3hhy35l7: $
     buildOTF instance_ufos/CommissionerFlare-Medium.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp33y4istg
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp33y4istg: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvb47za7k
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo03j681h
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo03j681h: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdones7b6
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-Medium.ttf
 build ../fonts/ttf/CommissionerFlare-Medium.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp33y4istg
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo03j681h
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-Medium.otf
 build ../fonts/otf/CommissionerFlare-Medium.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0lru8yab
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3hhy35l7
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp15phz7n2
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp15phz7n2: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpp69sb8xe
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpp69sb8xe: $
     buildTTF instance_ufos/CommissionerFlare-SemiBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpidrhjboi
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpidrhjboi: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppkdriwp_
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppkdriwp_: $
     buildOTF instance_ufos/CommissionerFlare-SemiBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwhsv3cxx
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwhsv3cxx: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp15phz7n2
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpghsnhkic
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpghsnhkic: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpp69sb8xe
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-SemiBold.ttf
 build ../fonts/ttf/CommissionerFlare-SemiBold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwhsv3cxx
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpghsnhkic
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-SemiBold.otf
 build ../fonts/otf/CommissionerFlare-SemiBold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpidrhjboi
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppkdriwp_
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr822_db8
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr822_db8: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprwzznoub
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprwzznoub: $
     buildTTF instance_ufos/CommissionerFlare-Bold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxz5zja46
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxz5zja46: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv0od2qid
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv0od2qid: $
     buildOTF instance_ufos/CommissionerFlare-Bold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9bfdks4l
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9bfdks4l: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr822_db8
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp37_b6ic9
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp37_b6ic9: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprwzznoub
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-Bold.ttf
 build ../fonts/ttf/CommissionerFlare-Bold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9bfdks4l
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp37_b6ic9
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-Bold.otf
 build ../fonts/otf/CommissionerFlare-Bold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxz5zja46
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpv0od2qid
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp96h85y5e
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp96h85y5e: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcc1vqxmf
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcc1vqxmf: $
     buildTTF instance_ufos/CommissionerFlare-ExtraBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0duvwr5x
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0duvwr5x: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjr9icuiq
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjr9icuiq: $
     buildOTF instance_ufos/CommissionerFlare-ExtraBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxqrn894u
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxqrn894u: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp96h85y5e
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnbjbqjn4
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnbjbqjn4: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcc1vqxmf
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-ExtraBold.ttf
 build ../fonts/ttf/CommissionerFlare-ExtraBold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxqrn894u
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnbjbqjn4
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-ExtraBold.otf
 build ../fonts/otf/CommissionerFlare-ExtraBold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0duvwr5x
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjr9icuiq
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpimlyq8y8
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpimlyq8y8: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnmt19_h6
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnmt19_h6: $
     buildTTF instance_ufos/CommissionerFlare-Black.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppr3dg52f
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppr3dg52f: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4yx3wq10
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4yx3wq10: $
     buildOTF instance_ufos/CommissionerFlare-Black.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpclh6y47v
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpclh6y47v: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpimlyq8y8
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe8ncia_3
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe8ncia_3: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnmt19_h6
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-Black.ttf
 build ../fonts/ttf/CommissionerFlare-Black.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpclh6y47v
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe8ncia_3
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-Black.otf
 build ../fonts/otf/CommissionerFlare-Black.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppr3dg52f
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4yx3wq10
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi7r_d4jo
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi7r_d4jo: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphzyjbajs
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphzyjbajs: $
     buildTTF instance_ufos/CommissionerFlare-ThinItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpypm6s6df
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpypm6s6df: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp52hr8gqm
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp52hr8gqm: $
     buildOTF instance_ufos/CommissionerFlare-ThinItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpym2cx1by
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpym2cx1by: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi7r_d4jo
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphtqyk1j8
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphtqyk1j8: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphzyjbajs
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-ThinItalic.ttf
 build ../fonts/ttf/CommissionerFlare-ThinItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpym2cx1by
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphtqyk1j8
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-ThinItalic.otf
 build ../fonts/otf/CommissionerFlare-ThinItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpypm6s6df
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp52hr8gqm
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi5y5ckeo
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi5y5ckeo: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw7kz4as4
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw7kz4as4: $
     buildTTF instance_ufos/CommissionerFlare-ExtraLightItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1hjynzeq
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1hjynzeq: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3_6bl_t5
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3_6bl_t5: $
     buildOTF instance_ufos/CommissionerFlare-ExtraLightItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpheule67d
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpheule67d: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpi5y5ckeo
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps9649dma
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps9649dma: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw7kz4as4
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-ExtraLightItalic.ttf
 build ../fonts/ttf/CommissionerFlare-ExtraLightItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpheule67d
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmps9649dma
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-ExtraLightItalic.otf
 build ../fonts/otf/CommissionerFlare-ExtraLightItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1hjynzeq
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3_6bl_t5
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpng6avtoj
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpng6avtoj: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpshrugg17
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpshrugg17: $
     buildTTF instance_ufos/CommissionerFlare-LightItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg01hhf3t
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg01hhf3t: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1ingwn1x
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1ingwn1x: $
     buildOTF instance_ufos/CommissionerFlare-LightItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn516v6bw
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn516v6bw: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpng6avtoj
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpoi153y1b
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpoi153y1b: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpshrugg17
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-LightItalic.ttf
 build ../fonts/ttf/CommissionerFlare-LightItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn516v6bw
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpoi153y1b
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-LightItalic.otf
 build ../fonts/otf/CommissionerFlare-LightItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg01hhf3t
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1ingwn1x
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplw1h2382
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplw1h2382: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpt_1vzusr
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpt_1vzusr: $
     buildTTF instance_ufos/CommissionerFlare-Italic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpns_qd8hq
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpns_qd8hq: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpweapb3gp
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpweapb3gp: $
     buildOTF instance_ufos/CommissionerFlare-Italic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpybdd6k94
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpybdd6k94: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplw1h2382
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdmsuav1a
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdmsuav1a: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpt_1vzusr
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-Italic.ttf
 build ../fonts/ttf/CommissionerFlare-Italic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpybdd6k94
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdmsuav1a
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-Italic.otf
 build ../fonts/otf/CommissionerFlare-Italic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpns_qd8hq
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpweapb3gp
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfruvbjd3
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfruvbjd3: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpiq7r9ji1
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpiq7r9ji1: $
     buildTTF instance_ufos/CommissionerFlare-MediumItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqvhj295o
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqvhj295o: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdc687q7i
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdc687q7i: $
     buildOTF instance_ufos/CommissionerFlare-MediumItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp481y7x28
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp481y7x28: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfruvbjd3
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp81c7o5uy
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp81c7o5uy: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpiq7r9ji1
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-MediumItalic.ttf
 build ../fonts/ttf/CommissionerFlare-MediumItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp481y7x28
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp81c7o5uy
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-MediumItalic.otf
 build ../fonts/otf/CommissionerFlare-MediumItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqvhj295o
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdc687q7i
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3d9lag92
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3d9lag92: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp99wd2nd7
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp99wd2nd7: $
     buildTTF instance_ufos/CommissionerFlare-SemiBoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprlk7iu8y
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprlk7iu8y: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqy6csi5c
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqy6csi5c: $
     buildOTF instance_ufos/CommissionerFlare-SemiBoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnw9mjh07
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnw9mjh07: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp3d9lag92
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfdg0hzzb
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfdg0hzzb: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp99wd2nd7
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-SemiBoldItalic.ttf
 build ../fonts/ttf/CommissionerFlare-SemiBoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnw9mjh07
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfdg0hzzb
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-SemiBoldItalic.otf
 build ../fonts/otf/CommissionerFlare-SemiBoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprlk7iu8y
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqy6csi5c
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqvf_bmp4
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqvf_bmp4: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj00leglc
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj00leglc: $
     buildTTF instance_ufos/CommissionerFlare-BoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7vspeoo0
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7vspeoo0: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuy86l0gg
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuy86l0gg: $
     buildOTF instance_ufos/CommissionerFlare-BoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpp9t89fbd
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpp9t89fbd: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqvf_bmp4
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqm4298qg
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqm4298qg: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpj00leglc
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-BoldItalic.ttf
 build ../fonts/ttf/CommissionerFlare-BoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpp9t89fbd
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqm4298qg
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-BoldItalic.otf
 build ../fonts/otf/CommissionerFlare-BoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7vspeoo0
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuy86l0gg
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpflnkqta5
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpflnkqta5: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjlbbmkyr
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjlbbmkyr: $
     buildTTF instance_ufos/CommissionerFlare-ExtraBoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4ofo38we
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4ofo38we: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuyk1go8r
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuyk1go8r: $
     buildOTF instance_ufos/CommissionerFlare-ExtraBoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpx0pxl75o
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpx0pxl75o: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpflnkqta5
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpx73j1v2x
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpx73j1v2x: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjlbbmkyr
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-ExtraBoldItalic.ttf
 build ../fonts/ttf/CommissionerFlare-ExtraBoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpx0pxl75o
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpx73j1v2x
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-ExtraBoldItalic.otf
 build ../fonts/otf/CommissionerFlare-ExtraBoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4ofo38we
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuyk1go8r
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxs2wy7kk
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxs2wy7kk: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9uqimvjo
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9uqimvjo: $
     buildTTF instance_ufos/CommissionerFlare-BlackItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc74bdahs
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc74bdahs: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5rjy_bcz
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5rjy_bcz: $
     buildOTF instance_ufos/CommissionerFlare-BlackItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpulq49b9v
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpulq49b9v: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxs2wy7kk
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzpyu1d0z
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzpyu1d0z: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp9uqimvjo
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerFlare-BlackItalic.ttf
 build ../fonts/ttf/CommissionerFlare-BlackItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpulq49b9v
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzpyu1d0z
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerFlare-BlackItalic.otf
 build ../fonts/otf/CommissionerFlare-BlackItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc74bdahs
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5rjy_bcz
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr68pq_z9
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr68pq_z9: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfkcrh94g
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfkcrh94g: $
     buildTTF instance_ufos/CommissionerLoud-Thin.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdmrvvjqw
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdmrvvjqw: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphxk67yg2
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphxk67yg2: $
     buildOTF instance_ufos/CommissionerLoud-Thin.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_4co1j5p
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_4co1j5p: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr68pq_z9
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnajsp1n4
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnajsp1n4: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfkcrh94g
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-Thin.ttf
 build ../fonts/ttf/CommissionerLoud-Thin.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_4co1j5p
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpnajsp1n4
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-Thin.otf
 build ../fonts/otf/CommissionerLoud-Thin.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdmrvvjqw
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphxk67yg2
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmped2o6ris
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmped2o6ris: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpywkm16c3
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpywkm16c3: $
     buildTTF instance_ufos/CommissionerLoud-ExtraLight.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1sw8fj3i
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1sw8fj3i: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4kagkkkx
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4kagkkkx: $
     buildOTF instance_ufos/CommissionerLoud-ExtraLight.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp265ptmjh
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp265ptmjh: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmped2o6ris
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6j6wawka
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6j6wawka: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpywkm16c3
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-ExtraLight.ttf
 build ../fonts/ttf/CommissionerLoud-ExtraLight.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp265ptmjh
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp6j6wawka
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-ExtraLight.otf
 build ../fonts/otf/CommissionerLoud-ExtraLight.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1sw8fj3i
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp4kagkkkx
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1dxtxgbe
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1dxtxgbe: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd1uwc9uy
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd1uwc9uy: $
     buildTTF instance_ufos/CommissionerLoud-Light.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvisn8l3k
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvisn8l3k: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgqxb78fr
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgqxb78fr: $
     buildOTF instance_ufos/CommissionerLoud-Light.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpneugsjgb
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpneugsjgb: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1dxtxgbe
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmitcr2lb
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmitcr2lb: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd1uwc9uy
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-Light.ttf
 build ../fonts/ttf/CommissionerLoud-Light.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpneugsjgb
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmitcr2lb
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-Light.otf
 build ../fonts/otf/CommissionerLoud-Light.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvisn8l3k
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgqxb78fr
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5brbemhp
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5brbemhp: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldy3e8go
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldy3e8go: $
     buildTTF instance_ufos/CommissionerLoud-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphnf3gucz
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphnf3gucz: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwm8ujpw2
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwm8ujpw2: $
     buildOTF instance_ufos/CommissionerLoud-Regular.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpummg50zq
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpummg50zq: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5brbemhp
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpm22q6oib
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpm22q6oib: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpldy3e8go
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-Regular.ttf
 build ../fonts/ttf/CommissionerLoud-Regular.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpummg50zq
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpm22q6oib
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-Regular.otf
 build ../fonts/otf/CommissionerLoud-Regular.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphnf3gucz
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwm8ujpw2
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr81oey9m
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr81oey9m: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu2e7tbak
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu2e7tbak: $
     buildTTF instance_ufos/CommissionerLoud-Medium.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmtq9hmn1
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmtq9hmn1: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp92we6eb9
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp92we6eb9: $
     buildOTF instance_ufos/CommissionerLoud-Medium.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpa6drit3z
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpa6drit3z: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpr81oey9m
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu6d9kdak
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu6d9kdak: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu2e7tbak
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-Medium.ttf
 build ../fonts/ttf/CommissionerLoud-Medium.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpa6drit3z
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu6d9kdak
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-Medium.otf
 build ../fonts/otf/CommissionerLoud-Medium.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmtq9hmn1
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp92we6eb9
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl9op76mh
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl9op76mh: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8d0t6gnw
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8d0t6gnw: $
     buildTTF instance_ufos/CommissionerLoud-SemiBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphx56xoop
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphx56xoop: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpof5t_fwc
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpof5t_fwc: $
     buildOTF instance_ufos/CommissionerLoud-SemiBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_1vg4h9t
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_1vg4h9t: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl9op76mh
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp67yu0mje
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp67yu0mje: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8d0t6gnw
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-SemiBold.ttf
 build ../fonts/ttf/CommissionerLoud-SemiBold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp_1vg4h9t
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp67yu0mje
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-SemiBold.otf
 build ../fonts/otf/CommissionerLoud-SemiBold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmphx56xoop
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpof5t_fwc
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcg5vxilm
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcg5vxilm: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqis42tjd
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqis42tjd: $
     buildTTF instance_ufos/CommissionerLoud-Bold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgxz7pl7l
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgxz7pl7l: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2wkkk8mk
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2wkkk8mk: $
     buildOTF instance_ufos/CommissionerLoud-Bold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjt25jrgu
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjt25jrgu: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpcg5vxilm
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1ek6q3il
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1ek6q3il: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqis42tjd
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-Bold.ttf
 build ../fonts/ttf/CommissionerLoud-Bold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjt25jrgu
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1ek6q3il
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-Bold.otf
 build ../fonts/otf/CommissionerLoud-Bold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgxz7pl7l
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2wkkk8mk
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe900iqf7
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe900iqf7: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl3vx9_gx
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl3vx9_gx: $
     buildTTF instance_ufos/CommissionerLoud-ExtraBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpms9wwmh0
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpms9wwmh0: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw5h49j8f
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw5h49j8f: $
     buildOTF instance_ufos/CommissionerLoud-ExtraBold.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1zf8mf8_
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1zf8mf8_: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpe900iqf7
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplk4895l3
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplk4895l3: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl3vx9_gx
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-ExtraBold.ttf
 build ../fonts/ttf/CommissionerLoud-ExtraBold.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1zf8mf8_
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmplk4895l3
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-ExtraBold.otf
 build ../fonts/otf/CommissionerLoud-ExtraBold.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpms9wwmh0
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw5h49j8f
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc84jx7n5
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc84jx7n5: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq2349dxm
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq2349dxm: $
     buildTTF instance_ufos/CommissionerLoud-Black.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjy0lov3y
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjy0lov3y: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuipfh3y8
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuipfh3y8: $
     buildOTF instance_ufos/CommissionerLoud-Black.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp34emvihh
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp34emvihh: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpc84jx7n5
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmj4fwfke
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmj4fwfke: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpq2349dxm
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-Black.ttf
 build ../fonts/ttf/CommissionerLoud-Black.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp34emvihh
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpmj4fwfke
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-Black.otf
 build ../fonts/otf/CommissionerLoud-Black.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjy0lov3y
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuipfh3y8
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqe2_pxv1
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqe2_pxv1: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpygn1hq_1
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpygn1hq_1: $
     buildTTF instance_ufos/CommissionerLoud-ThinItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw_76nhro
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw_76nhro: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpogtrb_bv
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpogtrb_bv: $
     buildOTF instance_ufos/CommissionerLoud-ThinItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmph3f9r1x9
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmph3f9r1x9: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqe2_pxv1
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzyreumez
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzyreumez: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpygn1hq_1
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-ThinItalic.ttf
 build ../fonts/ttf/CommissionerLoud-ThinItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmph3f9r1x9
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpzyreumez
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-ThinItalic.otf
 build ../fonts/otf/CommissionerLoud-ThinItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpw_76nhro
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpogtrb_bv
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd7stm1sz
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd7stm1sz: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprr2u2w9u
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprr2u2w9u: $
     buildTTF instance_ufos/CommissionerLoud-ExtraLightItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8uzv97em
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8uzv97em: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp88wpvvr0
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp88wpvvr0: $
     buildOTF instance_ufos/CommissionerLoud-ExtraLightItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxfx_qc66
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxfx_qc66: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd7stm1sz
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg6rusmdz
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg6rusmdz: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprr2u2w9u
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-ExtraLightItalic.ttf
 build ../fonts/ttf/CommissionerLoud-ExtraLightItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpxfx_qc66
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg6rusmdz
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-ExtraLightItalic.otf
 build ../fonts/otf/CommissionerLoud-ExtraLightItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8uzv97em
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp88wpvvr0
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2du3sl3w
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2du3sl3w: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8nabsngh
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8nabsngh: $
     buildTTF instance_ufos/CommissionerLoud-LightItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu1cklges
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu1cklges: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpft91bban
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpft91bban: $
     buildOTF instance_ufos/CommissionerLoud-LightItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjhd1g71v
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjhd1g71v: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2du3sl3w
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu2mwl0vr
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu2mwl0vr: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp8nabsngh
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-LightItalic.ttf
 build ../fonts/ttf/CommissionerLoud-LightItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjhd1g71v
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu2mwl0vr
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-LightItalic.otf
 build ../fonts/otf/CommissionerLoud-LightItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpu1cklges
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpft91bban
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7n94x2hk
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7n94x2hk: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsio4vbr6
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsio4vbr6: $
     buildTTF instance_ufos/CommissionerLoud-Italic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfq6lmm7o
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfq6lmm7o: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp65vobzby
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp65vobzby: $
     buildOTF instance_ufos/CommissionerLoud-Italic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprab8em1_
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprab8em1_: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7n94x2hk
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqlw06d50
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqlw06d50: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpsio4vbr6
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-Italic.ttf
 build ../fonts/ttf/CommissionerLoud-Italic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprab8em1_
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqlw06d50
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-Italic.otf
 build ../fonts/otf/CommissionerLoud-Italic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpfq6lmm7o
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp65vobzby
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprrnrgzth
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprrnrgzth: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwo2uyprn
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwo2uyprn: $
     buildTTF instance_ufos/CommissionerLoud-MediumItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg8tt8454
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg8tt8454: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp683g4anz
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp683g4anz: $
     buildOTF instance_ufos/CommissionerLoud-MediumItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp78jagian
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp78jagian: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmprrnrgzth
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo1apauwu
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo1apauwu: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwo2uyprn
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-MediumItalic.ttf
 build ../fonts/ttf/CommissionerLoud-MediumItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp78jagian
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpo1apauwu
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-MediumItalic.otf
 build ../fonts/otf/CommissionerLoud-MediumItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpg8tt8454
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp683g4anz
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp83ufvo86
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp83ufvo86: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppjtjltsl
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppjtjltsl: $
     buildTTF instance_ufos/CommissionerLoud-SemiBoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjd50pkeq
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjd50pkeq: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwlbdpude
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwlbdpude: $
     buildOTF instance_ufos/CommissionerLoud-SemiBoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpngzjdx1f
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpngzjdx1f: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp83ufvo86
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdfrlmz12
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdfrlmz12: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmppjtjltsl
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-SemiBoldItalic.ttf
 build ../fonts/ttf/CommissionerLoud-SemiBoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpngzjdx1f
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpdfrlmz12
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-SemiBoldItalic.otf
 build ../fonts/otf/CommissionerLoud-SemiBoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpjd50pkeq
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpwlbdpude
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgtwbvze6
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgtwbvze6: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp72a3h7en
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp72a3h7en: $
     buildTTF instance_ufos/CommissionerLoud-BoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0rioqxaz
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0rioqxaz: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpklw68sks
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpklw68sks: $
     buildOTF instance_ufos/CommissionerLoud-BoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvl2aogav
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvl2aogav: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpgtwbvze6
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmptnp5wgaa
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmptnp5wgaa: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp72a3h7en
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-BoldItalic.ttf
 build ../fonts/ttf/CommissionerLoud-BoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpvl2aogav
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmptnp5wgaa
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-BoldItalic.otf
 build ../fonts/otf/CommissionerLoud-BoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp0rioqxaz
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpklw68sks
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqla9662d
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqla9662d: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7s30u1dv
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7s30u1dv: $
     buildTTF instance_ufos/CommissionerLoud-ExtraBoldItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl96l57_o
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl96l57_o: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkiz458qe
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkiz458qe: $
     buildOTF instance_ufos/CommissionerLoud-ExtraBoldItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpajzpqpr0
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpajzpqpr0: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpqla9662d
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5xaj6gzb
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5xaj6gzb: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp7s30u1dv
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-ExtraBoldItalic.ttf
 build ../fonts/ttf/CommissionerLoud-ExtraBoldItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpajzpqpr0
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp5xaj6gzb
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-ExtraBoldItalic.otf
 build ../fonts/otf/CommissionerLoud-ExtraBoldItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpl96l57_o
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpkiz458qe
   operation = fix
   args = 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1awt1prc
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1awt1prc: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_rf44dz
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_rf44dz: $
     buildTTF instance_ufos/CommissionerLoud-BlackItalic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuag7390x
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuag7390x: $
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1pky2r12
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1pky2r12: $
     buildOTF instance_ufos/CommissionerLoud-BlackItalic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpoltov24c
-build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpoltov24c: $
-    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1awt1prc
+# Generating /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd5palj9l
+build /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd5palj9l: $
+    autohint /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpn_rf44dz
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/CommissionerLoud-BlackItalic.ttf
 build ../fonts/ttf/CommissionerLoud-BlackItalic.ttf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpoltov24c
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpd5palj9l
   operation = fix
   args = 
 # Generating ../fonts/otf/CommissionerLoud-BlackItalic.otf
 build ../fonts/otf/CommissionerLoud-BlackItalic.otf: fix $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmpuag7390x
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp1pky2r12
   operation = fix
   args = 
 default $
-    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp2il__3ws.buildStatstamp $
+    /var/folders/c1/ktl0ssn12_dgzfv4p6zflbqr0000gn/T/tmp87mtlzue.buildStatstamp $
     ../fonts/webfonts/Commissioner-Thin.woff2 $
     ../fonts/webfonts/Commissioner-ExtraLight.woff2 $
     ../fonts/webfonts/Commissioner-Light.woff2 $
