@@ -1,10 +1,11 @@
 {
-.appVersion = "3343";
+.appVersion = "3436";
 .formatVersion = 3;
 DisplayStrings = (
 "/parenleft.case/parenleft.case/parenright.case/parenright.case/braceleft.case/braceleft.case/braceleft.case/braceleft.case/braceleft.case/braceleft.case/braceleft.case/braceleft.case/endash.case/endash.case/endash.case/endash.case/emdash.case/emdash.case/emdash.case/emdash.case/guillemetright.case/guillemetright.case/guillemetright.case/guillemetright.case/guilsinglleft.case/guilsinglleft.case/guilsinglleft.case/guilsinglleft.case/guilsinglright.case/guilsinglright.case/guilsinglright.case/guilsinglright.case/at.case/at.case/at.case/at.case",
 "Α/Alpha.calt EΕ/Epsilon.calt Η/Eta.calt Ι/Iota.calt Ο/Omicron.calt Υ/Upsilon.calt ΩΩ/Omega.calt/Iotadieresis.calt/Upsilondieresis.calt",
-"T4HF/G.ss01/Gbreve.ss01/Gcaron.ss01/Gcircumflex.ss01/Gcommaaccent.ss01/Gdotaccent.ss01/Gmacron.ss01"
+"T4HF/G.ss01/Gbreve.ss01/Gcaron.ss01/Gcircumflex.ss01/Gcommaaccent.ss01/Gdotaccent.ss01/Gmacron.ss01",
+"ҽҽҽҽҽҽҽҽҿҿҿҿҿҿҿҿ"
 );
 axes = (
 {
@@ -135,9 +136,10 @@ languagesystem cyrl CHU;
 languagesystem cyrl SRB;
 
 languagesystem grek dflt;
-
 ";
 name = Languagesystems;
+notes = "
+";
 }
 );
 features = (
@@ -155,6 +157,7 @@ feature frac;
 feature ordn;
 feature case;
 feature calt;
+feature ss01;
 feature ss02;
 ";
 tag = aalt;
@@ -620,6 +623,16 @@ lookup grek_dieresisCapInsertion {
 	sub [Alphatonos Epsilontonos Omicrontonos Upsilontonos Alpha.calt Epsilon.calt Omicron.calt Upsilon.calt] Iota' by Iotadieresis.calt;
 	sub [Alphatonos Epsilontonos Etatonos Omicrontonos Omegatonos Alpha.calt Epsilon.calt Eta.calt Omicron.calt Omega.calt] Upsilon' by Upsilondieresis.calt;
 } grek_dieresisCapInsertion;
+
+lookup grek_dieresistonosCapInsertion1 {
+	sub Iotadieresis' [acutecomb acutecomb.case]' by Iotadieresis.calt;
+	sub Upsilondieresis' [acutecomb acutecomb.case]' by Upsilondieresis.calt; 
+} grek_dieresistonosCapInsertion1;
+
+lookup grek_dieresistonosCapInsertion2 {
+	sub Iota' [dieresiscomb dieresiscomb.case]' [acutecomb acutecomb.case]' by Iotadieresis.calt;
+	sub Upsilon' [dieresiscomb dieresiscomb.case]' [acutecomb acutecomb.case]' by Upsilondieresis.calt;
+} grek_dieresistonosCapInsertion2;
 
 ";
 tag = calt;
@@ -359829,7 +359842,7 @@ pos = (189,8);
 ref = e;
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "31578A47-A650-44FC-A56A-1A19FFCC7FA5";
@@ -359855,7 +359868,7 @@ pos = (189,8);
 ref = e;
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "BC264FD1-8586-4488-B838-A62E3DE9CFBD";
@@ -359881,7 +359894,7 @@ pos = (189,8);
 ref = e;
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "E8F7E8F4-AD9B-473E-8893-EB5B69444405";
@@ -359907,7 +359920,7 @@ pos = (189,8);
 ref = e;
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "22813554-62D7-4836-ABA1-4CFC8B4846D6";
@@ -360035,7 +360048,7 @@ pos = (250,5);
 ref = e;
 }
 );
-width = 1304;
+width = 1303;
 },
 {
 associatedMasterId = "A35B2DC7-4FF9-4B2C-BD03-7F8E719AFFEF";
@@ -360058,7 +360071,7 @@ pos = (250,5);
 ref = e;
 }
 );
-width = 1304;
+width = 1303;
 },
 {
 associatedMasterId = "7F9508FF-2C65-4645-B61A-40C2FDBFAEB5";
@@ -360081,7 +360094,7 @@ pos = (250,5);
 ref = e;
 }
 );
-width = 1304;
+width = 1303;
 },
 {
 associatedMasterId = "B503585B-9E86-45AA-BA71-A38DF6707413";
@@ -360104,7 +360117,7 @@ pos = (250,5);
 ref = e;
 }
 );
-width = 1304;
+width = 1303;
 }
 );
 metricRight = e;
@@ -360267,7 +360280,7 @@ pos = (206,8);
 ref = "_descender-cy.iso";
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "31578A47-A650-44FC-A56A-1A19FFCC7FA5";
@@ -360301,7 +360314,7 @@ pos = (206,8);
 ref = "_descender-cy.iso";
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "BC264FD1-8586-4488-B838-A62E3DE9CFBD";
@@ -360335,7 +360348,7 @@ pos = (206,8);
 ref = "_descender-cy.iso";
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "E8F7E8F4-AD9B-473E-8893-EB5B69444405";
@@ -360369,7 +360382,7 @@ pos = (206,8);
 ref = "_descender-cy.iso";
 }
 );
-width = 1246;
+width = 1244;
 },
 {
 layerId = "22813554-62D7-4836-ABA1-4CFC8B4846D6";
@@ -360521,7 +360534,7 @@ pos = (243,5);
 ref = "_descender-cy.iso";
 }
 );
-width = 1304;
+width = 1303;
 },
 {
 associatedMasterId = "A35B2DC7-4FF9-4B2C-BD03-7F8E719AFFEF";
@@ -360548,7 +360561,7 @@ pos = (243,5);
 ref = "_descender-cy.iso";
 }
 );
-width = 1304;
+width = 1303;
 },
 {
 associatedMasterId = "7F9508FF-2C65-4645-B61A-40C2FDBFAEB5";
@@ -360575,7 +360588,7 @@ pos = (243,5);
 ref = "_descender-cy.iso";
 }
 );
-width = 1304;
+width = 1303;
 },
 {
 associatedMasterId = "B503585B-9E86-45AA-BA71-A38DF6707413";
@@ -360602,7 +360615,7 @@ pos = (243,5);
 ref = "_descender-cy.iso";
 }
 );
-width = 1304;
+width = 1303;
 }
 );
 unicode = 1215;
