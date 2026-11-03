@@ -1,10 +1,12 @@
 sources:
     - Commissioner.glyphs
 familyName: Commissioner
-buildOTF: true
-buildTTF: true
+buildOTF: false
+buildTTF: false
 buildVariable: true
-buildWebfont: true
+buildWebfont: false
+cleanUp: true
+splitItalic: false
 axisOrder:
     - FLAR
     - VOLM
